@@ -1,4 +1,146 @@
-<div class="containter">
-    <h1>Pages#home</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaša Stranica</title>
+    <!-- Dodajte Bootstrap CSS ako ga već niste -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Vaš postojeći CSS kod */
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand img {
+            max-height: 50px; /* Prilagodite veličinu logotipa po potrebi */
+        }
+
+        .tabs {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tab {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .active-tab {
+            display: block;
+        }
+
+        /* Footer stilizacija */
+        .footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: auto;
+        }
+
+        .flex-grow {
+    flex-grow: 1;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" alt="Logo">
+        </div>
+        <ul class="tabs">
+            <li class="tab" onclick="showTab(1)">Tab 1</li>
+            <li class="tab" onclick="showTab(2)">Tab 2</li>
+            <li class="tab" onclick="showTab(3)">Tab 3</li>
+            <li class="tab" onclick="showTab(4)">Tab 4</li>
+            <li class="tab" onclick="showTab(5)">Tab 5</li>
+        </ul>
+    </div>
+
+    <!-- Tabovi -->
+    <div id="tab1" class="tab-content active-tab">
+        <!-- Sadržaj za Tab 1 -->
+        <h2>Tab 1 Sadržaj</h2>
+        <p>Ovo je sadržaj za Tab 1.</p>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <!-- Sadržaj za Tab 2 -->
+        <h2>Tab 2 Sadržaj</h2>
+        <p>Ovo je sadržaj za Tab 2.</p>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <!-- Sadržaj za Tab 3 -->
+        <h2>Tab 3 Sadržaj</h2>
+        <p>Ovo je sadržaj za Tab 3.</p>
+    </div>
+
+    <div id="tab4" class="tab-content">
+        <!-- Sadržaj za Tab 4 -->
+        <h2>Tab 4 Sadržaj</h2>
+        <p>Ovo je sadržaj za Tab 4.</p>
+    </div>
+
+    <div id="tab5" class="tab-content">
+        <!-- Sadržaj za Tab 5 -->
+        <h2>Tab 5 Sadržaj</h2>
+        <p>Ovo je sadržaj za Tab 5.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <!-- Dodajte Bootstrap i jQuery JavaScript ako već niste -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function showTab(tabNumber) {
+            // Sakrij sve tabove
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach((tabContent) => {
+                tabContent.classList.remove("active-tab");
+            });
+
+            // Prikazi odabrani tab
+            const selectedTab = document.getElementById(`tab${tabNumber}`);
+            selectedTab.classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
