@@ -1,6 +1,36 @@
-// Specific CSS for your home-page
-.containter {
-    height: 100%;
+.card-category {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .inline_flex {
+    display: flex;
+    justify-content: space-between; /* Raspodela prostora između dece */
+    align-items: flex-start; /* Poravnanje dece na vrh (prema potrebi) */
+  }
+  
+  .child {
+    width: 50%; /* Deca će zauzimati 50% širine kontejnera */
+    box-sizing: border-box; /* Da bi se sprečilo dodavanje margina ili paddinga od strane pregledača */
+    padding: 10px; /* Dodajte padding ako želite razmak između dece */
+  }
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum visina ekrana */
     margin: 0;
     padding: 0;
+    flex-grow: 1;
 }
