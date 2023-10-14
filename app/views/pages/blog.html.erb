@@ -33,104 +33,53 @@
 			<div class="container py-5 mt-4">
 			<div class="row">
 				<div class="col">
-
 					<h2 class="font-weight-bold text-color-dark text-9 mb-4">News and Blog</h2>
+          <div class="col-lg-2 text-md-center text-lg-end">
+            <%= link_to 'Create new post', blog_posts_new_path, class: 'btn btn-gradient font-weight-bold btn-px-5 btn-py-3' %>
+          </div>
 					<p class="text-4-5 line-height-7">Zenos uses its website, as well as our social media, to spread knowledge about topics of our interest. On our channels, you can find various manuals, trainings, seminars, as well as discussions and resources related to prevailing topics from the business world.</p>
 					<div class="container py-4">
 
 					<div class="row">
 						<div class="col">
-							<div class="blog-posts">
+              <div class="blog-posts">
+                <% @posts.each_slice(3) do |post_group| %>
+                  <div class="row">
+                    <% post_group.each do |post| %>
+                      <div class="col-md-4">
+                        <article class="post post-medium border-0 pb-0 mb-5">
+                          <div class="post-image">
+                            <%= link_to blog_posts_show_path(post) do %>
+                              <%= image_tag("team.jpg", alt: "", style: 'max-width: 100%; height: auto;') %>
+                            <% end %>
+                          </div>
 
-								<div class="row">
+                          <div class="post-content">
+                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><%= post.title %></h2>
+                            <p><%= post.description %></p>
 
-									<div class="col-md-4">
-										<article class="post post-medium border-0 pb-0 mb-5">
-											<div class="post-image">
-												<a href="blog-post.html">
-													<%= image_tag('team.jpg', alt: 'Porto', style: 'max-width: 100%; height: auto;') %>
-												</a>
-											</div>
-
-											<div class="post-content">
-
-												<h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="blog-post.html">Amazing Mountain</a></h2>
-												<p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-												<div class="post-meta">
-													<span><i class="far fa-user"></i> By Bob Doe</span>
-													<span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-													<span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-													<span class="d-block mt-2"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-												</div>
-
-											</div>
-										</article>
-									</div>
-
-									<div class="col-md-4">
-										<article class="post post-medium border-0 pb-0 mb-5">
-											<div class="post-image">
-												<a href="blog-post.html">
-													<img src="img/blog/medium/blog-2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-												</a>
-											</div>
-
-											<div class="post-content">
-
-												<h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="blog-post.html">Creative Business</a></h2>
-												<p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-												<div class="post-meta">
-													<span><i class="far fa-user"></i> By <a href="#">John Doe</a> </span>
-													<span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-													<span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-													<span class="d-block mt-2"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-												</div>
-
-											</div>
-										</article>
-									</div>
-
-									<div class="col-md-4">
-										<article class="post post-medium border-0 pb-0 mb-5">
-											<div class="post-image">
-												<a href="blog-post.html">
-													<img src="img/blog/medium/blog-3.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-												</a>
-											</div>
-
-											<div class="post-content">
-
-												<h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="blog-post.html">Unlimited Ways</a></h2>
-												<p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-												<div class="post-meta">
-													<span><i class="far fa-user"></i> By <a href="#">John Doe</a> </span>
-													<span><i class="far fa-folder"></i> <a href="#">News</a>, <a href="#">Design</a> </span>
-													<span><i class="far fa-comments"></i> <a href="#">12 Comments</a></span>
-													<span class="d-block mt-2"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
-												</div>
-
-											</div>
-										</article>
-									</div>
-
-								</div>
-
-								<div class="row">
-									<div class="col">
-										<ul class="pagination float-end">
-											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-											<li class="page-item active"><a class="page-link" href="#">1</a></li>
-											<li class="page-item"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
+                            <div class="post-meta">
+                              <span><i class="far fa-user"></i> Datum: <%= post.created_at %></span>
+                              <span class="d-block mt-2"><a href="blog-post.html" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    <% end %>
+                  </div>
+                <% end %>
+                <div class="row">
+                  <div class="col">
+                    <ul class="pagination float-end">
+                      <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 						</div>
 
 					</div>

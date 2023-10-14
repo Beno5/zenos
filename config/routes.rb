@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'blog_posts/new'
+  get 'blog_posts/edit'
+  get 'blog_posts/:id', to: 'blog_posts#show', as: 'blog_posts_show'
   get 'pages/home'
   get 'pages/about'
   get 'pages/projects'
