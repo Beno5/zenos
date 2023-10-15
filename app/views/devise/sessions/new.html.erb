@@ -17,38 +17,48 @@
 					<div class="row h-100">
 						<div class="col align-self-center">
 							<div class="d-block">
-								<span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2">News and Blog</span>
+								<span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2">Login</span>
 							</div>
 							<div class="d-block">
-								<h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0">News and Blog</h1>
+								<h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0">Login</h1>
 							</div>
 						</div>
 					</div>
 				</div>
 
 			</section>
+<div class="container py-5 mt-4">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="featured-box featured-box-primary text-start mt-0">
+        <div class="box-content">
+          <h2>Login</h2>
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { id: "frmSignIn", method: :post, class: "needs-validation" }) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :email,
+                          required: false,
+                          autofocus: true,
+                          input_html: { class: "form-control form-control-lg", autocomplete: "email" } %>
+              <%= f.input :password,
+                          required: false,
+                          input_html: { class: "form-control form-control-lg", autocomplete: "current-password" } %>
+              <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+            </div>
+            <div class="form-actions d-flex justify-content-end">
+              <%= f.button :submit, "Log in", class: "btn btn-primary btn-modern", "data-loading-text" => "Loading..." %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
 
-			<div class="container py-4">
-				<div class="row">
-					<div class="col">
-						
-					</div>
-				</div>
-			</div>
 
 
-			<section class="section section-height-3 bg-color-grey-scale-1 border-0 m-0">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-10 text-md-center text-lg-start mb-4 mb-lg-0">
-							<h2 class="text-color-dark font-weight-bold mb-1">Zenos is everything you need to help you run your business!</h2>
-							<p class="font-weight-bold positive-ls-3 text-4-5 mb-0">Make An Appointment Today With Our Online Form</p>
-						</div>
-						<div class="col-lg-2 text-md-center text-lg-end">
-							<a href="#" class="btn btn-gradient font-weight-bold btn-px-5 btn-py-3">CONTACT US</a>
-						</div>
-					</div>
-				</div>
-			</section>
+
+
 	</div>
 </div>
