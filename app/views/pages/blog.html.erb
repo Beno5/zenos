@@ -48,11 +48,12 @@
                     <% post_group.each do |post| %>
                       <div class="col-md-4">
                         <article class="post post-medium border-0 pb-0 mb-5">
-                          <div class="post-image">
-                            <%= link_to blog_post_path(post) do %>
-                              <%= image_tag("team.jpg", alt: "", style: 'max-width: 100%; height: auto;') %>
-                            <% end %>
-                          </div>
+                        <div class="post-image">
+													<%= link_to blog_post_path(post) do %>
+														<%= image_tag(post.main_image, alt: "Main Image", style: "max-width: 100%; height: auto;") if post.main_image.attached? %>
+													<% end %>
+												</div>
+
 
                           <div class="post-content">
                             <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><%= post.title %></h2>
