@@ -1,0 +1,17 @@
+.shadow-with-padding {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.card-blog {
+  height: 250px; 
+}
+
+.object-fit-cover {
+  object-fit: centar;
+}
+
+h1, h2 {
+  color: #0091B1;
+}
+
