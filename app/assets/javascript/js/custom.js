@@ -60,3 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Detalje o implementaciji karusela možete pronaći u dokumentaciji biblioteke.
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const imagePreviews = document.querySelectorAll(".image-preview");
+  const carousel = document.querySelector(".owl-carousel");
+  const owl = $(carousel);
+
+  imagePreviews.forEach((preview, index) => {
+    preview.addEventListener("click", () => {
+      owl.trigger("to.owl.carousel", [index, 300]);
+      imagePreviews.forEach((preview) => preview.classList.remove("selected"));
+      preview.classList.add("selected");
+    });
+  });
+});

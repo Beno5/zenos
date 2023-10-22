@@ -1,7 +1,9 @@
 class BlogPostsController < ApplicationController
   def new; end
 
-  def edit; end
+  def edit
+    @post = BlogPost.find(params[:id])
+  end
 
   def show
     @post = BlogPost.find(params[:id])
@@ -19,12 +21,25 @@ class BlogPostsController < ApplicationController
   end
 
   def update
+    @post = BlogPost.find(params[:id])
     if @post.update(blog_post_params)
-      # Uspješno ste ažurirali blog post
+      flash[:notice] = "Blog post successfully updated."
+      redirect_to blog_post_path(@post)
     else
-      # Prikazati greške i ponovno prikazati obrazac
+      flash[:alert] = "Error updating the blog post."
+      render 'edit'
     end
   end
+
+  def destroy
+    @post = BlogPost.find(params[:id])
+    if @post.destroy
+      redirect_to blogs_path, notice: "Record deleted successfully."
+    else
+      redirect_to blogs_path, alert: "Failed to delete the record."
+    end
+  end
+  
 
   private
 

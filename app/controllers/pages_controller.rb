@@ -3,7 +3,9 @@ class PagesController < ApplicationController
 
   def about; end
 
-  def projects; end
+  def projects
+    @posts = ProjectPost.all
+  end
 
   def blog
     @posts = BlogPost.all

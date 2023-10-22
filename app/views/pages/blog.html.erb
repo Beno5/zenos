@@ -50,28 +50,7 @@
                 <% @posts.each_slice(3) do |post_group| %>
                   <div class="row">
                     <% post_group.each do |post| %>
-											<div class="col-md-4 card-blog">
-												<article class="post post-medium border-0 pb-0 mb-5 rounded shadow-with-padding">
-													<div class="post-image">
-														<%= link_to blog_post_path(post) do %>
-															<%= image_tag(post.main_image, alt: "Main Image", class: "img-fluid rounded", style: "width: 100%; object-fit: cover; height: 100%;") if post.main_image.attached? %>
-														<% end %>
-													</div>
-													<div class="post-content p-4">
-														<div class="post-date">
-															<span class="day"><%= post.created_at.strftime("%d") %></span>
-															<span class="month"><%= post.created_at.strftime("%b") %></span>
-														</div>
-														<h4><%= link_to post.title, blog_post_path(post), class: "text-decoration-none text-2" %></h4>
-														<p class="mb-1 text-truncate"><%= post.description %></p>
-														<div class="d-flex justify-content-end">
-															<%= link_to blog_post_path(post), class: 'btn btn-primary btn-sm text-2' do %>
-																Read More <i class="fas fa-chevron-right text-1 ms-1"></i>
-															<% end %>
-														</div>
-													</div>
-												</article>
-											</div>
+											<%= render 'pages/card', post: post %>
                     <% end %>
                   </div>
                 <% end %>

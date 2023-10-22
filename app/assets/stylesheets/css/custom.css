@@ -4,7 +4,7 @@
 }
 
 .card-blog {
-  height: 250px; 
+  height: auto; 
 }
 
 .object-fit-cover {
@@ -15,3 +15,23 @@ h1, h2 {
   color: #0091B1;
 }
 
+
+.image-previews {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-preview {
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.image-preview img {
+  max-width: 100px;
+}
+
+.image-preview.selected {
+  border-color: #0091B1; /* Boja označene slike */
+}
