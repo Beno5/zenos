@@ -27,13 +27,14 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/assets/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="/assets/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.min.css">
+		<%= stylesheet_link_tag '/assets/vendor/bootstrap/css/bootstrap.min' %>
+		<%= stylesheet_link_tag '/assets/vendor/fontawesome-free/css/all.min' %>
+		<%= stylesheet_link_tag '/assets/vendor/animate/animate.compat' %>
+		<%= stylesheet_link_tag '/assets/vendor/simple-line-icons/css/simple-line-icons.min' %>
+		<%= stylesheet_link_tag '/assets/vendor/owl.carousel/assets/owl.carousel.min' %>
+		<%= stylesheet_link_tag '/assets/vendor/owl.carousel/assets/owl.theme.default.min' %>
+		<%= stylesheet_link_tag '/assets/vendor/magnific-popup/magnific-popup.min' %>
+
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="/assets/css/theme.css">
@@ -42,9 +43,10 @@
 		<link rel="stylesheet" href="/assets/css/theme-shop.css">
 
 		<!-- Revolution Slider CSS -->
-		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/layers.css">
-		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/navigation.css">
+		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/settings' %>
+		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/layers' %>
+		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/navigation' %>
+
 
 		<!-- Demo CSS -->
 		<link rel="stylesheet" href="/assets/css/demos/demo-digital-agency.css">
@@ -56,7 +58,7 @@
 		<link rel="stylesheet" href="/assets/css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="/assets/vendor/modernizr/modernizr.min.js"></script>
+		<%= javascript_include_tag '/assets/vendor/modernizr/modernizr.min' %>
 
 		<script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 		<script>
@@ -73,8 +75,8 @@
       <%= yield %>
       <%= render "shared/footer" %>
 
-      	<!-- Vendor -->
-		<script src="/assets/vendor/plugins/js/plugins.min.js"></script>
+		<!-- Vendor -->
+		<%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min' %>
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="/assets/js/theme.js"></script>
