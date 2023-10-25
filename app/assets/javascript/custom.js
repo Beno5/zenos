@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainImagePreview = document.getElementById("main_image_preview");
   const secondaryImagesPreview = document.getElementById("secondary_images_preview");
 
-  mainImageUpload.addEventListener("change", function (event) {
+    mainImageUpload.addEventListener("change", function (event) {
     mainImagePreview.innerHTML = ""; // Resetujemo prikaz glavne slike
 
     const file = event.target.files[0];
