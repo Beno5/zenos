@@ -27,35 +27,36 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<%= stylesheet_link_tag '/assets/vendor/bootstrap/css/bootstrap.min' %>
-		<%= stylesheet_link_tag '/assets/vendor/fontawesome-free/css/all.min' %>
-		<%= stylesheet_link_tag '/assets/vendor/animate/animate.compat' %>
-		<%= stylesheet_link_tag '/assets/vendor/simple-line-icons/css/simple-line-icons.min' %>
-		<%= stylesheet_link_tag '/assets/vendor/owl.carousel/assets/owl.carousel.min' %>
-		<%= stylesheet_link_tag '/assets/vendor/owl.carousel/assets/owl.theme.default.min' %>
-		<%= stylesheet_link_tag '/assets/vendor/magnific-popup/magnific-popup.min' %>
+		<%= stylesheet_link_tag 'bootstrap.min.css' %>
+		<%= stylesheet_link_tag 'all.min.css' %>
+		<%= stylesheet_link_tag 'animate.compat.css' %>
+		<%= stylesheet_link_tag 'simple-line-icons.min.css' %>
+		<%= stylesheet_link_tag 'owl.carousel.min.css' %>
+		<%= stylesheet_link_tag 'owl.theme.default.min.css' %>
+		<%= stylesheet_link_tag 'magnific-popup.min.css' %>
 
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="/assets/css/theme.css">
-		<link rel="stylesheet" href="/assets/css/theme-blog.css">
-		<link rel="stylesheet" href="/assets/css/theme-elements-new.css">
-		<link rel="stylesheet" href="/assets/css/theme-shop.css">
+		<%= stylesheet_link_tag 'theme.css' %>
+		<%= stylesheet_link_tag 'theme-blog.css' %>
+		<%= stylesheet_link_tag 'theme-elements-new.css' %>
+		<%= stylesheet_link_tag 'theme-shop.css' %>
 
 		<!-- Revolution Slider CSS -->
-		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/settings' %>
-		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/layers' %>
-		<%= stylesheet_link_tag '/assets/vendor/rs-plugin/css/navigation' %>
+		<%= stylesheet_link_tag 'settings.css' %>
+		<%= stylesheet_link_tag 'layers.css' %>
+		<%= stylesheet_link_tag 'navigation.css' %>
 
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="/assets/css/demos/demo-digital-agency.css">
+		<%= stylesheet_link_tag 'demo-digital-agency.css' %>
+
 
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="/assets/css/skins/skin-digital-agency.css">
+		<%= stylesheet_link_tag 'skin-digital-agency.css' %>
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="/assets/css/custom.css">
+		<%= stylesheet_link_tag 'custom.css' %>
 
 		<!-- Head Libs -->
 		<%= javascript_include_tag 'modernizr.min.js' %>
@@ -79,15 +80,15 @@
 		<%= javascript_include_tag 'plugins.min.js' %>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="/assets/js/theme.js"></script>
+		<%= javascript_include_tag 'theme.js' %>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="/assets/js/views/view.contact.js"></script>
+		<%= javascript_include_tag 'view.contact.js' %>
 
 		<!-- Theme Custom -->
-		<script src="/assets/js/custom.js"></script>
+		<%= javascript_include_tag 'custom.js' %>
 
 		<!-- Theme Initialization Files -->
-		<script src="/assets/js/theme.init.js"></script>
+		<%= javascript_include_tag 'theme.init.js' %>
   </body>
 </html>
