@@ -8,7 +8,22 @@
 @import "font-awesome";
 
 // Your CSS partials
+@import 'vendor/**/*.css';
 @import "components/index";
 @import "pages/index";
-@import "css/*" ;
-
+@import "vendor/bootstrap/css/bootstrap";
+@import "vendor/fontawesome-free/css/all.min";
+@import "vendor/animate/animate.compat";
+@import "vendor/simple-line-icons/css/simple-line-icons.min";
+@import "vendor/owl.carousel/assets/owl.carousel.min";
+@import "vendor/owl.carousel/assets/owl.theme.default.min";
+@import "vendor/magnific-popup/magnific-popup.min";
+@import "theme-blog";
+@import "theme-elements-new";
+@import "theme-shop";
+@import "vendor/rs-plugin/css/settings";
+@import "vendor/rs-plugin/css/layers";
+@import "vendor/rs-plugin/css/navigation";
+@import "css/demos/demo-digital-agency";
+@import "css/skins/skin-digital-agency";
+@import "custom";
