@@ -12,6 +12,7 @@ gem 'sprockets-rails'
 gem 'sprockets', '3.7.2'
 
 
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
