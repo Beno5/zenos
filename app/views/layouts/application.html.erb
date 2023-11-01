@@ -61,18 +61,20 @@
       <%= render "shared/footer" %>
 
 		<!-- Vendor -->
-		<%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min.js' %>
+		<%= javascript_include_tag 'plugins.min.js' %>
 
 		<!-- Theme Base, Components and Settings -->
-		<%= javascript_include_tag '/assets/js/theme.js' %>
+		<%= javascript_include_tag 'theme.js' %>
 
 		<!-- Current Page Vendor and Views -->
-		<%= javascript_include_tag '/assets/js/views/view.contact.js' %>
+		<%= javascript_include_tag 'view.contact.js' %>
 
 		<!-- Theme Custom -->
-			<!--<%= javascript_include_tag '/assets/js/custom.js' %> -->
+		<%= javascript_include_tag 'custom.js' %>
 
 		<!-- Theme Initialization Files -->
-		<%= javascript_include_tag '/assets/js/theme.init.js' %>
+		<%= javascript_include_tag 'theme.init.js' %>
+		<!-- Head Libs -->
+		<%= javascript_include_tag 'modernizr.min.js' %>
   </body>
 </html>
