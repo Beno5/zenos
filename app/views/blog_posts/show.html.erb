@@ -46,16 +46,13 @@
 									<div class="d-flex justify-content-between align-items-center">
 										<h2 class="font-weight-semi-bold"><%= @post.title %></h2>
 										<% if user_signed_in? %>
-											<div>
+											<div class="d-flex justify-content-between align-items-center">
 												<!-- Edit Button -->
-												<%= link_to edit_blog_post_path(@post), class: "btn btn-primary btn-sm mr-2" do %>
+												<%= link_to edit_blog_post_path(@post), class: "btn btn-primary me-2" do %>
 													Edit
 												<% end %>
-
-												<!-- Destroy Button -->
-											<%= link_to blog_post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" }, class: "btn btn-danger btn-sm" do %>
-												Delete
-											<% end %>
+		
+												<%= button_to "Delete", blog_post_path(@post), class: "btn btn-danger", data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 											</div>
 										<% end %>

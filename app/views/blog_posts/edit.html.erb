@@ -32,45 +32,9 @@
 				<div class="row">
 					<div class="col">
 						<%= form_with(model: @post, local: true, url: blog_post_path(@post), method: "patch") do |f| %>
-							<div class="container">
-								<h2 class="font-weight-bold text-color-dark text-9 mb-4">Create new post</h2>
-
-								<div class="field">
-									<%= f.label :title %>
-									<%= f.text_field :title, class: 'form-control' %>
-								</div>
-
-								<div class="field">
-									<%= f.label :description %>
-									<%= f.text_area :description, class: 'tinymce' %>
-								</div>
-
-								<div class="field">
-									<%= f.label :main_image %>
-									<%= f.file_field :main_image, id: "main_image", style: 'display: none' %>
-								</div>
-
-								<div id="main_image_preview">
-									<!-- Prikaz glavne slike -->
-								</div>
-
-								<div class="field">
-									<%= f.label :images %>
-									<label class="btn">
-										<span class="fileinput-new">Add Secondary Images</span>
-										<%= f.file_field :secondary_images, multiple: true, id: "secondary_images", style: 'display: none' %>
-									</label>
-								</div>
-
-							
-								<div id="secondary_images_preview" class="row flex-row">
-									<!-- Prikaz sporednih slika -->
-								</div>
-
-								<%= f.submit 'Create Post', class: 'btn btn-primary' %>
-							</div>
+							<%= render "form", f: f %>
+						<%= f.submit 'Update Post', class: 'btn btn-primary' %>
 						<% end %>
-
 					</div>
 				</div>
 			</div>
