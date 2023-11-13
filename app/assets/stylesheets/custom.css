@@ -35,3 +35,7 @@ h1, h2 {
 .image-preview.selected {
   border-color: #0091B1; /* Boja označene slike */
 }
+
+.font-span span {
+  font-family: "Nunito", "Helvetica", sans-serif;
+}

@@ -1,25 +1,25 @@
 .custom-big-text-1 {
-		font-size: 152px;
-		font-size: 9.5rem;
+		font-size: 128px;
+		font-size: 8rem;
 }
 
 @media (max-width: 575px) {
 		.custom-big-text-1 {
-				font-size: 5rem;
+				font-size: 4.1rem;
 		}
 }
 
 .custom-big-text-2 {
-		font-size: 124.8px;
-		font-size: 7.8rem;
-		line-height: 112px;
-		line-height: 7rem;
+		font-size: 99.2px;
+		font-size: 6.2rem;
+		line-height: 88px;
+		line-height: 5.5rem;
 }
 
 @media (max-width: 575px) {
 		.custom-big-text-2 {
-				font-size: 3.8rem;
-				line-height: 3.8rem;
+				font-size: 3.3rem;
+				line-height: 3.3rem;
 		}
 }
 
