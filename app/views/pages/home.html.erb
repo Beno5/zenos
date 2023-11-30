@@ -50,82 +50,30 @@
 		<div class="container py-5 my-4">
 			<div class="row">
 				<div class="col">
-					<div class="tabs tabs-bottom tabs-center tabs-simple custom-tabs-style-1">
-						<ul class="nav nav-tabs">
-							<li class="nav-item w-25">
-								<a class="nav-link pb-2 px-5-5 active" href="#tabsNavigationSimpleIcons1" data-bs-toggle="tab">
-									<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
-										<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-											<span class="box-content p-0 m-0">
-												<%= image_tag('arrow-symbols.svg', width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
-												<h4 class="positive-ls-3 font-weight-bold text-3">STRATEGY</h4>
-											</span>
-										</span>
-									</span>									
-								</a>
-							</li>
-							<li class="nav-item w-25">
-								<a class="nav-link pb-2 px-5-5" href="#tabsNavigationSimpleIcons2" data-bs-toggle="tab">
-									<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
-										<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-											<span class="box-content p-0 m-0">
-												<%= image_tag('lamp.svg', width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
-
-												<h4 class="positive-ls-3 font-weight-bold text-3">CREATIVE</h4>
-											</span>
-										</span>
-									</span>									
-								</a>
-							</li>
-							<li class="nav-item w-25">
-								<a class="nav-link pb-2 px-5-5" href="#tabsNavigationSimpleIcons3" data-bs-toggle="tab">
-									<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
-										<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-											<span class="box-content p-0 m-0">
-												<%= image_tag('mac.svg', width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
-												<h4 class="positive-ls-3 font-weight-bold text-3">DEVELOPMENT</h4>
-											</span>
-										</span>
-									</span>									
-								</a>
-							</li>
-							<li class="nav-item w-25">
-								<a class="nav-link pb-2 px-5-5" href="#tabsNavigationSimpleIcons4" data-bs-toggle="tab">
-									<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
-										<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-											<span class="box-content p-0 m-0">
-												<%= image_tag('megaphone.svg', width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
-												<h4 class="positive-ls-3 font-weight-bold text-3">MARKETING</h4>
-											</span>
-										</span>
-									</span>									
-								</a>
-							</li>
-						</ul>
-						<div class="tab-content px-lg-5 mx-lg-5">
-							<div class="tab-pane active" id="tabsNavigationSimpleIcons1">
-								<div class="text-center">
-									<p class="text-3-5 line-height-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet massa tellus, vitae lacinia arcu mollis ac. Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. Vestibulum mattis quam gravida malesuada faucibus. Duis nec est ac metuspulvinar nunc commodo nisi orci, sit amet fermentum sapien tempus eu. </p>
+					<div class="row">
+					<% data = {
+						'arrow-symbols.svg': 'STRATEGY',
+						'bullhorn-solid.svg': 'MARKETING',
+						'book-solid': 'EDUCATION',
+						'lightbulb-solid': 'ENTREPRENEURSHIP',
+						'mountain-city-solid': 'SOCIAL RESPONSIBILITY',
+						'recycle-solid': 'SUSTAINABLE PRODUCTION',
+						'apple-whole-solid.svg': 'HEALTHY NUTRITION',
+						'people-group-solid': 'INCLUSION'
+					} %>
+						<% data.each do |path, name| %>
+							<div class="col-md-3">
+								<div class="featured-boxes featured-boxes-style-6 p-0 m-0">
+									<div class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
+										<div class="box-content p-0 m-0 text-center">
+											<%= image_tag(path, width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
+											<h4 class="positive-ls-3 font-weight-bold text-3"><%= name %></h4>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="tab-pane" id="tabsNavigationSimpleIcons2">
-								<div class="text-center">
-									<p class="text-3-5 line-height-9">Ipsum dolor sit amet, dipiscing elit. Donec imperdiet massa tellus, vitae lacinia arcu mollis ac. Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. Vestibulum mattis quam gravida malesuada faucibus. Duis nec est ac metuspulvinar nunc commodo nisi orci, sit amet fermentum sapien tempus eu. </p>
-								</div>
-							</div>
-							<div class="tab-pane" id="tabsNavigationSimpleIcons3">
-								<div class="text-center">
-									<p class="text-3-5 line-height-9">Sit amet, consectetur adipiscing elit. Donec lus, vitae lacinia arcu mollis ac. Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. Vestibulum mattis quam gravida malesuada faucibus. Duis nec est ac metuspulvinar nunc commodo nisi orci, sit amet fermentum sapien tempus eu. </p>
-								</div>
-							</div>
-							<div class="tab-pane" id="tabsNavigationSimpleIcons4">
-								<div class="text-center">
-									<p class="text-3-5 line-height-9">Dolor sit amet, consectetur adipiscing elit. Donec imperdiet massa tellus, vitae lacinia arcu mollis ac. Nulla ex enim, pellente que vitae tristique vel, porttitor in quam. Vestibulum mattis quam gravida malesuada faucibus. Duis nec est ac metuspulvinar nunc commodo nisi orci, sit amet fermentum sapien tempus eu. </p>
-								</div>
-							</div>
-						</div>
+						<% end %>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -134,7 +82,7 @@
 			<Div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Who we are</h2>
+						<h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">WHO WE ARE?</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
@@ -166,8 +114,7 @@
 								<p><strong class="font-weight-bold text-color-secondary">Team Zenos</strong></p>
 							</div>
 						</div>
-						<%= image_tag('FB-and-IG.jpg',class: 'img-fluid', alt: 'signature', width: 150) %>
-
+						<%= image_tag('ZENOS-transparent-13.png',class: 'img-fluid', alt: 'signature', width: 135) %>
 					</div>
 
 				</div>
@@ -178,8 +125,8 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-10 text-md-center text-lg-start mb-4 mb-lg-0">
-						<h2 class="text-color-dark font-weight-bold mb-1">Zenos is your reliable partner in driving the change!</h2>
-						<p class="font-weight-bold positive-ls-3 text-4-5 mb-0">Get in touch with our team to find out more about what we do</p>
+						<h2 class="text-color-dark font-weight-bold mb-1 text-justify">Zenos is your reliable partner in driving the change!</h2>
+						<p class="font-weight-bold positive-ls-3 text-4-5 mb-0 text-justify">Get in touch with our team to find out more about what we do!</p>
 					</div>
 					<div class="col-lg-2 text-md-center text-lg-end">
 						<%= link_to "CONTACT US", pages_contact_path, class: "btn btn-gradient font-weight-bold btn-px-5 btn-py-3" %>
