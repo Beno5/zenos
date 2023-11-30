@@ -12,7 +12,7 @@
 }
 
 h1, h2 {
-  color: #0091B1;
+  color: var(--primary);
 }
 
 
@@ -33,7 +33,7 @@ h1, h2 {
 }
 
 .image-preview.selected {
-  border-color: #0091B1; /* Boja označene slike */
+  border-color: var(--primary); /* Boja označene slike */
 }
 
 .font-span span {
