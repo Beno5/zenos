@@ -62,10 +62,9 @@
 									<div class="post-meta">
 										<span><i class="fa-solid fa-calendar"></i>Datum: <%= @post.created_at.strftime("%d/%m/%Y") %> </span>
 									</div>
-									<p><%= @post.description %></p>
+									<p><%= @post.description.html_safe %></p>
 									<div class="row justify-content-center">
 										<div class="col-lg-6">
-											<h4>Navigation Inside</h4>
 											<div class="owl-carousel owl-theme nav-inside" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
 												<% @post.secondary_images.each do |image| %>
 													<div>

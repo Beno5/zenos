@@ -36,6 +36,6 @@ class ProjectPostsController < ApplicationController
   private
 
   def project_post_params
-    params.permit(:title, :description, :main_image, secondary_images: [])
+    params.require(:project_post).permit(:title, :description, :main_image, secondary_images: [])
   end
 end
