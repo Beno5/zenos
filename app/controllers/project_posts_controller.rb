@@ -1,8 +1,10 @@
 class ProjectPostsController < ApplicationController
-  def new; end
+  def new
+    @post = ProjectPost.new
+  end
 
   def edit
-    @post = BlogPost.find(params[:id])
+    @post = ProjectPost.find(params[:id])
   end
 
   def show
@@ -10,23 +12,24 @@ class ProjectPostsController < ApplicationController
   end
 
   def create
-    @post = ProjectPost.new(blog_post_params)
+    @post = ProjectPost.new(project_post_params)
     if @post.save
-      # Uspješno ste stvorili blog post
+      flash[:notice] = "Project post successfully created."
+      redirect_to project_post_path(@post)
     else
-      # Prikazati greške i ponovno prikazati obrazac
+      flash[:alert] = "Error creating the project post."
     end
 
-    #redirect to blogs
   end
 
   def update
     @post = ProjectPost.find(params[:id])
-
-    if @post.update(project_post_params)
-      # Uspješno ste ažurirali blog post
+    if @post.update!(project_post_params)
+      flash[:notice] = "Project post successfully updated."
+      redirect_to project_post_path(@post)
     else
-      # Prikazati greške i ponovno prikazati obrazac
+      flash[:alert] = "Error updating the project post."
+      render 'edit'
     end
   end
 
