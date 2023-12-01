@@ -11,7 +11,7 @@
         <span class="month"><%= post.created_at.strftime("%b") %></span>
       </div>
       <h4><%= link_to post.title, blog_post_path(post), class: "text-decoration-none text-2" %></h4>
-      <p class="mb-1 "><%= post.description %></p>
+      <p class="mb-1"><%= post.plain_text_description %></p>
       <div class="d-flex justify-content-end">
         <%= link_to blog_post_path(post), class: 'btn btn-primary btn-sm text-2' do %>
           Read More <i class="fas fa-chevron-right text-1 ms-1"></i>

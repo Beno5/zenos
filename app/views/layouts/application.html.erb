@@ -42,13 +42,7 @@
 
 		<!-- Head Libs -->
 	
-		<script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-		<script>
-			tinymce.init({
-				selector: '.tinymce',
-				plugins: 'lists link image table code help wordcount'
-			});
-		</script>
+		
   </head>
 
   <body>
@@ -57,28 +51,33 @@
       <%= yield %>
       <%= render "shared/footer" %>
 	
-<!-- Head Libs -->
-		<%= javascript_include_tag '/assets/vendor/modernizr/modernizr.min' %>
-
-
 <!-- Vendor -->
-		<%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min' %>
+		<%= javascript_include_tag 'plugins.min.js' %>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="/assets/js/theme.js"></script>
+		<%= javascript_include_tag 'theme.js' %>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="/assets/js/views/view.contact.js"></script>
+		<%= javascript_include_tag 'view.contact.js' %>
 
 		<!-- Theme Custom -->
-		<script src="/assets/js/custom.js"></script>
+		<%= javascript_include_tag 'custom.js' %>
 
 		<!-- Theme Initialization Files -->
-		<script src="/assets/js/theme.init.js"></script>
+		<%= javascript_include_tag 'theme.init.js' %>
+		<!-- Head Libs -->
+		<%= javascript_include_tag 'modernizr.min.js' %>
 
 
 		
-    <script>tinymce.init({forced_root_block : "",selector:'textarea'});</script>
-
+<script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: 'textarea, .tinymce',
+    plugins: 'lists link image table code help wordcount',
+    toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image table code | removeformat | help | wordcount',
+    forced_root_block: '',
+  });
+</script>
   </body>
 </html>

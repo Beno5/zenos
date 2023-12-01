@@ -1,5 +1,5 @@
 class ContactFormMailer < ApplicationMailer
-  def contact_email
+  def contact_email(params)
     @name = params[:name]
     @phone = params[:phone]
     @email = params[:email]

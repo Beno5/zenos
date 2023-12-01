@@ -38,7 +38,7 @@
 
 								<h2 class="font-weight-bold text-color-dark text-7 mt-0 mb-4">Send a Message</h2>
 
-								<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+								<%= form_with(url: contact_form_send_email_path, method: 'post', local: true, class: 'contact-form custom-form-style-1') do |form| %>
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Success!</strong> Your message has been sent to us.
 									</div>
@@ -50,31 +50,35 @@
 
 									<div class="row row-gutter-sm">
 										<div class="form-group col-lg-6 mb-4">
-											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required placeholder="Your Name">
+											<%= form.text_field :name, class: 'form-control', id: 'name', required: true, placeholder: 'Your Name', maxlength: 100, 'data-msg-required' => 'Please enter your name.' %>
 										</div>
 										<div class="form-group col-lg-6 mb-4">
-											<input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phone" id="phone" required placeholder="Phone Number">
+											<%= form.text_field :phone, class: 'form-control', id: 'phone', required: true, placeholder: 'Phone Number', maxlength: 100, 'data-msg-required' => 'Please enter your phone number.' %>
 										</div>
 									</div>
+
 									<div class="row row-gutter-sm">
 										<div class="form-group col-lg-6 mb-4">
-											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required placeholder="Your Name">
+											<%= form.email_field :email, class: 'form-control', id: 'email', required: true, placeholder: 'Your Email', maxlength: 100, 'data-msg-required' => 'Please enter your email address.', 'data-msg-email' => 'Please enter a valid email address.' %>
 										</div>
 										<div class="form-group col-lg-6 mb-4">
-											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required placeholder="Subject">
+											<%= form.text_field :subject, class: 'form-control', id: 'subject', required: true, placeholder: 'Subject', maxlength: 100, 'data-msg-required' => 'Please enter the subject.' %>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="form-group col mb-4">
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required placeholder="Your Message"></textarea>
+											<%= form.text_area :message, class: 'form-control', id: 'message', required: true, placeholder: 'Your Message', maxlength: 5000, 'data-msg-required' => 'Please enter your message.', rows: 10 %>
 										</div>
 									</div>
+
 									<div class="row">
 										<div class="form-group col mb-3">
-											<button type="submit" class="btn btn-gradient font-weight-bold btn-px-5 btn-py-3" data-loading-text="Loading...">SEND MESSAGE</button>
+											<%= form.submit 'SEND MESSAGE', disabled: true, class: 'btn btn-gradient font-weight-bold btn-px-5 btn-py-3', 'data-loading-text' => 'Loading...' %>
 										</div>
 									</div>
-								</form>
+								<% end %>
+
 
 							</div>
 						</div>
