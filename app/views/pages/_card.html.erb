@@ -1,7 +1,7 @@
 <div class="col-md-4 card-blog">
   <article class="post post-medium border-0 pb-0 mb-5 rounded shadow-with-padding">
     <div class="post-image">
-      <%= link_to blog_post_path(post) do %>
+      <%= link_to post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post) do %>
         <%= image_tag(post.main_image, alt: "Main Image", class: "img-fluid rounded", style: "width: 100%; object-fit: cover; height: 100%;") if post.main_image.attached? %>
       <% end %>
     </div>
