@@ -39,3 +39,36 @@ h1, h2 {
 .font-span span {
   font-family: "Nunito", "Helvetica", sans-serif;
 }
+
+.banner-container {
+  position: relative;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered-text p {
+  color: rgb(255, 255, 255); /* Set white color */
+  font-size: 42px; /* Set the font size */
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a black shadow */
+}
+
+.banner-container img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.plus-sign {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+

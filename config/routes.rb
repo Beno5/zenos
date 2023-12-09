@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'pages/projects'
   get 'pages/blog'
   get 'pages/contact'
+  get 'pages/nutrition'
+  get 'pages/zdrava-ishrana'
   
   post 'contact_form/send_email'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

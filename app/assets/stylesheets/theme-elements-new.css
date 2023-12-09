@@ -14853,6 +14853,12 @@ html.boxed .slider-container {
 	width: 48px;
 }
 
+.social-icons.social-icons-xxl li a {
+	height: 96px;
+	line-height: 100px;
+	width: 96px;
+}
+
 @media (max-width: 400px) {
 	.social-icons.social-icons-big li a, .social-icons.social-icons-lg li a {
 		height: 38px;

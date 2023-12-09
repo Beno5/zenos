@@ -12,4 +12,8 @@ class PagesController < ApplicationController
   end
 
   def contact; end
+
+  def nutrition
+  
+  end
 end
