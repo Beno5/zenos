@@ -13,7 +13,10 @@ class PagesController < ApplicationController
 
   def contact; end
 
+  def zdrava_ishrana
+
+  end
+
   def nutrition
-  
   end
 end
