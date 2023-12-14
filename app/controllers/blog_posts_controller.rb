@@ -1,5 +1,4 @@
 class BlogPostsController < ApplicationController
-  
   def new
     @post = BlogPost.new
   end
@@ -35,14 +34,13 @@ class BlogPostsController < ApplicationController
 
   def destroy
     @post = BlogPost.find(params[:id])
-    if @post.destroy
+    if @post.destroy!
       redirect_to pages_blog_path, notice: "Record deleted successfully."
     else
       redirect_to blogs_path, alert: "Failed to delete the record."
     end
   end
   
-
   private
 
   def blog_post_params

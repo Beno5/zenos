@@ -24,7 +24,7 @@
       <div class="col-md-6">
         <%= image_tag(@post.main_image, class: 'img-fluid img-thumbnail img-thumbnail-no-borders rounded shadow', style: "width: 100%", alt: '') if @post.main_image.attached? %>
         <% if @post.main_image.attached? %>
-          <button class="btn btn-danger btn-sm" id="remove-main-image">
+          <button type="button" class="btn btn-danger btn-sm" id="remove-main-image">
             <i class="fa-solid fa-times me-2"></i> Remove
           </button>
         <% end %>
@@ -54,7 +54,7 @@
       <div class="col-md-3">
         <%= image_tag(image, class: 'img-fluid img-thumbnail img-thumbnail-no-borders rounded shadow', style: 'width: 100%', alt: '') %>
         <div style="margin-top: 10px;"></div> <!-- Dodajemo marginu između Remove dugmeta i slike -->
-        <button class="btn btn-danger btn-sm remove-secondary-image">
+        <button type="button" class="btn btn-danger btn-sm remove-secondary-image">
           <i class="fa-solid fa-times me-2"></i> Remove
         </button>
       </div>

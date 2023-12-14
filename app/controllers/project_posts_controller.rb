@@ -33,6 +33,15 @@ class ProjectPostsController < ApplicationController
     end
   end
 
+  def destroy
+    @post = ProjectPost.find(params[:id])
+    if @post.destroy!
+      redirect_to pages_projects_path, notice: "Record deleted successfully."
+    else
+      redirect_to projects_path, alert: "Failed to delete the record."
+    end
+  end
+
   private
 
   def project_post_params
