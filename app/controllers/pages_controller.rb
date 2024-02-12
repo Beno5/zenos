@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def blog
+    debugger
     @posts = BlogPost.all
   end
 

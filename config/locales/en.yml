@@ -30,4 +30,74 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    text_banner_first: Your reliable partner
+    text_banner_second: in driving the change!
+    cards:
+      economic: ECONOMIC EMPOWERMENT
+      marketing: MARKETING
+      education: EDUCATION
+      inclusion: INCLUSION
+      social: SOCIAL RESPONSIBILITY
+      cultural: CULTURAL INTELLIGENCE
+      healty: HEALTHY NUTRITION
+      entreprenurship: ENTREPRENEURSHIP
+    who:
+      title: WHO WE ARE?
+      first_part: "At the heart of who we are is a simple belief: making society better often starts with everyday people taking small steps. We're passionate about driving positive change in everything we do."
+      second_part: Through training, online learning, partnerships, development of educational materials and various other activities, we're all about making a positive impact on society.
+      third_part: Since 2019, we've teamed up with many organizations and individuals, working together to create a brighter future in our areas of expertise.
+    qoute: 
+      text: Those who think there is no place for emotions in business have never been in the presence of a passionate leader.
+      signature: Co-founders of Zenos
+  about:
+    title: ABOUT
+    description_part_one: Zenos as an idea was developed by two friends - Ema and Ena, actively thinking about how to connect the wealth of the workforce in Bosnia and Herzegovina with the business opportunities available in the world. Globalization, technological progress and, above all, the Internet, enabled the active work of employees from any part of the world, for a company located in any part of the world - if, and only if, there are knowledge and skills that can be applied and used. At the heart of our concept lies the principle of economic empowerment.
+    description_part_two: Zenos is all about strengthening the capacity and enabling business opportunities. We prioritize empowering young people and women, along with other individuals eager to acquire and refine their skills and knowledge. Additionally, we assist organizations in building up their strategic positions by strengthening human capital, analyzing market opportunities, tracking trends, fostering social responsibility, and implementing cultural intelligence in diverse teams. A special emphasis is placed on supporting the food sector, where our focus is on advancing sustainable production and promoting the consumption of healthy food.
+    qoute:
+      text_part_one: "Embarking on a business venture with your best friend is a delicate dance that can either lead to perfection or disaster. The key lies in the authenticity of your friendship. Consider this: can you honestly criticize your friend's fashion choices if they appear less than stellar?"
+      text_part_two: A successful business partnership with a best friend requires a delicate balance of sincerity, tact, and a shared understanding. If you can deliver candid feedback with both honesty and kindness, and if your friend can receive it as constructive rather than critical, then you may just be on the path to building a lasting and prosperous business together.
+    different: 
+      title: WE ARE DIFFERENT!
+      text_part_one: Zenos team consists of young and energetic people who have different skills and knowledge, as well as different formal education - from economics, law, food engineering, information technology, foreign languages, etc.
+      text_part_two: In our uniquely diverse team, we unite with a shared purpose — to disseminate knowledge within our community and society at large.
+    testimonial_title: WHAT OTHERS SAY ABOUT US
+  projects:
+    title: PROJECTS
+    title_two: OUR PROJECTS
+    create: Create new post
+    description: Zenos uses its website, as well as our social media, to spread knowledge about topics of our interest. On our channels, you can find various manuals, trainings, seminars, as well as discussions and resources related to prevailing topics from the business world.
+  blog:
+    title: NEWS AND BLOG
+    description: Stay informed and engaged with the latest updates in our News and Blog section, where we bring you insightful articles, latest news and events from our team, and thought-provoking content. Dive into a mix of topics that impact you, and join the conversation - we are waiting to hear from you!
+  contact:
+    title: CONTACT
+    form: 
+      title: Send a Message
+      name: Your Name
+      name_error: Please enter your name.
+      phone: Phone Number
+      phone_error: Please enter your phone number.
+      email: Your Email
+      email_error: Please enter a valid email address.
+      subject: Subject
+      subject_error: Please enter the subject.
+      message: Your Message
+      message_error: Please enter your message.
+      send_message: SEND MESSAGE
+    address:
+      title: OUR OFFICE
+      address: "Address:"
+      phone: "Phone:"
+      email: "Email:"
+      working_hours:
+        title: Business Hours
+        monday_friday: Monday - Friday - 9am to 5pm
+        weekend: Saturday and Sunday - Closed
+
+  shared:
+    contact:
+      moto: Zenos is your reliable partner in driving the change!
+      get_in: Get in touch with our team to find out more about what we do!
+      contact_us: CONTACT US
+    
