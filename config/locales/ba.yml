@@ -30,4 +30,80 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 ba:
-  hello: "Zdravo svijete"
+  home:
+    text_banner_first: Vaš pouzdan partner u
+    text_banner_second: podsticanju promjena!
+    cards:
+      economic: EKONOMSKO OSNAŽIVANJE
+      marketing: MARKETING
+      education: EDUKACIJA
+      inclusion: INKLUZIJA
+      social: SOCIJALNA ODGOVORNOST
+      cultural: KULTURNAL INTELIGENCIJA
+      healty: ZDRAVA ISHRANA
+      entreprenurship: PREDUZETNIŠTVO
+    who:
+      title: KO SMO MI?
+      first_part: "Suština našeg postojanja temelji se na jednostavnom uvjerenju: Obični ljudi malim koracima mogu učiniti društvo boljim."
+      second_part: Naša strast je podsticanje pozitivne promjene u svemu što radimo. Kroz trening, učenje, partnerstva, razvoj edukativnih materijala i različite druge aktivnosti, cilj nam je pozitivno utjecati na društvo.
+      third_part: Zenos postoji od 2019. Godine i do sada smo uspjeli da u saradnji s mnogim organizacijama i individualcima svoju strucnost iskoristimo za stvaranje svjetlije budućnosti.
+    qoute: 
+      text: Oni koji misle da u biznisu nema mjesta za emocije nikada nisu bili u prisustvu strastvenog lidera.
+      signature: Zenos tim
+  about:
+    title: NAŠA PRIČA
+    description_part_one: Ideju Zenosa razvile su dvije prijateljice – Ema i Ena, dok su aktivno razmišljale kako spojiti bogatstvo radne snage u Bosni i Hercegovini s biznis prilikama dostupnim u svijetu. Globalizacija, tehnološki progres i, prije svega, internet, omogućili su aktivan rad zaposlenika iz bilo kojeg dijela svijeta, za preduzeća locirana u bilo kojem dijelu svijeta – ako i samo ako, imaju potrebna i primjenjiva znanja, vještine i kompetencije. Osnovna misija Zenosa oslanja se na ekonomsko osnaživanje, kako bi radna snaga iz BiH bila što kompetentnija za rad na stranim tržištima. Zbog toga, bavimo se istovremeno jačanjem kapaciteta i omogućavanjem poslovnih prilika.
+    description_part_two: Zenos se bavi jačanjem kapaciteta i omogućivanjem poslovnih prilika. Naš prioritet je osnaživanje mladih ljudi i žena, kao i drugih pojedinaca željnih sticanja novih i razvoja postojećih vještina i znanja. Osim fokusa na individualce, pružamo podršku organizacijama u izgrađivanju njihovih strateških pozicija kroz jačanje ljudskog kapitala, analiziranje tržišnih vrijednosti, praćenje trendova, promociju socijalne odgovornosti i implementiranje kulturalne inteligencije u raznolike timove. Poseban naglasak leži u podržavanju prehrambenog sektora, gdje je naš fokus unapređenje održive proizvodnje i promovisanje zdrave ishrane.
+    qoute:
+      text_part_one: "Krenuti u poslovni poduhvat s najboljim prijateljem je jedna neizvijesna avantura koja može imati dva moguća rezultata – ili perfekciju ili totalnu katastrofu. Negdje u sredini, teško da ćete završiti. Ključ uspjeha leži u kvaliteti i autentičnosti vašeg prijateljstva. Ako razmatrate ovu ideju, analizirajte koliko je vaše prijateljstvo otvoreno, iskreno i direktno. Možete li svome prijatelju otvoreno reći da njegova današnja modna kombinacija izgleda očajno? Ako ne možete, onda sigurno nećete moći iskreno kritikovati ni njegovu ideju za obavljanjem određenog dijela posla, što je u ovom slučaju jako bitno."
+      text_part_two: Uspješno biznis partnerstvo s najboljim prijateljem zahtijeva ravnotežu između iskrenosti, direktnosti, takta i međusobnog razumijevanja. Ako možete dati vaše iskreno mišljenje bez dvojbe hoće li vaš prijatelj to shvatiti kao konstruktivnu kritiku ili kao uvredu, onda imate sve predispozicije da zajedno izgradite trajan i prosperitetan biznis.
+      signature: Ema & Ena, Zenos
+    different: 
+      title: MI SMO DRUGAČIJI!
+      text_part_one: Zenos tim čine mladi i energični ljudi različitih vještina i znanja, kao i različitog formalnog obrazovanja - od ekonomije, prava, prehrambenih tehnologija, informacionih tehnologija, stranih jezika itd.
+      text_part_two: Naš jedinstveno raznoliki tim dijeli zajedničke vrijednosti i težnju ka jedinstvenom cilju, a to je širenje znanja društvu koje nas okružuje.
+    testimonial_title: ŠTA DRUGI KAŽU O NAMA
+  projects:
+    title: PROJEKTI
+    title_two: NAŠI PROJEKTI
+    create: Create new post
+    description: Putem svoje web stranice i socijalnih mreža aktivno širimo znanje o raznim temama koje su u polju našeg interesovanja. Ovdje možete pronaći priručnike, treninge, seminare, diskusije i razne druge resurse koji su povezani s aktuelnim temama u današnjem poslovnom svijetu.
+  blog:
+    title: VIJESTI I BLOG
+    description: Ako želite biti informisani s najnovijim dešavanjima vezanim za Zenos, pratite našu rubriku Vijesti i blog, gdje možete pročitati interesantne članke o našem timu, kao i druge sadržaje koji će vas potaknuti na razvoj kritičkog razmišljanja. Ukoliko vas posebno zaintrigira neka tema, čekamo vas da započnete diskusiju!
+  contact:
+    title: KONTAKT
+    form:
+      title: Pošalji poruku
+      name: Vaše ime
+      name_error: Molimo unesite vaše ime.
+      phone: Broj telefona
+      phone_error: Molimo unesite broj telefona.
+      email: Vaša email adresa
+      email_error: Molimo unesite ispravnu email adresu.
+      subject: Predmet
+      subject_error: Molimo unesite predmet.
+      message: Vaša poruka
+      message_error: Molimo unesite vašu poruku.
+      send_message: POŠALJI PORUKU
+    address:
+      title: NAŠA KANCELARIJA
+      address: "Adresa:"
+      phone: "Telefon:"
+      email: "Email:"
+      working_hours:
+        title: Radno vrijeme
+        monday_friday: Ponedjeljak - Petak - 9h do 17h
+        weekend: Subota i Nedjelja - Zatvoreno
+  shared:
+    navbar:
+      home: Početna
+      about: O nama
+      projects: Projekti
+      blog: Vijesti i blog
+      contact: Kontakt
+    contact:
+      moto: Zenos je vaš pouzdani partner u podsticanju projmjena!
+      get_in: Stupite u kontakt sa našim timom i saznajte više o našem radu!
+      contact_us: KONTAKTIRAJTE NAS
+    

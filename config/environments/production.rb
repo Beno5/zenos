@@ -103,5 +103,4 @@ Rails.application.configure do
     open_timeout: 30, # seconds
     read_timeout: 30  # seconds
   }
-  
 end

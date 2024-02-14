@@ -72,17 +72,15 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp-mail.outlook.com',
+    address: 'smtp.privateemail.com', # Namecheap SMTP server
     port: 587,
-    domain: 'hotmail.com',
-    user_name: 'benjamin.fejzagic@hotmail.com',
-    password: 'Benjamin.5',
-    authentication: 'plain',
-    enable_starttls_auto: true,
-    open_timeout: 30, # seconds
-    read_timeout: 30  # seconds
+    domain: 'zen-os.com',
+    user_name: 'info@zen-os.com',
+    password: 'Zenos2024', # Use the correct password for info@zen-os.com
+    authentication: :plain,
+    enable_starttls_auto: true
   }
 end

@@ -5,78 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Basic -->
-		<meta charset="utf-8">
-
-
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-
-		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
-
-		<!-- Vendor CSS -->
-
-		<!-- Theme CSS -->
-
-		<!-- Revolution Slider CSS -->
-
-
-		<!-- Demo CSS -->
-
-
-		<!-- Skin CSS -->
-
-		<!-- Theme Custom CSS -->
-
-		<!-- Head Libs -->
-	
-		
+    <meta charset="utf-8">
+    <meta name="keywords" content="WebSite Template" />
+    <meta name="description" content="Porto - Multipurpose Website Template">
+    <meta name="author" content="okler.net">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-      <%= render "shared/navbar" %>
-      <%= render "shared/flashes" %>
-      <%= yield %>
-      <%= render "shared/footer" %>
-	
-		<%= javascript_include_tag '/assets/vendor/modernizr/modernizr.min' %>
-
-		<%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min' %>
-
-		<!-- Theme Base, Components and Settings -->
-		<script src="/assets/js/theme.js"></script>
-
-		<!-- Current Page Vendor and Views -->
-		<script src="/assets/js/views/view.contact.js"></script>
-
-		<!-- Theme Custom -->
-		<script src="/assets/js/custom.js"></script>
-
-		<!-- Theme Initialization Files -->
-		<script src="/assets/js/theme.init.js"></script>
-
-		
-<script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-  tinymce.init({
-    selector: 'textarea, .tinymce',
-    plugins: 'lists link image table code help wordcount',
-    toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image table code | removeformat | help | wordcount',
-    forced_root_block: '',
-  });
-</script>
+    <%= render "shared/navbar" %>
+    <%= render "shared/flashes" %>
+    <%= yield %>
+    <%= render "shared/footer" %>
+    <%= javascript_include_tag '/assets/vendor/modernizr/modernizr.min' %>
+    <%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min' %>
+    <!-- Theme Base, Components and Settings -->
+    <script src="/assets/js/theme.js"></script>
+    <!-- Current Page Vendor and Views -->
+    <script src="/assets/js/views/view.contact.js"></script>
+    <!-- Theme Custom -->
+    <script src="/assets/js/custom.js"></script>
+    <!-- Theme Initialization Files -->
+    <script src="/assets/js/theme.init.js"></script>
+    <script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '.tinymce',
+        plugins: 'lists link image table code help wordcount',
+        toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image table code | removeformat | help | wordcount',
+        forced_root_block: '',
+      });
+    </script>
   </body>
+  
 </html>

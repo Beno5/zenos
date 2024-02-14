@@ -57,6 +57,7 @@ en:
     qoute:
       text_part_one: "Embarking on a business venture with your best friend is a delicate dance that can either lead to perfection or disaster. The key lies in the authenticity of your friendship. Consider this: can you honestly criticize your friend's fashion choices if they appear less than stellar?"
       text_part_two: A successful business partnership with a best friend requires a delicate balance of sincerity, tact, and a shared understanding. If you can deliver candid feedback with both honesty and kindness, and if your friend can receive it as constructive rather than critical, then you may just be on the path to building a lasting and prosperous business together.
+      signature: Co-founders of Zenos
     different: 
       title: WE ARE DIFFERENT!
       text_part_one: Zenos team consists of young and energetic people who have different skills and knowledge, as well as different formal education - from economics, law, food engineering, information technology, foreign languages, etc.
@@ -94,8 +95,13 @@ en:
         title: Business Hours
         monday_friday: Monday - Friday - 9am to 5pm
         weekend: Saturday and Sunday - Closed
-
   shared:
+    navbar:
+      home: Home
+      about: About
+      projects: Projects
+      blog: News And Blog
+      contact: Contact
     contact:
       moto: Zenos is your reliable partner in driving the change!
       get_in: Get in touch with our team to find out more about what we do!

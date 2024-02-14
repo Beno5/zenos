@@ -8,16 +8,12 @@ class PagesController < ApplicationController
   end
 
   def blog
-    debugger
     @posts = BlogPost.all
   end
 
   def contact; end
 
-  def zdrava_ishrana
+  def zdrava_ishrana; end
 
-  end
-
-  def nutrition
-  end
+  def nutrition; end
 end

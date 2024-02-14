@@ -4,6 +4,6 @@ class ProjectPost < ApplicationRecord
 
   def plain_text_description
     # Assuming 'description' is the attribute containing HTML text
-    return ActionView::Base.full_sanitizer.sanitize(description)
+    ActionView::Base.full_sanitizer.sanitize(description)
   end
 end

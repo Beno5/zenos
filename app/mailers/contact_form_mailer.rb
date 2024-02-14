@@ -1,4 +1,6 @@
 class ContactFormMailer < ApplicationMailer
+  default from: 'info@zen-os.com'
+
   def contact_email(params)
     @name = params[:name]
     @phone = params[:phone]
@@ -6,6 +8,6 @@ class ContactFormMailer < ApplicationMailer
     @subject = params[:subject]
     @message = params[:message]
 
-    mail(to: 'benjamin.fejzagic@hotmail.com', subject: @subject)
+    mail(to: 'info@zen-os.com', subject: @subject)
   end
 end

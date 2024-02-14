@@ -31,7 +31,7 @@
             <div class="row">
               <div class="col">
                 <h2 class="font-weight-bold text-color-dark text-7 mt-0 mb-4"><%= t("contact.form.title") %></h2>
-                <%= form_with(url: contact_form_send_email_path, method: 'post', local: true, class: 'contact-form custom-form-style-1') do |form| %>
+                <%= form_with(url: contact_form_send_email_path, method: 'post', local: true, class: 'contact-form custom-form-style-1', id: 'contact-form') do |form| %>
                   <div class="contact-form-success alert alert-success d-none mt-4">
                     <strong>Success!</strong> Your message has been sent to us.
                   </div>
@@ -62,7 +62,7 @@
                   </div>
                   <div class="row">
                     <div class="form-group col mb-3">
-                      <%= form.submit t("contact.form.send_message"), disabled: true, class: 'btn btn-gradient font-weight-bold btn-px-5 btn-py-3', 'data-loading-text' => 'Loading...' %>
+                      <%= form.submit t("contact.form.send_message"), class: 'btn btn-gradient font-weight-bold btn-px-5 btn-py-3' %>
                     </div>
                   </div>
                 <% end %>
