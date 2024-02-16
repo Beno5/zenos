@@ -2,7 +2,7 @@
   <article class="post post-medium border-0 pb-0 mb-5 rounded shadow-with-padding">
     <div class="post-image">
       <%= link_to post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post) do %>
-        <%= image_tag(post.main_image, alt: "Main Image", class: "img-fluid rounded", style: "width: 100%; object-fit: cover; height: 100%;") if post.main_image.attached? %>
+        <%= cl_image_tag(post.main_image.key, alt: 'Main Image', class: 'img-fluid rounded', style: 'width: 100%; object-fit: cover; height: 100%;', width: 700, height: 600, crop: :fill) if post.main_image.attached? %>
       <% end %>
     </div>
     <div class="post-content p-4">
@@ -11,7 +11,7 @@
         <span class="month"><%= post.created_at.strftime("%b") %></span>
       </div>
       <h4><%= link_to post.title, post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post), class: "text-decoration-none text-2" %></h4>
-      <p class="mb-1"><%= truncate(post.plain_text_description, length: 200) %></p>
+      <p class="mb-1"><%= truncate(post.plain_text_description, length: 250) %></p>
       <div class="d-flex justify-content-end">
         <%= link_to  post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post), class: 'btn btn-primary btn-sm text-2' do %>
           Read More <i class="fas fa-chevron-right text-1 ms-1"></i>

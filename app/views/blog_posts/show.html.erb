@@ -1,117 +1,108 @@
 <div class="body">
-
-		<div role="main" class="main">
-
-			<section class="page-header page-header-modern bg-primary custom-page-header">
-
-				<div class="custom-svg-style-1 svg-fill-color-primary position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" data-plugin-float-element-svg="true">
-						<circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-						<circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
-						<circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-						<circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10" stroke-width="3" stroke="6CD499" fill="none"/>
-						<circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-						<circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
-					</svg>								
-				</div>
-
-				<div class="container position-relative z-index-1 mt-4 h-100">
-					<div class="row h-100">
-						<div class="col align-self-center">
-							<div class="d-block">
-								<span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2">News and Blog</span>
-							</div>
-							<div class="d-block">
-								<h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0">News and Blog</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-			<div class="container py-4">
-				<div class="row">
-					<div class="col">
-						<div class="blog-posts single-post">
-							<article class="post post-large blog-single-post border-0 m-0 p-0">
-								<div class="post-image ms-0">
-									<%= image_tag(@post.main_image, class: 'img-fluid img-thumbnail img-thumbnail-no-borders rounded shadow',style: "width: 100%", alt: '') %>
-								</div>
-								<div class="post-date ms-0">
-									<span class="day"><%= @post.created_at.strftime("%d") %></span>
-									<span class="month"><%= @post.created_at.strftime("%b") %></span>
-								</div>
-								<div class="post-content ms-0">
-									<div class="d-flex justify-content-between align-items-center">
-										<h2 class="font-weight-semi-bold"><%= @post.title %></h2>
-										<% if user_signed_in? %>
-											<div class="d-flex justify-content-between align-items-center">
-												<!-- Edit Button -->
-												<%= link_to edit_blog_post_path(@post), class: "btn btn-primary me-2" do %>
-													Edit
-												<% end %>
-		
-												<%= button_to "Delete", blog_post_path(@post), class: "btn btn-danger", data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-											</div>
-										<% end %>
-									</div>
-									<div class="post-meta">
-										<span><i class="fa-solid fa-calendar"></i>Datum: <%= @post.created_at.strftime("%d/%m/%Y") %> </span>
-									</div>
-									<p><%= @post.description.html_safe %></p>
-									<div class="row justify-content-center">
-										<div class="col-lg-6">
-											<div class="owl-carousel owl-theme nav-inside" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
-												<% @post.secondary_images.each_with_index do |image, index| %>
-													<div>
-														<div class="img-thumbnail border-0 p-0 d-block">
-															<img class="img-fluid border-radius-0" src="<%= image.url %>" alt="">
-														</div>
-													</div>
-												<% end %>
-											</div>
-										</div>
-									</div>
-									<div class="row justify-content-center">
-										<div class="col-lg-6">
-											<div class="image-previews">
-												<% @post.secondary_images.each_with_index do |image, index| %>
-													<div class="image-preview" data-index="<%= index %>">
-														<img src="<%= image.url %>" alt="">
-													</div>
-												<% end %>
-											</div>
-										</div>
-									</div>
-
-									<div class="post-block mt-5 post-share">
-										<h4 class="mb-3">Share this Post</h4>
-										<!-- Go to www.addthis.com/dashboard to customize your tools -->
-										<div class="addthis_inline_share_toolbox"></div>
-										<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ba220dbab331b0"></script>
-									</div>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<section class="section section-height-3 bg-color-grey-scale-1 border-0 m-0">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-10 text-md-center text-lg-start mb-4 mb-lg-0">
-							<h2 class="text-color-dark font-weight-bold mb-1">Zenos is everything you need to help you run your business!</h2>
-							<p class="font-weight-bold positive-ls-3 text-4-5 mb-0">Make An Appointment Today With Our Online Form</p>
-						</div>
-						<div class="col-lg-2 text-md-center text-lg-end">
-							<a href="#" class="btn btn-gradient font-weight-bold btn-px-5 btn-py-3">CONTACT US</a>
-						</div>
-					</div>
-				</div>
-			</section>
-	</div>
+  <div role="main" class="main">
+    <section class="page-header page-header-modern bg-primary custom-page-header">
+      <div class="custom-svg-style-1 svg-fill-color-primary position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" data-plugin-float-element-svg="true">
+          <circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+          <circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10" stroke-width="3" stroke="6CD499" fill="none"/>
+          <circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+        </svg>
+      </div>
+      <div class="container position-relative z-index-1 mt-4 h-100">
+        <div class="row h-100">
+          <div class="col align-self-center">
+            <div class="d-block">
+              <span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2">News and Blog</span>
+            </div>
+            <div class="d-block">
+              <h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0">News and Blog</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+          <div class="blog-posts single-post">
+            <article class="post post-large blog-single-post border-0 m-0 p-0">
+              <% if @post.main_image.attached? %>
+                <div class="post-image ms-0" style="display: flex; justify-content: center; align-items: center;">
+                  <%= cl_image_tag(@post.main_image.key, class: 'img-fluid img-thumbnail img-thumbnail-no-borders rounded shadow', style: 'max-width: 950px; max-height: 650px; object-fit: cover;', alt: '') %>
+                </div>
+              <% end %>
+              <div class="post-date ms-0">
+                <span class="day"><%= @post.created_at.strftime("%d") %></span>
+                <span class="month"><%= @post.created_at.strftime("%b") %></span>
+              </div>
+              <div class="post-content ms-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="font-weight-semi-bold"><%= @post.title %></h2>
+                  <% if user_signed_in? %>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <!-- Edit Button -->
+                      <%= link_to edit_blog_post_path(@post), class: "btn btn-primary me-2" do %>
+                        Edit
+                      <% end %>
+                      <%= button_to "Delete", blog_post_path(@post), class: "btn btn-danger", data: { confirm: "Are you sure?" }, method: :delete %></p>
+                  </div>
+                <% end %>
+              </div>
+              <div class="post-meta">
+                <span><i class="fa-solid fa-calendar"></i>Datum: <%= @post.created_at.strftime("%d/%m/%Y") %> </span>
+              </div>
+              <p><%= @post.description.html_safe %></p>
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <div class="owl-carousel owl-theme nav-inside" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
+                    <% @post.secondary_images.each_with_index do |image, index| %>
+                      <div>
+                        <div class="img-thumbnail border-0 p-0 d-block">
+                          <img class="img-fluid border-radius-0" src="<%= image.url %>" alt="">
+                        </div>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <div class="image-previews">
+                    <% @post.secondary_images.each_with_index do |image, index| %>
+                      <div class="image-preview" data-index="<%= index %>">
+                        <img src="<%= image.url %>" alt="">
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+             <!-- <div class="post-block mt-5 post-share">
+                <h4 class="mb-3">Share this Post</h4>
+                 Go to www.addthis.com/dashboard to customize your tools
+                <div class="addthis_inline_share_toolbox"></div> 
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ba220dbab331b0"></script> -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section section-height-3 bg-color-grey-scale-1 border-0 m-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10 text-md-center text-lg-start mb-4 mb-lg-0">
+          <h2 class="text-color-dark font-weight-bold mb-1">Zenos is everything you need to help you run your business!</h2>
+          <p class="font-weight-bold positive-ls-3 text-4-5 mb-0">Make An Appointment Today With Our Online Form</p>
+        </div>
+        <div class="col-lg-2 text-md-center text-lg-end">
+          <a href="#" class="btn btn-gradient font-weight-bold btn-px-5 btn-py-3">CONTACT US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 </div>
