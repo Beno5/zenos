@@ -37,13 +37,21 @@ class BlogPostsController < ApplicationController
     if @post.destroy!
       redirect_to pages_blog_path, notice: 'Record deleted successfully.'
     else
-      redirect_to blogs_path, alert: 'Failed to delete the record.'
+      flash[:alert] = 'Failed to delete the record.'
     end
   end
 
   private
 
   def blog_post_params
-    params.require(:blog_post).permit(:title, :description, :main_image, secondary_images: [])
+    params_edited = params.require(:blog_post).permit(:title, :description, :locale, :main_image, secondary_images: [])
+
+    if params_edited.dig(:secondary_images).reject do |x|
+      x == ''
+    end.blank?
+      params_edited.except(:secondary_images)
+    else
+      params_edited
+    end
   end
 end

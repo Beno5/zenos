@@ -39,14 +39,14 @@ ba:
       education: EDUKACIJA
       inclusion: INKLUZIJA
       social: SOCIJALNA ODGOVORNOST
-      cultural: KULTURNAL INTELIGENCIJA
+      cultural: KULTURALNA INTELIGENCIJA
       healty: ZDRAVA ISHRANA
       entreprenurship: PREDUZETNIŠTVO
     who:
       title: KO SMO MI?
       first_part: "Suština našeg postojanja temelji se na jednostavnom uvjerenju: Obični ljudi malim koracima mogu učiniti društvo boljim."
       second_part: Naša strast je podsticanje pozitivne promjene u svemu što radimo. Kroz trening, učenje, partnerstva, razvoj edukativnih materijala i različite druge aktivnosti, cilj nam je pozitivno utjecati na društvo.
-      third_part: Zenos postoji od 2019. Godine i do sada smo uspjeli da u saradnji s mnogim organizacijama i individualcima svoju strucnost iskoristimo za stvaranje svjetlije budućnosti.
+      third_part: Zenos postoji od 2019. godine i do sada smo uspjeli da u saradnji s mnogim organizacijama i individualcima svoju stručnost iskoristimo za stvaranje svjetlije budućnosti.
     qoute: 
       text: Oni koji misle da u biznisu nema mjesta za emocije nikada nisu bili u prisustvu strastvenog lidera.
       signature: Zenos tim
@@ -70,7 +70,7 @@ ba:
     description: Putem svoje web stranice i socijalnih mreža aktivno širimo znanje o raznim temama koje su u polju našeg interesovanja. Ovdje možete pronaći priručnike, treninge, seminare, diskusije i razne druge resurse koji su povezani s aktuelnim temama u današnjem poslovnom svijetu.
   blog:
     title: VIJESTI I BLOG
-    description: Ako želite biti informisani s najnovijim dešavanjima vezanim za Zenos, pratite našu rubriku Vijesti i blog, gdje možete pročitati interesantne članke o našem timu, kao i druge sadržaje koji će vas potaknuti na razvoj kritičkog razmišljanja. Ukoliko vas posebno zaintrigira neka tema, čekamo vas da započnete diskusiju!
+    description: Ako želite biti informisani s najnovijim dešavanjima vezanim za Zenos, pratite našu rubriku Vijesti i Blog, gdje možete pročitati interesantne članke o našem timu, kao i druge sadržaje koji će vas potaknuti na razvoj kritičkog razmišljanja. Ukoliko vas posebno zaintrigira neka tema, čekamo vas da započnete diskusiju!
   contact:
     title: KONTAKT
     form:
@@ -94,7 +94,7 @@ ba:
       working_hours:
         title: Radno vrijeme
         monday_friday: Ponedjeljak - Petak - 9h do 17h
-        weekend: Subota i Nedjelja - Zatvoreno
+        weekend: Subota i nedjelja - neradni dani
   shared:
     navbar:
       home: Početna
@@ -103,7 +103,7 @@ ba:
       blog: Vijesti i blog
       contact: Kontakt
     contact:
-      moto: Zenos je vaš pouzdani partner u podsticanju projmjena!
-      get_in: Stupite u kontakt sa našim timom i saznajte više o našem radu!
+      moto: Zenos je vaš pouzdani partner u podsticanju promjena!
+      get_in: Stupite u kontakt s našim timom i saznajte više o našem radu!
       contact_us: KONTAKTIRAJTE NAS
     

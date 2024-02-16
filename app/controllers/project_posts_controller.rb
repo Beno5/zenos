@@ -37,13 +37,22 @@ class ProjectPostsController < ApplicationController
     if @post.destroy!
       redirect_to pages_projects_path, notice: 'Record deleted successfully.'
     else
-      redirect_to projects_path, alert: 'Failed to delete the record.'
+      flash[:alert] = 'Failed to delete the record.'
     end
   end
 
   private
 
   def project_post_params
-    params.require(:project_post).permit(:title, :description, :main_image, secondary_images: [])
+    params_edited = params.require(:project_post).permit(:title, :description, :locale, :main_image,
+                                                         secondary_images: [])
+
+    if params_edited.dig(:secondary_images).reject do |x|
+      x == ''
+    end.blank?
+      params_edited.except(:secondary_images)
+    else
+      params_edited
+    end
   end
 end
