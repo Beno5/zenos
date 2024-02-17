@@ -93,12 +93,13 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.privateemail.com', # Namecheap SMTP server
-    port: 587,
-    domain: 'zen-os.com',
-    user_name: 'info@zen-os.com',
-    password: 'Zenos2024', # Use the correct password for info@zen-os.com
-    authentication: :plain,
-    enable_starttls_auto: true
+    address: ENV['SMTP_ADDRESS'],
+    port: ENV['SMTP_PORT'],
+    domain: ENV['SMTP_DOMAIN'],
+    user_name: ENV['SMTP_USER_NAME'],
+    password: ENV['SMTP_PASSWORD'],
+    authentication: ENV['SMTP_AUTHENTICATION'].to_sym,
+    enable_starttls_auto: ENV['SMTP_ENABLE_STARTTLS_AUTO'] == 'true'
   }
+  
 end
