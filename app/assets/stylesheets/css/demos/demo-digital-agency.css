@@ -47,12 +47,13 @@
 @media (max-width: 767px) {
 		.custom-svg-style-1 {
 				width: 1920px;
-				left: 100% !important;
+				left: 0% !important;
 		}
 		.custom-svg-style-1.custom-svg-style-1-variation {
 				left: 0% !important;
 		}
 }
+
 
 /*
 * Header
@@ -324,3 +325,117 @@
 .custom-form-style-1 textarea.form-control {
 		height: auto;
 }
+
+
+/* Existing styles for larger screens */
+
+/* Add existing styles for header and logo here */
+
+@media (max-width: 575px) {
+	.custom-big-text-1 {
+	  font-size: 4.1rem;
+	}
+  
+	/* Add other styles for smaller screens as needed */
+  }
+  
+
+@media (max-width: 450px) {
+	.owl-carousel {
+		height: 610px !important; /* Adjust the height as needed */
+	}
+
+	.custom-svg-style-1 {
+		width: 2556px;
+		left: 72% !important;
+	}
+
+	.landing-picture-position {
+		right: -220px !important; /* Adjust the right position as needed */
+		bottom: 0px !important; /* Adjust the bottom position as needed */
+		width: 150% !important; /* Adjust the width as needed */
+	}
+
+	.logo {
+	width: 185px !important;
+	height: 40px !important;
+	}
+
+	#header .header-container {
+	display: block !important;
+	}
+
+	
+	.custom-big-text-2 {
+		font-size: 2.10rem !important; /* 30% less than 3.3rem */
+		line-height: 2.10rem !important; /* 30% less than 3.3rem */
+	}
+
+	.custom-big-text-1 {
+		font-size: 2.42rem !important; /* 30% less than 3.3rem */
+		line-height: 2.42rem !important; /* 30% less than 3.3rem */
+	}
+
+	.custom-stroke-text-effect-1 {
+		-webkit-text-stroke-width: 0.35px; /* 30% less than 0.5px */
+	}
+
+	.custom-svg-reverse > svg {
+		transform: rotateY(180deg);
+	}
+
+	.titles {
+	align-items: initial !important;
+	}
+
+	.first-title {
+		display: none !important;
+	}
+
+	.second-title {
+		margin-top: 37px;
+	}
+
+	.contact-us {
+		display: flex !important;
+		justify-content: center !important;
+	} 
+
+	.footer-row {
+		flex-direction: column;
+	}
+
+	.copyright {
+		order: 2; /* Change order for smaller screens */
+	}
+	
+	.contact {
+		order: 1; /* Change order for smaller screens */
+		flex-direction: column-reverse;
+	}
+
+	.contact-info {
+		width: 240px;
+	}
+
+	.page-header{
+		height: 200px !important;
+	}
+
+	.send-message {
+		display: flex !important;
+		justify-content: center !important;	
+	}
+
+	.sanja-slika {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.post-slika {
+		width: 100% !important;
+		height: auto !important;	
+	}
+}
+  
+  
