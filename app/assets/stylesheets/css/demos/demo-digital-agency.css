@@ -389,10 +389,6 @@
 	}
 
 	.first-title {
-		display: none !important;
-	}
-
-	.second-title {
 		margin-top: 37px;
 	}
 
@@ -435,6 +431,15 @@
 	.post-slika {
 		width: 100% !important;
 		height: auto !important;	
+	}
+
+	.text-home {
+		margin-left: 0px !important;
+	}
+
+	.send-message-container {
+		padding-top: 0px !important;
+		margin-top: 0px !important;
 	}
 }
   
