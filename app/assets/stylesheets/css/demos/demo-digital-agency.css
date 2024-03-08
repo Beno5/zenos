@@ -345,6 +345,24 @@
 		height: 610px !important; /* Adjust the height as needed */
 	}
 
+	#mainNav > li {
+		display: inline-flex;
+		justify-content: center;
+		align-self: center;
+	}
+
+	.col-md-3 {
+		width: 50%;
+	}
+
+	.team-img {
+		margin: 0px !important;
+	}
+
+	.text-we-are {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
 	.custom-svg-style-1 {
 		width: 2556px;
 		left: 72% !important;

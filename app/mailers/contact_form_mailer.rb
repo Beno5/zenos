@@ -10,4 +10,11 @@ class ContactFormMailer < ApplicationMailer
 
     mail(to: 'info@zen-os.com', subject: @subject)
   end
+
+  def inform_user(params)
+    @email = params[:email]
+    @content = I18n.t("mail.content")
+  
+    mail(to: @email, subject: I18n.t("mail.subject") )
+  end
 end

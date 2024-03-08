@@ -106,4 +106,7 @@ ba:
       moto: Zenos je vaš pouzdani partner u podsticanju promjena!
       get_in: Stupite u kontakt s našim timom i saznajte više o našem radu!
       contact_us: KONTAKTIRAJTE NAS
+  mail:
+    subject: "Potvrda: Vaš upit na Zenos"
+    content: Hvala što ste kontaktirali Zenos! Naš tim će Vam uskoro odgovoriti.
     

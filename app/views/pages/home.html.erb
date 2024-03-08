@@ -44,9 +44,7 @@
     </div>
     <div class="container py-5 my-4">
       <div class="row">
-        <div class="col">
-          <div class="row">
-            <% data = {
+        <% data = {
 						'economic_empowerment.svg': 'economic',
 						'bullhorn-solid.svg': 'marketing',
 						'book-solid.svg': 'education',
@@ -56,20 +54,18 @@
 						'apple-whole-solid.svg': 'healty',
 						'lightbulb-solid.svg': 'entreprenurship'
 					} %>
-            <% data.each do |path, name| %>
-              <div class="col-md-3">
-                <div class="featured-boxes featured-boxes-style-6 p-0 m-0">
-                  <div class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
-                    <div class="box-content p-0 m-0 text-center">
-                      <%= image_tag(path, width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
-                      <h4 class="positive-ls-3 font-weight-bold text-3"><%= t("home.cards.#{name}") %></h4>
-                    </div>
-                  </div>
+        <% data.each do |path, name| %>
+          <div class="col-md-3">
+            <div class="featured-boxes featured-boxes-style-6 p-0 m-0">
+              <div class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
+                <div class="box-content p-0 m-0 text-center">
+                  <%= image_tag(path, width: 70, height: 70, alt: '', data: { icon: true, plugin_options: { onlySVG: true, extraClass: 'svg-fill-color-primary px-5 py-4' } }) %>
+                  <h4 class="positive-ls-3 font-weight-bold text-3"><%= t("home.cards.#{name}") %></h4>
                 </div>
               </div>
-            <% end %>
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
     <section class="section section-height-3 bg-dark border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">

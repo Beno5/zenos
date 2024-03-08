@@ -106,4 +106,7 @@ en:
       moto: Zenos is your reliable partner in driving the change!
       get_in: Get in touch with our team to find out more about what we do!
       contact_us: CONTACT US
+  mail:
+    subject: "Confirmation: Your Inquiry at Zenos"
+    content: Thank you for contacting Zenos! Our team will reach out to you soon.
     

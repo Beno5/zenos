@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-User.create!(email: 'test@testemail.com', password: '123456')
+User.create!(email: 'info@zen-os.com', password: 'Zenos2024')
 image_path = Rails.root.join('app', 'assets', 'images', 'team.jpg')
 image_path_c1 = Rails.root.join('app', 'assets', 'images', 'first.jpg')
 image_path_c2 = Rails.root.join('app', 'assets', 'images', 'druga.jpg')

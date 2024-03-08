@@ -4,11 +4,11 @@ class PagesController < ApplicationController
   def about; end
 
   def projects
-    @posts =  ProjectPost.all.select { |post| post.locale == I18n.locale.to_s }
+    @posts =  ProjectPost.where(locale: I18n.locale.to_s).order(created_at: :desc)
   end
 
   def blog
-    @posts =  BlogPost.all.select { |post| post.locale == I18n.locale.to_s }
+    @posts =  BlogPost.where(locale: I18n.locale.to_s).order(created_at: :desc)
   end
 
   def contact; end
