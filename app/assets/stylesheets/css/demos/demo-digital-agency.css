@@ -342,7 +342,7 @@
 
 @media (max-width: 450px) {
 	.owl-carousel {
-		height: 610px !important; /* Adjust the height as needed */
+		height: 230px !important; /* Adjust the height as needed */
 	}
 
 	#mainNav > li {
