@@ -15,6 +15,9 @@ h1, h2 {
   color: var(--primary);
 }
 
+#mainNav > li {
+  margin-left: 10px !important;
+}
 
 .image-previews {
   display: flex;

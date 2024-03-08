@@ -10,7 +10,7 @@
         <span class="day"><%= post.created_at.strftime("%d") %></span>
         <span class="month"><%= post.created_at.strftime("%b") %></span>
       </div>
-      <h4><%= link_to post.title, post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post), class: "text-decoration-none text-2" %></h4>
+      <h4><%= link_to truncate(post.title, length: 55), post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post), class: "text-decoration-none text-2" %></h4>
       <p class="mb-1"><%= truncate(post.plain_text_description, length: 250) %></p>
       <div class="d-flex justify-content-end">
         <%= link_to  post.is_a?(BlogPost) ? blog_post_path(post) : project_post_path(post), class: 'btn btn-primary btn-sm text-2' do %>
