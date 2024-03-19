@@ -157,7 +157,7 @@
 @media (min-width: 1200px) {
 		.owl-carousel .owl-item .custom-bg-slider-left,
 		.owl-carousel .owl-item .custom-bg-slider-right {
-				width: 85%;
+				width: 75%;
 		}
 }
 
@@ -343,6 +343,10 @@
 @media (max-width: 450px) {
 	.owl-carousel {
 		height: 230px !important; /* Adjust the height as needed */
+	}
+
+	.landing-carousel {
+		height: 610px !important;
 	}
 
 	#mainNav > li {
