@@ -3,10 +3,16 @@
     <%= @post.new_record? ? 'Create new post' : 'Edit post' %>
   </h2>
   <div class="row">
-    <div class="col-md-9"> <!-- Title takes 75% width on medium-sized screens and larger -->
+    <div class="col-md-6"> <!-- Title takes 75% width on medium-sized screens and larger -->
       <div class="field mb-4">
         <%= f.label :title %>
         <%= f.text_field :title, required: true, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="col-md-3"> <!-- Date field takes 25% width on medium-sized screens and larger -->
+      <div class="field mb-4">
+        <%= f.label :date_of_post %>
+        <%= f.date_field :date_of_post, class: 'form-control' %>
       </div>
     </div>
     <div class="col-md-3"> <!-- Locale takes 25% width on medium-sized screens and larger -->

@@ -80,7 +80,7 @@ h1, h2 {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .centered-text p {
     font-size: 36px; /* Adjust font size for smaller screens */
     line-height: 1.4; /* Adjust line height for better readability */

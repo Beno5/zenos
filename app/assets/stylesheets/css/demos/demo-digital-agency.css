@@ -3,7 +3,7 @@
 		font-size: 8rem;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
 		.custom-big-text-1 {
 				font-size: 4.1rem;
 		}
@@ -16,12 +16,24 @@
 		line-height: 5.5rem;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
 		.custom-big-text-2 {
 				font-size: 3.3rem;
 				line-height: 3.3rem;
 		}
 }
+
+@media (max-width: 1200px) {
+	.custom-big-text-2 {
+			font-size: 5.0rem;
+			line-height: 5.0rem;
+	}
+
+	.custom-big-text-1 {
+		font-size: 6.5rem;
+}
+}
+
 
 .custom-stroke-text-effect-1 {
 		-webkit-text-fill-color: transparent;
@@ -44,7 +56,7 @@
 		}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 		.custom-svg-style-1 {
 				width: 1920px;
 				left: 0% !important;
@@ -71,7 +83,7 @@
 				margin-left: 25px;
 		}
 		#header .header-nav-main nav > ul > li > a {
-				font-size: 16px;
+				font-size: 14px;
 				font-weight: 500;
 		}
 }
@@ -104,7 +116,7 @@
 /*
 * Carousel
 */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 		.custom-half-carousel-style-1.carousel-half-full-width-wrapper > .owl-carousel {
 				width: calc( 100vw - ( ( 100vw - 960px ) / 2 ));
 		}
@@ -150,21 +162,28 @@
 @media (min-width: 992px) {
 		.owl-carousel .owl-item .custom-bg-slider-left,
 		.owl-carousel .owl-item .custom-bg-slider-right {
-				width: 105%;
+			width: 54%;
+			height: 73%;
+			border-top-left-radius: 130px;
+
 		}
 }
 
 @media (min-width: 1200px) {
 		.owl-carousel .owl-item .custom-bg-slider-left,
 		.owl-carousel .owl-item .custom-bg-slider-right {
-				width: 85%;
+			width: 57%;
+			height: 77%;
+			border-top-left-radius: 130px;
 		}
 }
 
 @media (min-width: 1600px) {
 		.owl-carousel .owl-item .custom-bg-slider-left,
 		.owl-carousel .owl-item .custom-bg-slider-right {
-				width: 71%;
+				width: 54%;
+				height: 79%;
+				border-top-left-radius: 130px;
 		}
 }
 
@@ -331,20 +350,46 @@
 
 /* Add existing styles for header and logo here */
 
-@media (max-width: 575px) {
+@media (min-width: 992px) {
+	.hide-no-phone {
+		display: none;
+	}
+}
+@media (max-width: 992px) {
 	.custom-big-text-1 {
 	  font-size: 4.1rem;
 	}
+
+	.hide {
+		display: none;
+	}
+
+	.phone-titles {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
   
 	/* Add other styles for smaller screens as needed */
   }
   
-
-@media (max-width: 450px) {
+  @media (max-width: 992px) {
 	.owl-carousel {
-		height: 230px !important; /* Adjust the height as needed */
+		height: 780px !important;
 	}
+  }
 
+
+
+  @media (max-width: 450px) {
+	.owl-carousel {
+		height: 450px !important;
+		}
+  }
+
+  @media (max-width: 992px) {
+	
 	#mainNav > li {
 		display: inline-flex;
 		justify-content: center;
@@ -403,7 +448,7 @@
 	}
 
 	.titles {
-	align-items: initial !important;
+		align-items: end !important;
 	}
 
 	.first-title {

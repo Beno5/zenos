@@ -3,6 +3,8 @@ class ProjectPost < ApplicationRecord
   has_many_attached :secondary_images
 
   before_save :apply_cloudinary_transformation
+  after_initialize :set_default_date_of_post
+
 
 
   def plain_text_description
@@ -11,6 +13,10 @@ class ProjectPost < ApplicationRecord
   end
   
   private
+
+  def set_default_date_of_post
+    self.date_of_post ||= Date.today
+  end
 
   def apply_cloudinary_transformation
     # Check if the main_image is attached and apply the transformation

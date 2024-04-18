@@ -55,6 +55,16 @@ article.post .post-date .month {
 	text-transform: uppercase;
 }
 
+article.post .post-date .year {
+	background: #f7f7f7;
+	border-radius: 0 0 2px 2px;
+	color: #009999;
+	font-size: 0.8em;
+	line-height: 1.8;
+	padding: 1px 10px;
+	text-transform: uppercase;
+}
+
 article.post .post-date .day {
 	background: #f7f7f7;
 	border-radius: 2px 2px 0 0;
