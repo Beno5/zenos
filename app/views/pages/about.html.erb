@@ -79,37 +79,76 @@
       
 
 
-          <section class="section section-height-3 bg-dark border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-            <div class="container">
-              <div class="row">
-                <div class="col text-center">
-                  <h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600"><%= t("about.testimonial_title") %></h2>
-                </div>
-              </div>
-              <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
-                <div class="col-lg-10">
-                  <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-light custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false}">
-                    <div>
-                      <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
-                        <blockquote>
-                          <p class="text-color-light opacity-7 text-5 line-height-5 mb-0">Zenos is a team of exceptionally talented and intelligent young professionals, each with a unique area of expertise. They consistently bring creativity, dedic ation, and a keen eye for detail to everything they do. Our work in developing projects has benefited from the collaboration with Zenos, they have proven to be a team you can always rely on, delivering great results and assisting us in our educational activities.</p>
-                        </blockquote>
-                        <div class="testimonial-author">
-                          <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-1">NGO Spin, Bosnia and Herzegovina</span>
-                          <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-1">https://spin-okret.org/</span>
+     <section class="section section-height-3 bg-dark border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
+              <%= t("about.testimonial_title") %>
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
+          <div class="col-lg-10">
+            <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-light custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false}">
+              <% Testimonial.all.each do |testimonial| %>
+                <div>
+                  <!-- Testimonial -->
+                  <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
+                    <blockquote>
+                      <p class="text-color-light opacity-7 text-4-5 line-height-5 mb-0">
+                        <%= testimonial.send("text_#{params[:locale]}") %>
+                      </p>
+                    </blockquote>
+                  </div>
 
-                          <strong class="font-weight-bold text-color-light text-5">Nedim Mičijević</strong>
-                        </div>
+                  <!-- Div s podacima i slikom ispod testimoniala, sa responsive layoutom -->
+                  <div class="row align-items-center">
+                    <!-- Lijevi dio sa logom i podacima, sada ide ispod slike na manjim ekranima -->
+                    <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
+                      <!-- Gornji deo sa logom -->
+                      <div class="mb-3 d-flex justify-content-center">
+                        <a href="<%= testimonial.web_link %>" target="_blank">
+                          <%= image_tag("#{testimonial.first_name}_logo.png", alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
+                        </a>
                       </div>
-                      <div class="d-flex justify-content-center">
-                        <%= image_tag("Nedim.jpeg", alt: 'author', class: "rounded-circle", style: "width: 250px; height: 250px; object-fit: cover; object-position: center;") %>
+                      <!-- Donji deo sa podacima -->
+                      <div class="text-center">
+                        <span class="d-block text-color-light font-weight-bold text-5 mb-3">
+                          <%= "#{testimonial.first_name} #{testimonial.last_name}" %>
+                        </span>
+                        <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                          <%= testimonial.company_name %>
+                        </span>
+                        <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                          <a href="<%= testimonial.web_link %>" class="text-color-light" target="_blank"><%= testimonial.web_link %></a>
+                        </span>
                       </div>
+                    </div>
+
+                    <!-- Desni deo sa slikom autora, sada ide iznad loga na manjim ekranima -->
+                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                      <%= image_tag("#{testimonial.first_name}.jpeg", alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
                     </div>
                   </div>
                 </div>
-              </div>
+              <% end %>
             </div>
-          </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
         

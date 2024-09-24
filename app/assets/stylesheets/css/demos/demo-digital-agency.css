@@ -386,6 +386,9 @@
 	.owl-carousel {
 		height: 450px !important;
 		}
+	.owl-stage-outer {
+		overflow: visible !important;
+	}
   }
 
   @media (max-width: 992px) {
