@@ -90,5 +90,38 @@ h1, h2 {
 .logo {
 	width: 309px;
 	height: 67px;
+}
+
+.highlight-text {
+  font-size: 120%; /* Povećava tekst za 20% u odnosu na ostali tekst */
+  color: var(--primary); /* Boja varijable primary */
+}
+
+.text-container, .image-container {
+  flex: 1; /* Oba dela zauzimaju jednake delove prostora */
+}
+
+.text-container {
+  padding: 0 15px; /* Razmak unutar div-a */
+}
+
+.image-container img {
+  max-width: 100%; /* Obezbeđuje da slika ostane unutar svog div-a */
+  height: auto; /* Očuvanje proporcija slike */
+}
+
+@media (max-width: 768px) {
+  .ee_landing {
+    transform: scale(1.10); /* Uvećaj sliku za 15% */
+}
+
+  .row {
+    flex-direction: row; /* Prikaz horizontalno */
   }
+
+  .text-container h2 {
+    font-size: 16px; /* Smanji veličinu fonta za mobilne uređaje */
+  }
+}
+
 

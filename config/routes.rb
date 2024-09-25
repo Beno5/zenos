@@ -11,8 +11,10 @@ Rails.application.routes.draw do
     get 'pages/contact'
     get 'pages/nutrition'
     get 'pages/zdrava-ishrana'
+    get 'pages/landing'
 
     post 'contact_form/send_email'
+    post 'contact_form/send_email_landing'
 
     root 'pages#home'
   end

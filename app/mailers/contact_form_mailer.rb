@@ -13,8 +13,17 @@ class ContactFormMailer < ApplicationMailer
 
   def inform_user(params)
     @email = params[:email]
-    @content = I18n.t("mail.content")
-  
-    mail(to: @email, subject: I18n.t("mail.subject") )
+    @content = I18n.t('mail.content')
+
+    mail(to: @email, subject: I18n.t('mail.subject'))
+  end
+
+  def email_landing(params)
+    @name = params[:name]
+    @company = params[:company_name]
+    @email = params[:email]
+    @subject = 'Test sa landing page zeps'
+
+    mail(to: 'info@zen-os.com', subject: @subject)
   end
 end
