@@ -16,4 +16,6 @@ class PagesController < ApplicationController
   def zdrava_ishrana; end
 
   def nutrition; end
+
+  def landing; end
 end

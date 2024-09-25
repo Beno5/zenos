@@ -7,4 +7,12 @@ class ContactFormController < ApplicationController
       format.json { render json: { response: 'success' } }
     end
   end
+
+  def send_email_landing
+    ContactFormMailer.email_landing(params).deliver_now!
+
+    respond_to do |format|
+      format.json { render json: { response: 'success' } }
+    end
+  end
 end
