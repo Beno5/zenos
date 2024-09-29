@@ -74,89 +74,67 @@
         </div>
       </div>
     </section>
-    
-      <div class="row">
-      
 
-
-     <section class="section section-height-3 bg-dark border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
-              <%= t("about.testimonial_title") %>
-            </h2>
+    <div class="row">
+      <section class="section section-height-3 bg-dark border-0 m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="text-color-light font-weight-bold text-9 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
+                <%= t("about.testimonial_title") %>
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
-          <div class="col-lg-10">
-            <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-light custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false}">
-              <% Testimonial.order(:order).each do |testimonial| %>
-                <div>
-                  <!-- Testimonial -->
-                  <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
-                    <blockquote>
-                      <p class="text-color-light opacity-7 text-4-5 line-height-5 mb-0">
-                        <%= testimonial.send("text_#{params[:locale]}") %>
-                      </p>
-                    </blockquote>
-                  </div>
-
-                  <!-- Div s podacima i slikom ispod testimoniala, sa responsive layoutom -->
-                  <div class="row align-items-center">
-                    <!-- Lijevi dio sa logom i podacima, sada ide ispod slike na manjim ekranima -->
-                    <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
-                      <!-- Gornji deo sa logom -->
-                      <div class="mb-3 d-flex justify-content-center">
-                        <a href="<%= testimonial.web_link %>" target="_blank">
-
-                          <%= cl_image_tag(testimonial.logo_image_key, alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
-
-                        </a>
-                      </div>
-                      <!-- Donji deo sa podacima -->
-                      <div class="text-center">
-                        <span class="d-block text-color-light font-weight-bold text-5 mb-3">
-                          <%= "#{testimonial.first_name} #{testimonial.last_name}" %>
-                        </span>
-                        <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                          <%= testimonial.company_name %>
-                        </span>
-                        <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                          <a href="<%= testimonial.web_link %>" class="text-color-light" target="_blank"><%= testimonial.web_link %></a>
-                        </span>
-                      </div>
+          <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
+            <div class="col-lg-10">
+              <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-light custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false}">
+                <% Testimonial.order(:order).each do |testimonial| %>
+                  <div>
+                    <!-- Testimonial -->
+                    <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
+                      <blockquote>
+                        <p class="text-color-light opacity-7 text-4-5 line-height-5 mb-0">
+                          <%= testimonial.send("text_#{params[:locale]}") %>
+                        </p>
+                      </blockquote>
                     </div>
 
-                    <!-- Desni deo sa slikom autora, sada ide iznad loga na manjim ekranima -->
-                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                    <!-- Div s podacima i slikom ispod testimoniala, sa responsive layoutom -->
+                    <div class="row align-items-center">
+                      <!-- Lijevi dio sa logom i podacima, sada ide ispod slike na manjim ekranima -->
+                      <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
+                        <!-- Gornji deo sa logom -->
+                        <div class="mb-3 d-flex justify-content-center">
+                          <a href="<%= testimonial.web_link %>" target="_blank">
+                            <%= cl_image_tag(testimonial.logo_image_key, alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
+                          </a>
+                        </div>
+                        <!-- Donji deo sa podacima -->
+                        <div class="text-center">
+                          <span class="d-block text-color-light font-weight-bold text-5 mb-3">
+                            <%= "#{testimonial.first_name} #{testimonial.last_name}" %>
+                          </span>
+                          <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            <%= testimonial.company_name %>
+                          </span>
+                          <span class="d-block text-color-light opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            <a href="<%= testimonial.web_link %>" class="text-color-light" target="_blank"><%= testimonial.web_link %></a>
+                          </span>
+                        </div>
+                      </div>
 
-                      <%= cl_image_tag(testimonial.profile_image_key, alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
-
+                      <!-- Desni dio sa slikom autora, sada ide iznad loga na manjim ekranima -->
+                      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                        <%= cl_image_tag(testimonial.profile_image_key, alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+                      </div>
                     </div>
                   </div>
-                </div>
-              <% end %>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-      </div>
+      </section>
     </div>
     <%= render "shared/contact_us" %>
   </div>
