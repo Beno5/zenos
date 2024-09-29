@@ -7,6 +7,7 @@ class CreateTestimonials < ActiveRecord::Migration[7.0]
       t.string :web_link
       t.text :text_ba
       t.text :text_en
+      t.integer :order
 
       t.timestamps
     end
