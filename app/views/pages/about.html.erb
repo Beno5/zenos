@@ -109,7 +109,9 @@
                       <!-- Gornji deo sa logom -->
                       <div class="mb-3 d-flex justify-content-center">
                         <a href="<%= testimonial.web_link %>" target="_blank">
+
                           <%= cl_image_tag(testimonial.logo_image_key, alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
+
                         </a>
                       </div>
                       <!-- Donji deo sa podacima -->
@@ -128,7 +130,9 @@
 
                     <!-- Desni deo sa slikom autora, sada ide iznad loga na manjim ekranima -->
                     <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+
                       <%= cl_image_tag(testimonial.profile_image_key, alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+
                     </div>
                   </div>
                 </div>
