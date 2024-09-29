@@ -91,7 +91,7 @@
         <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">
           <div class="col-lg-10">
             <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-light custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false}">
-              <% Testimonial.all.each do |testimonial| %>
+              <% Testimonial.order(:order).each do |testimonial| %>
                 <div>
                   <!-- Testimonial -->
                   <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
@@ -109,7 +109,7 @@
                       <!-- Gornji deo sa logom -->
                       <div class="mb-3 d-flex justify-content-center">
                         <a href="<%= testimonial.web_link %>" target="_blank">
-                          <%= image_tag("#{testimonial.first_name}_logo.png", alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
+                          <%= cl_image_tag(testimonial.logo_image_key, alt: "#{testimonial.company_name} logo", style: "width: 206px; height: auto;") %>
                         </a>
                       </div>
                       <!-- Donji deo sa podacima -->
@@ -128,7 +128,7 @@
 
                     <!-- Desni deo sa slikom autora, sada ide iznad loga na manjim ekranima -->
                     <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
-                      <%= image_tag("#{testimonial.first_name}.jpeg", alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+                      <%= cl_image_tag(testimonial.profile_image_key, alt: 'author', class: "rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
                     </div>
                   </div>
                 </div>

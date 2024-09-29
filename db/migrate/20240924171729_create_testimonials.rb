@@ -8,6 +8,8 @@ class CreateTestimonials < ActiveRecord::Migration[7.0]
       t.text :text_ba
       t.text :text_en
       t.integer :order
+      t.string :profile_image_key
+      t.string :logo_image_key
 
       t.timestamps
     end
