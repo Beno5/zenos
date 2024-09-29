@@ -67,6 +67,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_24_171729) do
     t.string "web_link"
     t.text "text_ba"
     t.text "text_en"
+    t.integer "order"
+    t.string "profile_image_key"
+    t.string "logo_image_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
