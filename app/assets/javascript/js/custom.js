@@ -71,6 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   owlCarousel.on("changed.owl.carousel", function (event) {
+    if ($(".testimonial").length > 0) {
+      return; // Ako postoji, prekinite izvršavanje
+    }
     // Označavamo trenutnu sliku u "image-previews" divu
     imagePreviews.forEach((preview) => preview.classList.remove("selected"));
     imagePreviews[event.item.index].classList.add("selected");

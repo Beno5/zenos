@@ -123,23 +123,14 @@ h1, h2 {
     font-size: 16px; /* Smanji veličinu fonta za mobilne uređaje */
   }
 
-  .testimonial-author {
-    text-align: center; /* Centriranje teksta za mobilne uređaje */
-  }
-
-  .row.align-items-center {
-    flex-direction: column; /* Promena pravca za mobilne uređaje */
-    text-align: center; /* Centriranje sadržaja */
-  }
-
-  .col-md-6 {
-    margin-bottom: 20px; /* Dodavanje razmaka između kolona */
-  }
-
 }
 
 /* Osnovni stilovi za testimonial */
 .testimonial {
   margin-bottom: 30px; /* Povećanje razmaka između testimoniala */
 }
+
+
+
+
 
