@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  $('.testimonial-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    nav: true, // Dodaje strelice
+    dots: true, // Dodaje tačkice
+    autoplay: true,
+    autoplayTimeout: 5000
+  });
+});
+
 if ($('#main_image')[0]) {
   const mainImageUpload = document.getElementById("main_image");
   const secondaryImagesUpload = document.getElementById("secondary_images");
