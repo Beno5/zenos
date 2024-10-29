@@ -31,7 +31,15 @@
 
 	.custom-big-text-1 {
 		font-size: 6.5rem;
-}
+	}
+
+	.custom-text-moto-1 {
+		font-size: 1.8rem !important;
+	}
+
+	.custom-text-moto-2 {
+		font-size: 1.8rem !important;
+	}
 }
 
 
@@ -150,41 +158,68 @@
 		margin-left: 2px;
 }
 
+/* Define the base styles for the carousel items */
 .owl-carousel .owl-item .custom-bg-slider-left,
 .owl-carousel .owl-item .custom-bg-slider-right {
-		position: absolute;
-		width: 130%;
-		max-width: initial;
-		right: 0;
-		bottom: 0;
+    position: absolute;
+    width: 130%; /* You may want to adjust this to a base proportion */
+    height: auto; /* Ensures height scales with width */
+    max-width: initial;
+    right: -30px;
+    bottom: -15px;
+    aspect-ratio: 3 / 2; /* Maintains 3:2 aspect ratio */
 }
 
-@media (min-width: 992px) {
-		.owl-carousel .owl-item .custom-bg-slider-left,
-		.owl-carousel .owl-item .custom-bg-slider-right {
-			width: 54%;
-			height: 73%;
-			border-top-left-radius: 130px;
+/* Media query adjustments for responsive scaling */
 
-		}
+
+
+@media (min-width: 600px) {
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 115%; /* Resized based on the container */
+        height: auto;
+    }
+}
+
+@media (min-width: 870px) {
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 101%; /* Resized based on the container */
+        height: auto;
+    }
 }
 
 @media (min-width: 1200px) {
-		.owl-carousel .owl-item .custom-bg-slider-left,
-		.owl-carousel .owl-item .custom-bg-slider-right {
-			width: 57%;
-			height: 77%;
-			border-top-left-radius: 130px;
-		}
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 84%; /* Scales up slightly on larger screens */
+        height: auto;
+    }
 }
 
-@media (min-width: 1600px) {
-		.owl-carousel .owl-item .custom-bg-slider-left,
-		.owl-carousel .owl-item .custom-bg-slider-right {
-				width: 54%;
-				height: 79%;
-				border-top-left-radius: 130px;
-		}
+@media (min-width: 1400px) {
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 73%; /* Scales up slightly on larger screens */
+        height: auto;
+    }
+}
+
+@media (min-width: 1610px) {
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 62%; /* Matches the 3:2 ratio consistently */
+        height: auto;
+    }
+}
+
+@media (min-width: 1800px) {
+    .owl-carousel .owl-item .custom-bg-slider-left,
+    .owl-carousel .owl-item .custom-bg-slider-right {
+        width: 59%; /* Matches the 3:2 ratio consistently */
+        height: auto;
+    }
 }
 
 .owl-carousel .owl-item .custom-bg-slider-left {
@@ -237,6 +272,7 @@
 				line-height: 4rem;
 		}
 }
+
 
 /*
 * Accordion
@@ -364,13 +400,6 @@
 		display: none;
 	}
 
-	.phone-titles {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-  
 	/* Add other styles for smaller screens as needed */
   }
   
@@ -389,7 +418,36 @@
 	.owl-stage-outer {
 		overflow: visible !important;
 	}
+
+	.custom-text-moto-1 {
+		font-size: 1.2rem !important;
+	}
+
+	.custom-text-moto-2 {
+		font-size: 1.2rem !important;
+		margin-top: 0px !important;
+	}
+
+	.zenos-titles {
+		width: 100%;
+		height: 100%; /* Zauzima celu visinu roditeljskog diva */
+		padding-top: 0; /* Ukloni padding gore */
+		margin-top: 0; /* Ukloni margin gore */
+	}
+
+
+	.titles {
+		align-items: end !important;
+	}
+
+	.phone-titles {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 65%;
+	}
   }
+  
 
   @media (max-width: 992px) {
 	
@@ -414,12 +472,6 @@
 	.custom-svg-style-1 {
 		width: 2556px;
 		left: 72% !important;
-	}
-
-	.landing-picture-position {
-		right: -220px !important; /* Adjust the right position as needed */
-		bottom: 0px !important; /* Adjust the bottom position as needed */
-		width: 150% !important; /* Adjust the width as needed */
 	}
 
 	.logo {
@@ -450,9 +502,7 @@
 		transform: rotateY(180deg);
 	}
 
-	.titles {
-		align-items: end !important;
-	}
+
 
 	.first-title {
 		margin-top: 37px;

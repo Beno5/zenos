@@ -4,28 +4,29 @@ class ProjectPostsController < ApplicationController
   end
 
   def edit
-    @post = ProjectPost.find(params[:id])
+    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
   end
 
   def show
-    @post = ProjectPost.find(params[:id])
+    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
   end
 
   def create
     @post = ProjectPost.new(project_post_params)
     if @post.save
       flash[:notice] = 'Project post successfully created.'
-      redirect_to project_post_path(@post)
+      redirect_to project_post_path(@post)  # Ovdje će se generisati URL sa slugom
     else
       flash[:alert] = 'Error creating the project post.'
+      render 'new'
     end
   end
 
   def update
-    @post = ProjectPost.find(params[:id])
-    if @post.update!(project_post_params)
+    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
+    if @post.update(project_post_params)  # Uklonjena uzvičnica
       flash[:notice] = 'Project post successfully updated.'
-      redirect_to project_post_path(@post)
+      redirect_to project_post_path(@post)  # Ovdje će se generisati URL sa slugom
     else
       flash[:alert] = 'Error updating the project post.'
       render 'edit'
@@ -33,11 +34,12 @@ class ProjectPostsController < ApplicationController
   end
 
   def destroy
-    @post = ProjectPost.find(params[:id])
-    if @post.destroy!
+    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
+    if @post.destroy  # Uklonjena uzvičnica
       redirect_to pages_projects_path, notice: 'Record deleted successfully.'
     else
       flash[:alert] = 'Failed to delete the record.'
+      redirect_to project_post_path(@post)
     end
   end
 
@@ -47,9 +49,7 @@ class ProjectPostsController < ApplicationController
     params_edited = params.require(:project_post).permit(:title, :description, :locale, :main_image,
                                                          secondary_images: [])
 
-    if params_edited.dig(:secondary_images).reject do |x|
-      x == ''
-    end.blank?
+    if params_edited.dig(:secondary_images).reject { |x| x == '' }.blank?
       params_edited.except(:secondary_images)
     else
       params_edited

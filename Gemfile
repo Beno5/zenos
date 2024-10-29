@@ -60,6 +60,8 @@ gem 'cloudinary'
 gem 'devise'
 gem 'font-awesome-sass', '~> 6.1'
 gem 'simple_form', '~> 5.0' 
+gem 'friendly_id', '~> 5.4.0'
+
 
 
 gem 'jquery-rails'

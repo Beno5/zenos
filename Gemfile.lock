@@ -115,6 +115,8 @@ GEM
     ffi (1.15.5)
     font-awesome-sass (6.4.2)
       sassc (~> 2.0)
+    friendly_id (5.4.2)
+      activerecord (>= 4.0.0)
     glob (0.4.1)
     globalid (1.2.0)
       activesupport (>= 6.1)
@@ -299,6 +301,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass (~> 6.1)
+  friendly_id (~> 5.4.0)
   i18n-js
   importmap-rails
   jbuilder
