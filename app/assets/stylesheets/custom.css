@@ -123,6 +123,7 @@ h1, h2 {
     font-size: 16px; /* Smanji veličinu fonta za mobilne uređaje */
   }
 
+
   .testimonial-main-container {
     min-height: 1280px;
   }
@@ -133,7 +134,6 @@ h1, h2 {
 .testimonial {
   margin-bottom: 30px; /* Povećanje razmaka između testimoniala */
 }
-
 
 
 

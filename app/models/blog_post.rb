@@ -1,4 +1,7 @@
 class BlogPost < ApplicationRecord
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   has_one_attached :main_image
   has_many_attached :secondary_images
 
