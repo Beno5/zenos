@@ -122,10 +122,12 @@ h1, h2 {
   .text-container h2 {
     font-size: 16px; /* Smanji veličinu fonta za mobilne uređaje */
   }
-  
+
+
   .testimonial-main-container {
     min-height: 1280px;
   }
+
 }
 
 /* Osnovni stilovi za testimonial */
