@@ -3,8 +3,8 @@ Rails.application.routes.draw do
     devise_for :users, path: 'auth',
                        path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'cmon_let_me_in' }
 
-    resources :blog_posts
-    resources :project_posts
+    resources :blog_posts, param: :slug  # Ažurirano
+    resources :project_posts, param: :slug  # Ažurirano
     get 'pages/about'
     get 'pages/projects'
     get 'pages/blog'
