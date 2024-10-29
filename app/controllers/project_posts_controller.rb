@@ -15,7 +15,7 @@ class ProjectPostsController < ApplicationController
     @post = ProjectPost.new(project_post_params)
     if @post.save
       flash[:notice] = 'Project post successfully created.'
-      redirect_to project_post_path(@post)  # Ovdje će se generisati URL sa slugom
+      redirect_to project_post_path(@post) # Ovdje će se generisati URL sa slugom
     else
       flash[:alert] = 'Error creating the project post.'
       render 'new'
@@ -23,10 +23,10 @@ class ProjectPostsController < ApplicationController
   end
 
   def update
-    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
-    if @post.update(project_post_params)  # Uklonjena uzvičnica
+    @post = ProjectPost.friendly.find(params[:slug]) # Promijenjeno da koristi slug
+    if @post.update(project_post_params) # Uklonjena uzvičnica
       flash[:notice] = 'Project post successfully updated.'
-      redirect_to project_post_path(@post)  # Ovdje će se generisati URL sa slugom
+      redirect_to project_post_path(@post) # Ovdje će se generisati URL sa slugom
     else
       flash[:alert] = 'Error updating the project post.'
       render 'edit'
@@ -34,8 +34,8 @@ class ProjectPostsController < ApplicationController
   end
 
   def destroy
-    @post = ProjectPost.friendly.find(params[:slug])  # Promijenjeno da koristi slug
-    if @post.destroy  # Uklonjena uzvičnica
+    @post = ProjectPost.friendly.find(params[:slug]) # Promijenjeno da koristi slug
+    if @post.destroy # Uklonjena uzvičnica
       redirect_to pages_projects_path, notice: 'Record deleted successfully.'
     else
       flash[:alert] = 'Failed to delete the record.'
