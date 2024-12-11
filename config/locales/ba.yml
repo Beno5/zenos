@@ -44,24 +44,24 @@ ba:
       entreprenurship: PREDUZETNIŠTVO
     who:
       title: KO SMO MI?
-      first_part: "Suština našeg postojanja temelji se na jednostavnom uvjerenju: Obični ljudi malim koracima mogu učiniti društvo boljim."
-      second_part: Naša strast je podsticanje pozitivne promjene u svemu što radimo. Kroz trening, učenje, partnerstva, razvoj edukativnih materijala i različite druge aktivnosti, cilj nam je pozitivno utjecati na društvo.
-      third_part: Zenos postoji od 2019. godine i do sada smo uspjeli da u saradnji s mnogim organizacijama i individualcima svoju stručnost iskoristimo za stvaranje svjetlije budućnosti.
+      first_part: "U Zenosu vjerujemo da stvarna promjena počinje malim koracima, od običnih ljudi koji žele napraviti razliku. Naš cilj je stvoriti pozitivan utjecaj kroz praktične alate kao što su obuke, online kursevi i korisni edukativni materijali."
+      second_part: Od 2019. godine, sarađujemo s organizacijama i pojedincima kako bismo radili na svjetlijoj budućnosti. Zajedno se fokusiramo na oblasti poput obrazovanja i ekonomskog osnaživanja, podržavajući zajednice u stvaranju stvarnog i trajnog napretka.
+      third_part: Strastveni smo u želji da napravimo razliku – i to činimo zajedno.
     qoute: 
       text: Oni koji misle da u biznisu nema mjesta za emocije nikada nisu bili u prisustvu strastvenog lidera.
       signature: Zenos tim
   about:
     title: NAŠA PRIČA
-    description_part_one: Ideju Zenosa razvile su dvije prijateljice – Ema i Ena, dok su aktivno razmišljale kako spojiti bogatstvo radne snage u Bosni i Hercegovini s biznis prilikama dostupnim u svijetu. Globalizacija, tehnološki progres i, prije svega, internet, omogućili su aktivan rad zaposlenika iz bilo kojeg dijela svijeta, za preduzeća locirana u bilo kojem dijelu svijeta – ako i samo ako, imaju potrebna i primjenjiva znanja, vještine i kompetencije. Osnovna misija Zenosa oslanja se na ekonomsko osnaživanje, kako bi radna snaga iz BiH bila što kompetentnija za rad na stranim tržištima. Zbog toga, bavimo se istovremeno jačanjem kapaciteta i omogućavanjem poslovnih prilika.
-    description_part_two: Zenos se bavi jačanjem kapaciteta i omogućivanjem poslovnih prilika. Naš prioritet je osnaživanje mladih ljudi i žena, kao i drugih pojedinaca željnih sticanja novih i razvoja postojećih vještina i znanja. Osim fokusa na individualce, pružamo podršku organizacijama u izgrađivanju njihovih strateških pozicija kroz jačanje ljudskog kapitala, analiziranje tržišnih vrijednosti, praćenje trendova, promociju socijalne odgovornosti i implementiranje kulturalne inteligencije u raznolike timove. Poseban naglasak leži u podržavanju prehrambenog sektora, gdje je naš fokus unapređenje održive proizvodnje i promovisanje zdrave ishrane.
+    description_part_one: "Zenos je nastao kao ideja između dvije prijateljice, Eme i Ene (da, naša imena su stvarno toliko slična!), koje su željele povezati kvalificiranu radnu snagu Bosne i Hercegovine s globalnim poslovnim prilikama. Iskoristivši internet i modernu tehnologiju, prepoznale smo mogućnost da talentirani ljudi mogu raditi bilo gdje u svijetu – sve dok posjeduju odgovarajuće vještine. Naša misija je usmjerena na ekonomsko osnaživanje, s posebnim naglaskom na žene i mlade osobe, kroz izgradnju znanja, vještina i kontakata potrebnih za uspjeh."
+    description_part_two: Osim pojedincima, pomažemo i organizacijama kroz različite timske edukacije, pomoć pri kreiranju različitih strategija, orijentaciju ka društvenoj odgovornosti i intekulturalnoj inteligenciji.
     qoute:
-      text_part_one: "Krenuti u poslovni poduhvat s najboljim prijateljem je jedna neizvijesna avantura koja može imati dva moguća rezultata – ili perfekciju ili totalnu katastrofu. Negdje u sredini, teško da ćete završiti. Ključ uspjeha leži u kvaliteti i autentičnosti vašeg prijateljstva. Ako razmatrate ovu ideju, analizirajte koliko je vaše prijateljstvo otvoreno, iskreno i direktno. Možete li svome prijatelju otvoreno reći da njegova današnja modna kombinacija izgleda očajno? Ako ne možete, onda sigurno nećete moći iskreno kritikovati ni njegovu ideju za obavljanjem određenog dijela posla, što je u ovom slučaju jako bitno."
-      text_part_two: Uspješno biznis partnerstvo s najboljim prijateljem zahtijeva ravnotežu između iskrenosti, direktnosti, takta i međusobnog razumijevanja. Ako možete dati vaše iskreno mišljenje bez dvojbe hoće li vaš prijatelj to shvatiti kao konstruktivnu kritiku ili kao uvredu, onda imate sve predispozicije da zajedno izgradite trajan i prosperitetan biznis.
+      text_part_one: "Pokretanje biznisa s najboljom prijateljicom zahtijeva balans, a temelj uspjeha leži u autentičnosti prijateljstva. Sve se zasniva na iskrenosti, povjerenju i zajedničkoj viziji, te u vašoj bliskosti  koja omogućava da dajete istinite povratne informacije, čak i kad nisu lako prihvatljive."
+      text_part_two: Koliko god to bilo izazovno, graditi nešto zajedno iz temelja, jedno je nevjerovatno životno iskustvo.
       signature: Ema & Ena, Zenos
     different: 
       title: MI SMO DRUGAČIJI!
-      text_part_one: Zenos tim čine mladi i energični ljudi različitih vještina i znanja, kao i različitog formalnog obrazovanja - od ekonomije, prava, prehrambenih tehnologija, informacionih tehnologija, stranih jezika itd.
-      text_part_two: Naš jedinstveno raznoliki tim dijeli zajedničke vrijednosti i težnju ka jedinstvenom cilju, a to je širenje znanja društvu koje nas okružuje.
+      text_part_one: "Zenos tim čine mladi, dinamični ljudi različitih vještina, iskustava i stručnosti, od ekonomije i prava, preko prehrambenih tehnologija, IT-a, grafičkog dizajna i stranih jezika. Iako dolazimo iz različitih oblasti, imamo zajednički cilj: širiti znanje i ostaviti trajan utjecaj u našoj zajednici, a i šire."
+      text_part_two: Iako naša snaga leži u raznolikosti, ono što nas spaja jeste zajednička posvećenost stvaranju promjena i osnaživanju drugih.
     testimonial_title: ŠTA DRUGI KAŽU O NAMA
   projects:
     title: PROJEKTI
