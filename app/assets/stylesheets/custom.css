@@ -135,6 +135,13 @@ h1, h2 {
   margin-bottom: 30px; /* Povećanje razmaka između testimoniala */
 }
 
+.min-height-580 {
+  min-height: 580px !important; /* Minimalna visina za testimonial */
+}
 
-
-
+.min-height-470 {
+  min-height: 470px !important; /* Minimalna visina za testimonial */
+}
+.min-height-440 {
+  min-height: 440px !important; /* Minimalna visina za testimonial */
+}

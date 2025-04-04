@@ -71,6 +71,9 @@ ba:
   blog:
     title: VIJESTI I BLOG
     description: Ako želite biti informisani s najnovijim dešavanjima vezanim za Zenos, pratite našu rubriku Vijesti i Blog, gdje možete pročitati interesantne članke o našem timu, kao i druge sadržaje koji će vas potaknuti na razvoj kritičkog razmišljanja. Ukoliko vas posebno zaintrigira neka tema, čekamo vas da započnete diskusiju!
+  education_training:
+    title: Education & Training
+    description: Test
   contact:
     title: KONTAKT
     form:

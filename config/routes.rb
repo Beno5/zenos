@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get 'pages/about'
     get 'pages/projects'
     get 'pages/blog'
+    get 'pages/education_training'
     get 'pages/contact'
     get 'pages/nutrition'
     get 'pages/zdrava-ishrana'

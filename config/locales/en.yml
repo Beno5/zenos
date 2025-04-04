@@ -71,6 +71,9 @@ en:
   blog:
     title: NEWS AND BLOG
     description: Stay informed and engaged with the latest updates in our News and Blog section, where we bring you insightful articles, latest news and events from our team, and thought-provoking content. Dive into a mix of topics that impact you, and join the conversation - we are waiting to hear from you!
+  education_training:
+    title: Education & Training
+    description: Zenos offers comprehensive training programs designed for both individuals and businesses. Our programs combine experiential learning, personalized guidance, and hands-on practice to equip participants with practical skills. We provide both group training sessions and 1:1 mentorship, ensuring flexibility and tailored support. 
   contact:
     title: CONTACT
     form: 

@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   def blog
     @posts =  BlogPost.where(locale: I18n.locale.to_s).order(date_of_post: :desc)
   end
+  def education_training
+  end
 
   def contact; end
 
