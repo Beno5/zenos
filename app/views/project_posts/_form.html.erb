@@ -21,6 +21,18 @@
         <%= f.select :locale, [['English', 'en'], ['Bosnian', 'ba']], {}, required: true, class: 'form-control' %>
       </div>
     </div>
+    <% if !@post.new_record? %> <!-- Only show this field for editing existing posts -->
+      <div class="col-md-4"> <!-- Connected post field takes 25% width on medium-sized screens and larger -->
+        <div class="form-group mb-4"> <!-- Add form-group for proper spacing -->
+          <%= f.label :linked_project_post_id, 'Connected Post (different language)', class: 'form-label' %> <!-- Add class for label styling -->
+          <% opposite_locale = @post.locale == 'en' ? 'ba' : 'en' %>
+          <%= f.select :linked_project_post_id, 
+          ProjectPost.where(locale: opposite_locale).where.not(id: @post.id).pluck(:title, :id), 
+          { include_blank: true }, 
+          class: 'form-control' %> <!-- Use standard select -->
+        </div>
+      </div>
+    <% end %>
   </div>
   <div class="field mb-4">
     <%= f.label :description %>

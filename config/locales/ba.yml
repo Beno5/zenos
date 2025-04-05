@@ -71,6 +71,83 @@ ba:
   blog:
     title: VIJESTI I BLOG
     description: Ako želite biti informisani s najnovijim dešavanjima vezanim za Zenos, pratite našu rubriku Vijesti i Blog, gdje možete pročitati interesantne članke o našem timu, kao i druge sadržaje koji će vas potaknuti na razvoj kritičkog razmišljanja. Ukoliko vas posebno zaintrigira neka tema, čekamo vas da započnete diskusiju!
+  education_training:
+    title: Obuka i Trening
+    description: Zenos nudi sveobuhvatne programe obuke dizajnirane za pojedince i preduzeća. Naši programi kombinuju iskustveno učenje, personalizovano vođenje i praktičnu primjenu kako bi učesnicima pružili praktične vještine. Nudimo grupne obuke kao i 1:1 mentorstvo, osiguravajući fleksibilnost i prilagođenu podršku.
+    description2: Naši treninzi su dizajnirani da pruže pojedincima i preduzećima praktične vještine koje su im potrebne za uspjeh u globalnom okruženju koje se stalno mijenja. Kontaktirajte nas da saznate više o našim prilagođenim rješenjima obuke.
+    invididual_training:
+      title: Obučni Programi za Pojedince
+      entrepreneurship:
+        title: "1. Preduzetništvo: Od Ideje do Posla"
+        description: "Pružamo pojedincima znanje i alate potrebne za pokretanje vlastitog biznisa. Naš program uključuje šest modula:"
+        module_one: "Validacija Poslovne Ideje & Istraživanje Tržišta"
+        module_two: "Razvoj Poslovnog Modela & Strategije"
+        module_three: "Finansijsko Planiranje & Budžetiranje"
+        module_four: "Marketing & Brendiranje za Startupe"
+        module_five: "Prodaja & Upravljanje Odnosima s Kupcima"
+        module_six: "Pravni & Operativni Okviri"
+      economic_empowerment:
+        title: "2. Ekonomsko Osnaživanje"
+        description: "Nudimo obuku za jačanje pojedinaca za tržište rada, obuhvatajući:"
+        module_one: "Obuka za Virtuelne Asistente"
+        module_two: "Pisanje CV-a & Priprema za Intervjue"
+        module_three: "Poslovna Komunikacija na Engleskom Jeziku"
+        module_four: "Digitalne Vještine na Radnom Mjestu (MS Office, Alati za Upravljanje Projektima, CRM Softver)"
+        module_five: "Pregovaranje & Rješavanje Konflikata"
+        module_six: "Osnovna Finansijska Pismenost"
+      marketing_communication:
+        title: "3. Marketing & Komunikacija"
+        description: "Naši programi obuke opremaju pojedince osnovnim marketing vještinama, uključujući:"
+        module_one: "Upravljanje Društvenim Mrežama"
+        module_two: "Osnove Grafičkog Dizajna"
+        module_three: "Pisanje Tekstova & Content Marketing"
+        module_four: "Strategije Digitalnog Oglašavanja"
+      intercultural_communication:
+        title: "4. Interkulturna Komunikacija"
+        description: "Pripremamo pojedince da se snalaze u globalnim radnim okruženjima kroz:"
+        module_one: "Savladavanje Intervjua za Internacionalna Radna Mjesta"
+        module_two: "Međukulturna Poslovna Komunikacija"
+        module_three: "Efektivna Saradnja u Internacionalnim Timovima"
+        module_four: "Kulturna Inteligencija za Remote Timove"
+      healthy_nutrition:
+        title: "5. Zdrava Ishrana"
+        description: "Pružamo mentorstvo i grupne sesije prilagođene specifičnim potrebama, kao što su:"
+        module_one: "Zdravlje Žena & Ishrana"
+        module_two: "Uvođenje Čvrste Hrane za Bebe"
+        module_three: "Zdrava Ishrana za Djecu & Adolescente"
+    corporate_training:
+      title: Korporativni Trening Programi
+      talent_management:
+        title: "1. Upravljanje Talentima"
+        description: "Naša obuka iz upravljanja talentima pomaže preduzećima da implementiraju strukturirani pristup upravljanju ključnim zaposlenicima. Proces uključuje:"
+        module_one: "Razvijanje Strategije Upravljanja Talentima"
+        module_two: "Identifikacija Ključnih Pozicija"
+        module_three: "Privlačenje Talenta"
+        module_four: "Akvizicija i Selekcija Talenta"
+        module_five: "Zapošljavanje"
+        module_six: "Uvod u Talent"
+        module_seven: "Zadržavanje Talenta"
+        module_eight: "Razvoj Talenta"
+        module_nine: "Planiranje Nasljedstva"
+      marketing_strategy:
+        title: "2. Marketing Strategija & Implementacija"
+        description: "Pomažemo preduzećima u razvoju marketinških strategija i obuci njihovih internih timova za implementaciju, uključujući:"
+        module_one: "Istraživanje Tržišta & Pozicioniranje"
+        module_two: "Digitalni Marketing & Brendiranje"
+        module_three: "Strategije Akvizicije & Zadržavanja Kupaca"
+      cultural_intelligence:
+        title: "3. Kulturna Inteligencija & Raznolikost"
+        description: "Obučavamo organizacije kako da koriste raznolikost za rast, nudeći:"
+        module_one: "Rješavanje Konflikata unutar Internacionalnih Timova"
+        module_two: "Širenje na Globalna Tržišta"
+        module_three: "Strategije za Uključivo Radno Okruženje"
+        module_four: "Efektivna Komunikacija u Multikulturnim Timovima"
+      healthy_nutrition:
+        title: "4. Zdrava Ishrana za Poslovanje"
+        description: "Specijalizovani smo za nutricionističke programe za:"
+        module_one: "Vrtiće & Škole (Planiranje Uravnoteženih Obroka za Djecu)"
+        module_two: "Fitness Centre & Sportske Organizacije (Nutricionizam za Performanse & Planovi Ishrane)"
+        module_three: "Korporativni Programi Zdravlja (Zdravlje Zaposlenih & Produktivnost)"
   contact:
     title: KONTAKT
     form:

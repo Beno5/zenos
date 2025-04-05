@@ -217,7 +217,7 @@
 @media (min-width: 1800px) {
     .owl-carousel .owl-item .custom-bg-slider-left,
     .owl-carousel .owl-item .custom-bg-slider-right {
-        width: 59%; /* Matches the 3:2 ratio consistently */
+        width: 62%; /* Matches the 3:2 ratio consistently */
         height: auto;
     }
 }
@@ -264,11 +264,11 @@
 
 @media (min-width: 992px) {
 		.custom-page-header.page-header-modern .custom-big-text-1 {
-				font-size: 6rem;
+				font-size: 5rem;
 				line-height: 6rem;
 		}
 		.custom-page-header.page-header-modern .custom-big-text-2 {
-				font-size: 5rem;
+				font-size: 4rem;
 				line-height: 4rem;
 		}
 }

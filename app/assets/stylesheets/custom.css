@@ -135,6 +135,75 @@ h1, h2 {
   margin-bottom: 30px; /* Povećanje razmaka između testimoniala */
 }
 
+.min-height-580 {
+  min-height: 580px !important; /* Minimalna visina za testimonial */
+}
 
+.min-height-470 {
+  min-height: 470px !important; /* Minimalna visina za testimonial */
+}
+.min-height-440 {
+  min-height: 440px !important; /* Minimalna visina za testimonial */
+}
 
+/* Postavljanje flexbox za horizontalno poravnavanje */
+.language-switcher {
+  display: flex;;
+  align-items: center;  /* Vertikalno centriranje linkova */
+  position: absolute;
+  right: 20px;  /* Podesite prema potrebi */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+/* Stil za svaki jezički link */
+.language-switcher .nav-link {
+  font-size: 16px;
+  color: #fff;  /* Prilagodite boje prema dizajnu */
+  margin-left: 10px;
+  margin-right: 10px;  /* Dajte malo prostora između linkova */
+}
+
+/* Separator između linkova */
+.language-switcher .language-separator {
+  color: #fff;  /* Boja separatora */
+  margin: 0 10px;  /* Prostor sa obe strane separatora */
+}
+
+.language-switcher-mob {
+  display: flex;
+  align-items: center;  /* Vertikalno centriranje linkova */
+  position: absolute;
+  right: 60px;  /* Podesite prema potrebi */
+  top: 36%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+/* Stil za svaki jezički link */
+.language-switcher-mob .nav-link {
+  font-size: 16px;
+  color: #fff;  /* Prilagodite boje prema dizajnu */
+  margin-left: 10px;
+  margin-right: 10px;  /* Dajte malo prostora između linkova */
+}
+
+/* Separator između linkova */
+.language-switcher-mob .language-separator {
+  color: #fff;  /* Boja separatora */
+  margin: 0 10px;  /* Prostor sa obe strane separatora */
+}
+
+/* CSS za prikaz strelice na select elementu */
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"%3E%3Cpath fill="none" stroke="%23000" stroke-width="1.5" d="M2 4l4 4 4-4"%3E%3C/path%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 12px 12px;
+  padding-right: 2rem;
+}
 
