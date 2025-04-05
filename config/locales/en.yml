@@ -74,6 +74,80 @@ en:
   education_training:
     title: Education & Training
     description: Zenos offers comprehensive training programs designed for both individuals and businesses. Our programs combine experiential learning, personalized guidance, and hands-on practice to equip participants with practical skills. We provide both group training sessions and 1:1 mentorship, ensuring flexibility and tailored support. 
+    description2: Our training programs are designed to provide both individuals and businesses with the practical skills they need to succeed in an evolving global landscape. Contact us to learn more about our customized training solutions. 
+    invididual_training:
+      title: Training Programs for Individuals
+      entrepreneurship:
+        title: "1. Entrepreneurship: From Idea to Business"
+        description: "We provide individuals with the knowledge and tools needed to start their own business. Our program includes six modules:"
+        module_one: "Business Idea Validation & Market Research"
+        module_two: "Business Model & Strategy Development"
+        module_three: "Financial Planning & Budgeting"
+        module_four: "Marketing & Branding for Startups"
+        module_five: "Sales & Customer Relationship Management"
+        module_six: "Legal & Operational Frameworks"
+      economic_empowerment:
+        title: "2. Economic Empowerment"
+        description: "We offer training to strengthen individuals for the labor market, covering:"
+        module_one: "Virtual Assistant Training"
+        module_two: "CV Writing & Interview Preparation"
+        module_three: "Business Communication in English"
+        module_four: "Workplace Digital Skills (MS Office, Project Management Tools, CRM Software)"
+        module_five: "Negotiation & Conflict Resolution"
+        module_six: "Basic Financial Literacy"
+      marketing_communication:
+        title: "3. Marketing & Communication"
+        description: "Our training programs equip individuals with essential marketing skills, including:"
+        module_one: "Social Media Management"
+        module_two: "Basics of Graphic Design"
+        module_three: "Copywriting & Content Marketing"
+        module_four: "Digital Advertising Strategies"
+      intercultural_communication:
+        title: "4. Intercultural Communication"
+        description: "We prepare individuals to navigate global workplaces by offering:"
+        module_one: "Mastering Interviews for International Jobs"
+        module_two: "Cross-Cultural Business Communication"
+        module_three: "Effective Collaboration in International Teams"
+        module_four: "Cultural Intelligence for Remote Teams"
+      healthy_nutrition:
+        title: "5. Healthy Nutrition"
+        description: "We provide mentorship and group sessions tailored to specific needs, such as:"
+        module_one: "Women’s Health & Nutrition"
+        module_two: "Introducing Solid Foods for Babies"
+        module_three: "Healthy Eating for Children & Adolescents"
+    corporate_training:
+      title: Corporate Training Programs
+      talent_management:
+        title: "1. Talent Management"
+        description: "Our talent management training helps businesses implement a structured approach to managing key employees. The process includes:"
+        module_one: "Developing a Talent Management Strategy"
+        module_two: "Identifying Key Positions"
+        module_three: "Attracting Talents"
+        module_four: "Acquisition and Selection of Talents"
+        module_five: "Employment"
+        module_six: "Talent Orientation"
+        module_seven: "Talent Retention"
+        module_eight: "Development of Talents"
+        module_nine: "Succession Planning"
+      marketing_strategy:
+        title: "2. Marketing Strategy & Implementation"
+        description: "We assist businesses in developing marketing strategies and training their internal teams on execution, including:"
+        module_one: "Market Research & Positioning"
+        module_two: "Digital Marketing & Brand Building"
+        module_three: "Customer Acquisition & Retention Strategies"
+      cultural_intelligence:
+        title: "3. Cultural Intelligence & Diversity"
+        description: "We train organizations on leveraging diversity for growth by offering:"
+        module_one: "Conflict Resolution within International Teams"
+        module_two: "Expanding into Global Markets"
+        module_three: "Strategies for Inclusive Work Environments"
+        module_four: "Effective Communication in Multicultural Teams"
+      healthy_nutrition:
+        title: "4. Healthy Nutrition for Businesses"
+        description: "We specialize in nutrition programs for:"
+        module_one: "Kindergartens & Schools (Balanced Meal Planning for Children)"
+        module_two: "Fitness Centers & Sports Organizations (Performance Nutrition & Meal Plans)"
+        module_three: "Corporate Wellness Programs (Employee Health & Productivity)"
   contact:
     title: CONTACT
     form: 

@@ -9,10 +9,16 @@
                 <%= image_tag('Zenos_logo_web_bijela.png', alt: 'zenos', class: 'logo') %>
               <% end %>
             </div>
+            <!-- Dodajemo ovu verziju jezičkih linkova na mobilnim uređajima -->
           </div>
         </div>
         <div class="header-column justify-content-end">
           <div class="header-row">
+            <div class="language-switcher-mob d-sm-none">
+              <%= link_to("EN", url_for(locale: 'en', change: true), class: "nav-link") %>
+              <span class="language-separator">|</span>
+              <%= link_to("BA", url_for(locale: 'ba', change: true), class: "nav-link") %>
+            </div>
             <div class="header-nav header-nav-links header-nav-line header-nav-bottom-line header-nav-bottom-line-active-text-light header-nav-dropdowns-dark header-nav-light-text">
               <div class="header-nav-main header-nav-main-text-capitalize header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                 <nav class="collapse">
@@ -38,12 +44,6 @@
                     <li>
                       <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link" if user_signed_in? %>
                     </li>
-                    <li >
-                      <%= link_to("EN", url_for(locale: 'en'), class: "nav-link english") %>
-                    </li>
-                    <li>
-                      <%= link_to("BA", url_for(locale: 'ba'), class: "nav-link bosnian") %>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -55,5 +55,12 @@
         </div>
       </div>
     </div>
+    <!-- Dodajemo ovaj div za jezičke linkove -->
+    <div class="language-switcher d-none d-sm-flex align-items-center">
+      <%= link_to("EN", url_for(locale: 'en', change: true), class: "nav-link") %>
+      <span class="language-separator">|</span>
+      <%= link_to("BA", url_for(locale: 'ba', change: true), class: "nav-link") %>
+    </div>
   </div>
+</div>
 </header>

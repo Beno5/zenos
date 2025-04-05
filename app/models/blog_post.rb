@@ -2,6 +2,8 @@ class BlogPost < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
+  belongs_to :linked_blog_post, class_name: 'BlogPost', optional: true
+
   has_one_attached :main_image
   has_many_attached :secondary_images
 

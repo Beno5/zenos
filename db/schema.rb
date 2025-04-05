@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_241_029_192_947) do
+ActiveRecord::Schema[7.0].define(version: 20_250_405_205_323) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -51,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 20_241_029_192_947) do
     t.string 'locale'
     t.date 'date_of_post'
     t.string 'slug'
+    t.integer 'linked_blog_post_id'
     t.index ['slug'], name: 'index_blog_posts_on_slug', unique: true
   end
 
@@ -62,6 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 20_241_029_192_947) do
     t.string 'locale'
     t.date 'date_of_post'
     t.string 'slug'
+    t.integer 'linked_project_post_id'
     t.index ['slug'], name: 'index_project_posts_on_slug', unique: true
   end
 
