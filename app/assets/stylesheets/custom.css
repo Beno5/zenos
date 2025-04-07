@@ -87,6 +87,27 @@ h1, h2 {
   }
 }
 
+@media (max-width: 1280px) {
+  .padding-mob-nav-li {
+    padding: 0 0.3rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 232px !important;
+    height: 50px !important;
+  }
+
+  .padding-mob-nav-li {
+    padding: 0 0.2rem !important;
+  }
+
+  .margin-0 {
+    margin: 0 !important;
+  }
+}
+
 .logo {
 	width: 309px;
 	height: 67px;
@@ -176,7 +197,7 @@ h1, h2 {
   align-items: center;  /* Vertikalno centriranje linkova */
   position: absolute;
   right: 60px;  /* Podesite prema potrebi */
-  top: 36%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 1000;
 }

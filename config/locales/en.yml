@@ -75,6 +75,7 @@ en:
     title: Education & Training
     description: Zenos offers comprehensive training programs designed for both individuals and businesses. Our programs combine experiential learning, personalized guidance, and hands-on practice to equip participants with practical skills. We provide both group training sessions and 1:1 mentorship, ensuring flexibility and tailored support. 
     description2: Our training programs are designed to provide both individuals and businesses with the practical skills they need to succeed in an evolving global landscape. Contact us to learn more about our customized training solutions. 
+    description3: Contact us to learn more about our customized training solutions. 
     invididual_training:
       title: Training Programs for Individuals
       entrepreneurship:
@@ -178,6 +179,7 @@ en:
       about: About
       projects: Projects
       blog: News And Blog
+      education_training: Education & Training
       contact: Contact
     contact:
       moto: Zenos is your reliable partner in driving the change!
