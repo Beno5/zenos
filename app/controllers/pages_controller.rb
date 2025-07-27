@@ -20,4 +20,12 @@ class PagesController < ApplicationController
   def nutrition; end
 
   def landing; end
+
+  def talent_management; end
+
+  private
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
 end

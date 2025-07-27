@@ -149,6 +149,122 @@ ba:
         module_one: Vrtiće i škole (planiranje balansiranih obroka za djecu)
         module_two: Fitnes centre i sportske organizacije (ishrana za ostvarivanje performanse i planiranje obroka)
         module_three: Korporativne wellness programe (zdravlje zaposlenih i produktivnost)
+  talent_management:
+    navbar:
+      academy: "Akademija"
+      why_us: "Zašto odabrati?"
+      modules: "Moduli"
+      audience: "Za koga je?"
+      details_signup: "Detalji & Prijava"
+      team: "Tim"
+      testimonials: "Iskustva"
+    academy:
+      title: "Akademija za Talent Menadžment"
+      title2: Kome je namijenjena Akademija za Talent menadžment?
+      description1: <strong>Upravljanje talentima više nije luksuz rezervisan za velike korporacije.</strong>
+        U današnjem dinamičnom i nepredvidivom poslovnom okruženju, gdje promjene na tržištu rada postaju svakodnevica,
+        organizacije koje žele ostvariti stabilan rast i konkurentsku prednost moraju znati kako prepoznati, razvijati i zadržati talente.
+        <strong>To nije opcija, to je uslov za održivost i uspjeh.</strong>
+      description2: <strong>Upravo zato je razvijena Akademija za Talent Menadžment – edukativni program koji nudi konkretne alate,
+        znanja i strategije za prepoznavanje, razvoj i zadržavanje ključnih ljudi u organizaciji.</strong>
+      description3: Talent menadžment <strong>nije isto što i klasično upravljanje ljudskim resursima</strong>. Dok se HR često bavi operativnim zadacima – administracijom,
+        evidencijama i osnovnim procesima zapošljavanja – <strong>talent menadžment je strateški proces koji postavlja ključne ljude u centar dugoročnog poslovnog razvoja</strong>.
+      hr:
+        title: "HR stručnjacima i asistentima"
+        desc: "koji žele proširiti svoje kompetencije i specijalizovati se za oblast talent menadžmenta"
+      managers:
+        title: "Menadžerima timova i rukovodiocima"
+        desc: "koji svakodnevno preuzimaju odgovornost za razvoj svojih zaposlenih"
+      owners:
+        title: "Vlasnicima malih i srednjih preduzeća"
+        desc: "koji nemaju formalan HR odjel, pa strateško upravljanje ljudima postaje njihov zadatak"
+      individuals:
+        title: "Zainteresovanim pojedincima"
+        desc: "koji planiraju karijeru u oblasti ljudskih resursa, employer brandinga ili organizacionog razvoja"  
+    why_us:
+      title: Zašto odabrati Akademiju za Talent menadžment? 
+      item1:
+        icon: "icon-graph icons text-color-primary bg-color-grey"
+        title: "Savremen Model"
+        desc: "Akademija koristi model talent menadžmenta razvijen prema najnovijim poslovnim i HR trendovima."
+      item2:
+        icon: "icon-lock icons text-color-light bg-color-primary"
+        title: "Zaštićena Metodologija"
+        desc: "Program se zasniva na autorskom modelu koji je pravno zaštićen kao intelektualno vlasništvo i certificiran je zaštićenim žigom."
+      item3:
+        icon: "icon-check icons text-color-primary bg-color-grey"
+        title: "Sigurna Verifikacija"
+        desc: "Certifikati se izdaju s jedinstvenim brojem i omogućavaju online provjeru autentičnosti u bilo kojem trenutku."
+      item4:
+        icon: "icon-layers icons text-color-light bg-color-primary"
+        title: "Praktična Primjena"
+        desc: "Polaznici Akademije tokom programa rade na izradi vlastite strategije talent mendžmenta koju mogu odmah primjenjivati u svome preduzeću."
+      item5:
+        icon: "icon-user-follow icons text-color-primary bg-color-grey"
+        title: "Direktno Mentorstvo"
+        desc: "Program vodi autorica modela, što omogućava direktnu razmjenu znanja i iskustva kroz programske sesije, učešće u mreži i direktni kontakt."
+      item6:
+        icon: "icon-globe icons text-color-light bg-color-primary"
+        title: "Regionalni Kontekst"
+        desc: "Sadržaj Akademije razvijen je uzimajući u obzir specifičnosti poslovanja u Bosni i Hercegovini, Hrvatskoj, Srbiji i Crnoj Gori."
+      item7:
+        icon: "icon-people icons text-color-primary bg-color-grey"
+        title: "Ekskluzivan Pristup"
+        desc: "Broj učesnika po grupi je ograničen, što omogućava individualiziraniji pristup i veću interakciju tokom trajanja programa."
+      item8:
+        icon: "icon-ban icons text-color-light bg-color-primary"
+        title: "Bez Preduslova"
+        desc: "Akademija je prilagođena i onima koji nemaju formalno HR obrazovanje ili iskustvo."
+      item9:
+        icon: "icon-camrecorder icons text-color-primary bg-color-grey"
+        title: "Prilagodljivo Učenje"
+        desc: "Sve sesije se održavaju online i imaju snimak 72 sata nakon održavanja, što omogućava učestvovanje iz bilo kojeg grada ili države, i nadoknadu propuštene sesije."
+      item10:
+        icon: "icon-users icons text-color-light bg-color-primary"
+        title: "Zajednica Znanja"
+        desc: "Učesnici postaju dio zatvorene grupe, gdje mogu nastaviti razmjenu iskustava tokom i nakon završetka programa."
+    modules:
+      title: "Program po modulima"
+      module1:
+        title: "Modul 1: Procesni model talent menadžmenta"
+        desc: "Uvodna sesija pruža pregled cjelokupnog procesa talent menadžmenta kroz predstavljanje zaštićenog modela koji obuhvata devet ključnih aktivnosti. Polaznici uče razliku između operativnog HR-a i strateškog talent menadžmenta, analiziraju domete TM-a i razumijevaju njegov utjecaj na rast i razvoj organizacije."
+      module2:
+        title: "Modul 2: Kreiranje strategije talent menadžmenta"
+        desc: "Ova sesija posvećena je učenju kako se razvija strategija talent menadžmenta koja je usklađena s općom poslovnom strategijom i konkurentskim usmjerenjem organizacije. U okviru ovog modula započinje i rad na ličnom projektu, a svaki naredni modul predstavlja gradivni element tog projekta."
+      module3:
+        title: "Modul 3: Identifikacija ključnih pozicija i kreiranje idealnog profila"
+        desc: "Polaznici uče kako da prepoznaju i mapiraju ključne pozicije u organizaciji koristeći klasifikaciju A/B/C pozicija. Takođe, stiču znanja o kreiranju idealnog profila kandidata – kompetencija, vještina i osobina koje su potrebne za strateški važne uloge."
+      module4:
+        title: "Modul 4: Privlačenje talenata i employer branding"
+        desc: "Ova sesija omogućava polaznicima da nauče kako se kreira strategija privlačenja talenata, kako se razvija employer branding i kako se definišu ključne poruke prema ciljanim kandidatima. Uči se o metodama istraživanja tržišta rada, kreiranju kampanja i osmišljavanju atraktivne slike poslodavca."
+      module5:
+        title: "Modul 5: Selekcija i zapošljavanje talenata"
+        desc: "Polaznici usvajaju znanja o različitim tehnikama selekcije, kreiranju procesa koji su prilagođeni ključnim pozicijama i razvijanju procedura za profesionalno vođenje pregovora o zapošljavanju. Uče se i kako osmisliti ponudu za posao koja je u skladu sa potrebama organizacije i očekivanjima kandidata, te kako upravljati komunikacijom s kandidatima tokom i nakon selekcije."
+      module6:
+        title: "Modul 6: Onboarding i organizacijska kultura"
+        desc: "Ovaj modul pokriva znanja o planiranju i provođenju kvalitetnog onboarding procesa, uz povezivanje sa organizacijskom kulturom i vrijednostima firme. Polaznici uče kako postaviti onboarding program koji jača angažovanost, ubrzava adaptaciju i doprinosi zadržavanju ključnih zaposlenih."
+      module7:
+        title: "Modul 7: Razvoj i zadržavanje talenata"
+        desc: "Fokus ove sesije je na učenju metoda za kreiranje individualnih razvojnih planova, motivacijskih strategija i alata za smanjenje fluktuacije. Polaznici usvajaju tehnike koje omogućavaju kontinuirani razvoj zaposlenih i izgradnju organizacijske lojalnosti."
+      module8:
+        title: "Modul 8: Planiranje sukcesije"
+        desc: "Polaznici se upoznaju sa metodama identifikacije nasljednika za ključne pozicije i razvojem sukcesionih planova koji omogućavaju stabilnost i dugoročnu održivost poslovanja. Obrađuju se alati za praćenje potencijala i planiranje razvoja budućih lidera."
+      title2: "Završni ispit: Teorijsko i praktično provjeravanje znanja"
+      description2: "Akademija se završava kombinovanim ispitom: teorijskim online testom i pregledom projekta koji je razvijan tokom svih modula. Svaki polaznik dobija povratnu informaciju na svoju Strategiju talent menadžmenta izrađenu tokom trajanja programa, čime se pokazuje povezivanje teorije i prakse."
+    format:
+      title: "Format i detalji kursa"
+      duration_title: "Trajanje"
+      duration: "2 mjeseca"
+      format_title: "Format"
+      format: "Online sesije (Zoom), 1x sedmično, 90–120 minuta"
+      support_title: "Podrška"
+      support: "WhatsApp grupa za Q&A i networking"
+      requirements_title: "Radne obaveze"
+      requirements: "Prisustvo na sesijama ili pregled modula, rad na strategiji talent menadžmenta i završni ispit"
+      certificate_title: "Certifikat"
+      certificate: "Digitalna i štampana verzija sa serijskim brojem, QR kodom i zaštićenim TM9 žigom"
+      countdown_title: "Rana prijava traje do 31.08.2025."
+      cta_button: "Prijavi se"
   contact:
     title: KONTAKT
     form:

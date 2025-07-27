@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'pages/nutrition'
     get 'pages/zdrava-ishrana'
     get 'pages/landing'
+    get 'pages/talent_management'
 
     post 'contact_form/send_email'
     post 'contact_form/send_email_landing'

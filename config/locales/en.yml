@@ -149,6 +149,109 @@ en:
         module_one: "Kindergartens & Schools (Balanced Meal Planning for Children)"
         module_two: "Fitness Centers & Sports Organizations (Performance Nutrition & Meal Plans)"
         module_three: "Corporate Wellness Programs (Employee Health & Productivity)"
+  talent_management:
+    navbar:
+      academy: "Academy"
+      why_us: "Why choose us"
+      modules: "Modules"
+      audience: "Why choose us?"
+      details_signup: "Details & Signup"
+      team: "Team"
+      testimonials: "Testimonials"
+    academy:
+      title: "Talent Management Academy"
+      title2: Who is the Talent Management Academy for?
+      description1: <strong>Talent management is no longer a luxury reserved for large corporations.</strong>
+        In today’s dynamic and unpredictable business environment, where labor market changes are a daily reality,
+        organizations that want to achieve stable growth and competitive advantage must know how to identify, develop, and retain talent.
+        <strong>This is not an option; it is a condition for sustainability and success.</strong>
+      description2: <strong>That’s why we developed the Talent Management Academy – an educational program that offers concrete tools,
+        knowledge, and strategies for identifying, developing, and retaining key people in the organization.</strong>
+      description3: Talent management <strong>is not the same as traditional human resource management</strong>. While HR often deals with operational tasks – administration,
+        records, and basic hiring processes – <strong>talent management is a strategic process that places key people at the center of long-term business development</strong>.
+      hr:
+        title: "HR professionals and assistants"
+        desc: "who want to expand their competencies and specialize in the field of talent management"
+      managers:
+        title: "Team managers and leaders"
+        desc: "who take daily responsibility for the development of their employees"
+      owners:
+        title: "Owners of small and medium enterprises"
+        desc: "who do not have a formal HR department, so strategic people management becomes their task"
+      individuals:
+        title: "Interested individuals"
+        desc: "who plan a career in human resources, employer branding, or organizational development"
+    why_us:
+      title: "Why Choose the Talent Management Academy?"
+      item1:
+        icon: "icon-graph icons text-color-primary bg-color-grey"
+        title: "Modern Model"
+        desc: "The Academy applies a talent management model developed according to the latest business and HR trends."
+      item2:
+        icon: "icon-lock icons text-color-light bg-color-primary"
+        title: "Protected Methodology"
+        desc: "The program is based on an original model legally protected as intellectual property and certified with a registered trademark."
+      item3:
+        icon: "icon-check icons text-color-primary bg-color-grey"
+        title: "Secure Verification"
+        desc: "Certificates are issued with a unique number and allow online authentication at any time."
+      item4:
+        icon: "icon-layers icons text-color-light bg-color-primary"
+        title: "Practical Application"
+        desc: "Participants work on creating their own talent management strategy during the program, which they can immediately apply in their companies."
+      item5:
+        icon: "icon-user-follow icons text-color-primary bg-color-grey"
+        title: "Direct Mentorship"
+        desc: "The program is led by the model’s author, enabling direct knowledge exchange through sessions, networking, and individual contact."
+      item6:
+        icon: "icon-globe icons text-color-light bg-color-primary"
+        title: "Regional Context"
+        desc: "The Academy's content was developed with the specific business environment of Bosnia and Herzegovina, Croatia, Serbia, and Montenegro in mind."
+      item7:
+        icon: "icon-people icons text-color-primary bg-color-grey"
+        title: "Exclusive Access"
+        desc: "The number of participants per group is limited, allowing for a more personalized approach and greater interaction during the program."
+      item8:
+        icon: "icon-ban icons text-color-light bg-color-primary"
+        title: "No Prerequisites"
+        desc: "The Academy is suitable even for those without formal HR education or experience."
+      item9:
+        icon: "icon-camrecorder icons text-color-primary bg-color-grey"
+        title: "Flexible Learning"
+        desc: "All sessions are held online and recorded, with access for 72 hours after the session — enabling participation from any location and allowing make-up viewing."
+      item10:
+        icon: "icon-users icons text-color-light bg-color-primary"
+        title: "Knowledge Community"
+        desc: "Participants join a closed group where they can continue exchanging experiences during and after the program."
+
+    modules:
+      title: "Program by Modules"
+      module1:
+        title: "Module 1: Talent Management Process Model"
+        desc: "The introductory session provides an overview of the entire talent management process through a presentation of a protected model covering nine key activities. Participants learn the difference between operational HR and strategic talent management, analyze the reach of TM, and understand its impact on organizational growth and development."
+      module2:
+        title: "Module 2: Creating a Talent Management Strategy"
+        desc: "This session focuses on learning how to develop a talent management strategy aligned with the company’s overall business strategy and competitive direction. Participants begin work on their personal projects, with each subsequent module building upon it."
+      module3:
+        title: "Module 3: Identifying Key Positions and Creating Ideal Profiles"
+        desc: "Participants learn how to identify and map key positions in the organization using the A/B/C classification model. They also gain knowledge in creating the ideal candidate profile — the competencies, skills, and traits needed for strategic roles."
+      module4:
+        title: "Module 4: Talent Attraction and Employer Branding"
+        desc: "This session teaches participants how to create a talent attraction strategy, develop employer branding, and define key messages for target candidates. Topics include labor market research, campaign creation, and building an attractive employer image."
+      module5:
+        title: "Module 5: Talent Selection and Recruitment"
+        desc: "Participants learn about various selection techniques, how to design hiring processes tailored to key positions, and how to lead professional negotiations. They also learn how to craft job offers aligned with organizational needs and candidate expectations, and how to manage communication before, during, and after hiring."
+      module6:
+        title: "Module 6: Onboarding and Organizational Culture"
+        desc: "This module covers how to design and execute a high-quality onboarding process linked with the company’s culture and values. Participants learn how to create onboarding programs that boost engagement, accelerate adaptation, and help retain key employees."
+      module7:
+        title: "Module 7: Talent Development and Retention"
+        desc: "This session focuses on methods for developing individual development plans, motivation strategies, and retention tools. Participants gain techniques that support continuous employee growth and foster organizational loyalty."
+      module8:
+        title: "Module 8: Succession Planning"
+        desc: "Participants are introduced to methods for identifying successors for key positions and creating succession plans that ensure business continuity and long-term sustainability. Tools for tracking potential and developing future leaders are also covered."
+      title2: "Final Exam: Theoretical and Practical Knowledge Verification"
+      description2: "The Academy concludes with a combined exam: an online theoretical test and a review of the project developed throughout the modules. Each participant receives individual feedback on their Talent Management Strategy, demonstrating the connection between theory and practice."
   contact:
     title: CONTACT
     form: 
