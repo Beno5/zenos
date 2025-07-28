@@ -202,9 +202,45 @@
 
 
           </div>
-          <div id="section5">
-            <h2 class="font-weight-semi-bold text-7 mb-2">Sekcija 5 – Detalji kursa, prijava i paketi</h2>
+ <div id="section5" >
+  <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.pricing.title") %></h2>
+
+  <div class="pricing-table row g-0 mb-4">
+    <% (1..4).each do |i| %>
+      <% plan = :"talent_management.pricing.plan#{i}" %>
+      <div class="col-md-6 col-lg-3">
+        <div class="plan <%= 'plan-featured' if i == 3 %>">
+          <div class="plan-header <%= 'bg-primary' if i == 3 %>">
+            <h3><%= t("#{plan}.title") %></h3>
           </div>
+          <div class="plan-price">
+            <span class="price"><%= t("#{plan}.price_eur") %></span>
+            <label class="price-label"><%= t("#{plan}.price_bam") %></label>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><%= t("#{plan}.people") %></li>
+              <li><%= t("#{plan}.deadline") %></li>
+              <li><%= t("#{plan}.rate") %></li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+  <a href="#registrationModal"
+     class="btn <%= i == 3 ? 'btn-primary' : 'btn-dark btn-outline' %> btn-modern py-2 px-4"
+     data-bs-toggle="modal"
+     data-type="<%= t("#{plan}.type") %>">
+    <%= t("#{plan}.button") %>
+  </a>
+</div>
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
           <div id="section6">
             <h2 class="font-weight-semi-bold text-7 mb-2">Sekcija 6 – Tim Akademije</h2>
           </div>
@@ -217,9 +253,132 @@
   </div>
 </div>
 
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModalLabel"><%= t("talent_management.form.title") %></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+      </div>
+      <div class="modal-body">
+        <form id="registrationForm">
+         <!-- Individual fields -->
+<div id="individualFields" class="d-none">
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.name") %></label>
+      <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.organization") %></label>
+      <input type="text" class="form-control" name="organization">
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.country") %></label>
+      <input type="text" class="form-control" name="country" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.city") %></label>
+      <input type="text" class="form-control" name="city">
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.position") %></label>
+      <input type="text" class="form-control" name="position">
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.email") %></label>
+      <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.individual.phone") %></label>
+      <input type="tel" class="form-control" name="phone" required>
+    </div>
+    <div class="mb-3 col-12">
+      <label><%= t("talent_management.pricing.form.individual.message") %></label>
+      <textarea class="form-control" name="message"></textarea>
+    </div>
+  </div>
+</div>
+
+
+          <!-- Group fields -->
+          <div id="groupFields" class="d-none">
+  <div class="row">
+    <div class="mb-3">
+      <label><%= t("talent_management.pricing.form.group.organization") %></label>
+      <input type="text" class="form-control" name="organization">
+    </div>
+
+    <% (1..5).each do |i| %>
+      <div class="mb-3 col-md-6">
+        <label><%= t("talent_management.pricing.form.group.participant", num: i, required: i <= 2 ? "*" : "") %></label>
+        <input type="text" class="form-control" name="participant_<%= i %>" <%= i <= 2 ? "required" : "" %>>
+      </div>
+      <div class="mb-3 col-md-6">
+        <label><%= t("talent_management.pricing.form.group.position") %></label>
+        <input type="text" class="form-control" name="position_<%= i %>">
+      </div>
+    <% end %>
+
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.group.country") %></label>
+      <input type="text" class="form-control" name="country" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.group.city") %></label>
+      <input type="text" class="form-control" name="city">
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.group.email") %></label>
+      <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label><%= t("talent_management.pricing.form.group.phone") %></label>
+      <input type="tel" class="form-control" name="phone" required>
+    </div>
+    <div class="mb-3 col-12">
+      <label><%= t("talent_management.pricing.form.group.message") %></label>
+      <textarea class="form-control" name="message"></textarea>
+    </div>
+  </div>
+</div>
+
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary"><%= t("talent_management.pricing.form.submit") %></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <script>
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("registrationModal");
+    const individualFields = document.getElementById("individualFields");
+    const groupFields = document.getElementById("groupFields");
+
+    const buttons = document.querySelectorAll('[data-bs-toggle="modal"]');
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", function () {
+        const type = this.dataset.type;
+        if (type === "group") {
+          individualFields.classList.add("d-none");
+          groupFields.classList.remove("d-none");
+        } else {
+          groupFields.classList.add("d-none");
+          individualFields.classList.remove("d-none");
+        }
+      });
+    });
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     const deadline = new Date("2025-08-31T23:59:59").getTime();
 
