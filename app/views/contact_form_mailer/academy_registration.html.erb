@@ -1,0 +1,22 @@
+<p><strong>Naslov paketa:</strong> <%= @title %></p>
+
+<% if @type == 'individual' %>
+  <p><strong>Ime i prezime:</strong> <%= @data[:name] %></p>
+  <p><strong>Organizacija:</strong> <%= @data[:organization] %></p>
+  <p><strong>Država:</strong> <%= @data[:country] %></p>
+  <p><strong>Grad:</strong> <%= @data[:city] %></p>
+  <p><strong>Pozicija:</strong> <%= @data[:position] %></p>
+<% else %>
+  <p><strong>Organizacija:</strong> <%= @data[:organization] %></p>
+  <% 1.upto(5) do |i| %>
+    <% name = @data["participant#{i}".to_sym] %>
+    <% pos = @data["position#{i}".to_sym] %>
+    <% if name.present? %>
+      <p><strong>Polaznik <%= i %>:</strong> <%= name %> – <%= pos %></p>
+    <% end %>
+  <% end %>
+<% end %>
+
+<p><strong>E-mail:</strong> <%= @data[:email] %></p>
+<p><strong>Telefon:</strong> <%= @data[:phone] %></p>
+<p><strong>Poruka:</strong> <%= @data[:message] %></p>

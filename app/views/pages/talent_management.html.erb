@@ -145,7 +145,7 @@
             <p class="text-4 line-height-7 text-justify"><%=  t("talent_management.modules.description2") %></p>
           </div>
           <div id="section4">
-            <h2 class="font-weight-semi-bold text-8 mb-5 text-center"><%= t("talent_management.format.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8 mb-5"><%= t("talent_management.format.title") %></h2>
             <div class="row justify-content-center mb-5">
               <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <i class="icons icon-clock text-color-primary mb-3" style="font-size: 40px;"></i>
@@ -173,76 +173,123 @@
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.certificate") %></p>
               </div>
             </div>
-           <div class="text-center mt-5 mb-4">
-  <h4 class="font-weight-bold text-5 mb-3"><%= t("talent_management.format.countdown_title") %></h4>
-
-<div id="custom-countdown" class="d-flex justify-content-center gap-5 flex-wrap mb-4">
-    <div class="text-center">
-      <span class="h1 font-weight-bold text-color-primary d-block" id="cd-days">00</span>
-      <small class="text-muted text-uppercase">Dana</small>
-    </div>
-    <div class="text-center">
-      <span class="h1 font-weight-bold text-color-primary d-block" id="cd-hours">00</span>
-      <small class="text-muted text-uppercase">Sati</small>
-    </div>
-    <div class="text-center">
-      <span class="h1 font-weight-bold text-color-primary d-block" id="cd-minutes">00</span>
-      <small class="text-muted text-uppercase">Minuta</small>
-    </div>
-    <div class="text-center">
-      <span class="h1 font-weight-bold text-color-primary d-block" id="cd-seconds">00</span>
-      <small class="text-muted text-uppercase">Sekundi</small>
-    </div>
-  </div>
-
-  <a href="#section5" class="btn btn-primary btn-modern text-uppercase font-weight-bold px-5 py-3 mt-3">
-    <%= t("talent_management.format.cta_button") %>
-  </a>
-</div>
-
-
+            <div class="text-center mt-5 mb-4">
+              <h4 class="font-weight-bold text-5 mb-3"><%= t("talent_management.format.countdown_title") %></h4>
+              <div id="custom-countdown" class="d-flex justify-content-center gap-5 flex-wrap mb-4">
+                <div class="text-center">
+                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-days">00</span>
+                  <small class="text-muted text-uppercase">Dana</small>
+                </div>
+                <div class="text-center">
+                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-hours">00</span>
+                  <small class="text-muted text-uppercase">Sati</small>
+                </div>
+                <div class="text-center">
+                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-minutes">00</span>
+                  <small class="text-muted text-uppercase">Minuta</small>
+                </div>
+                <div class="text-center">
+                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-seconds">00</span>
+                  <small class="text-muted text-uppercase">Sekundi</small>
+                </div>
+              </div>
+              <a href="#section5" class="btn btn-primary btn-modern text-uppercase font-weight-bold px-5 py-3 mt-3">
+                <%= t("talent_management.format.cta_button") %>
+              </a>
+            </div>
           </div>
- <div id="section5" >
-  <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.pricing.title") %></h2>
-
-  <div class="pricing-table row g-0 mb-4">
-    <% (1..4).each do |i| %>
-      <% plan = :"talent_management.pricing.plan#{i}" %>
-      <div class="col-md-6 col-lg-3">
-        <div class="plan <%= 'plan-featured' if i == 3 %>">
-          <div class="plan-header <%= 'bg-primary' if i == 3 %>">
-            <h3><%= t("#{plan}.title") %></h3>
+          <div id="section5" >
+            <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.pricing.title") %></h2>
+            <div class="pricing-table row g-0 mb-4">
+              <% (1..4).each do |i| %>
+                <% plan = :"talent_management.pricing.plan#{i}" %>
+                <div class="col-md-6 col-lg-3">
+                  <div class="plan <%= 'plan-featured' if i == 3 %>">
+                    <div class="plan-header <%= 'bg-primary' if i == 3 %>">
+                      <h3><%= t("#{plan}.title") %></h3>
+                    </div>
+                    <div class="plan-price">
+                      <span class="price"><%= t("#{plan}.price_eur") %></span>
+                      <label class="price-label"><%= t("#{plan}.price_bam") %></label>
+                    </div>
+                    <div class="plan-features">
+                      <ul>
+                        <li><%= t("#{plan}.people") %></li>
+                        <li><%= t("#{plan}.deadline") %></li>
+                        <li><%= t("#{plan}.rate") %></li>
+                      </ul>
+                    </div>
+                    <div class="plan-footer">
+                      <a href="#registrationModal"
+   class="btn <%= i == 3 ? 'btn-primary' : 'btn-dark btn-outline' %> btn-modern py-2 px-4"
+   data-bs-toggle="modal"
+   data-type="<%= t("#{plan}.type") %>"
+   data-title="<%= t("#{plan}.title") %>">
+                        <%= t("#{plan}.button") %>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
           </div>
-          <div class="plan-price">
-            <span class="price"><%= t("#{plan}.price_eur") %></span>
-            <label class="price-label"><%= t("#{plan}.price_bam") %></label>
-          </div>
-          <div class="plan-features">
-            <ul>
-              <li><%= t("#{plan}.people") %></li>
-              <li><%= t("#{plan}.deadline") %></li>
-              <li><%= t("#{plan}.rate") %></li>
-            </ul>
-          </div>
-          <div class="plan-footer">
-  <a href="#registrationModal"
-     class="btn <%= i == 3 ? 'btn-primary' : 'btn-dark btn-outline' %> btn-modern py-2 px-4"
-     data-bs-toggle="modal"
-     data-type="<%= t("#{plan}.type") %>">
-    <%= t("#{plan}.button") %>
-  </a>
-</div>
-
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
-
-
-
           <div id="section6">
-            <h2 class="font-weight-semi-bold text-7 mb-2">Sekcija 6 – Tim Akademije</h2>
+            <div class="row">
+              <div class="col-md-7 order-2 order-md-1">
+                <div class="overflow-hidden">
+                  <h2 class="font-weight-semi-bold text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
+                    <%= t("talent_management.team.title") %>
+                  </h2>
+                </div>
+                <p class="text-4 line-height-7 text-justify appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                  <%= raw t("talent_management.team.content") %>
+                </p>
+                <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+                <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                  <div class="col-lg-12">
+                    <a href="mailto:ema@zen-os.com" target="_blank" class="btn btn-modern btn-dark mt-3 px-4 py-2">Kontakt</a>
+                    <a href="https://www.linkedin.com/in/ema-burić-phd-b87280b9/" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?hl=hr&user=xoHy7QsAAAAJ" target="_blank" class="btn btn-modern btn-light mt-3 px-4 py-2">Google Scholar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter">
+                <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover ",  style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
+              </div>
+            </div>
+          
+          <p class="text-4 line-height-7 text-justify lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+            <%= t("talent_management.team.collaborators_title") %>
+          </p>
+          <div class="mt-4 pt-2">
+            <div class="row team-list sort-destination" data-sort-id="team">
+              <% [
+      { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
+      { img: "aida_talent.jpg", name: "Aida Kurtalić", role: "Komunikacijski specijalista", description: t("talent_management.team.aida_description"), email: "aida@zen-os.com", linkedin: "https://www.linkedin.com/in/aidakurtalic/" },
+      { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
+    ].each do |person| %>
+                <div class="col-12 col-sm-6 col-lg-4 isotope-item">
+                  <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                    <span class="thumb-info-wrapper">
+<%= image_tag(person[:img], class: "img-fluid", alt: person[:name], style: "height: 300px; width: 100%; object-fit: cover; object-position: center;") %>
+
+                      <span class="thumb-info-title">
+                        <span class="thumb-info-inner"><%= person[:name] %></span>
+                        <span class="thumb-info-type"><%= person[:role] %></span>
+                      </span>
+                    </span>
+                    <span class="thumb-info-caption">
+                      <span class="thumb-info-caption-text"><%= person[:description] %></span>
+                      <span class="thumb-info-social-icons mb-4">
+<a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
+                        <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              <% end %>
+            </div>
+          </div>
           </div>
           <div id="section7">
             <h2 class="font-weight-semi-bold text-7 mb-2">Sekcija 7 – Iskustva polaznika</h2>
@@ -252,132 +299,145 @@
     </div>
   </div>
 </div>
-
 <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="registrationModalLabel"><%= t("talent_management.form.title") %></h5>
+        <h5 class="modal-title" id="registrationModalLabel"><%= t("talent_management.pricing.form.title") %></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
       </div>
       <div class="modal-body">
-        <form id="registrationForm">
-         <!-- Individual fields -->
-<div id="individualFields" class="d-none">
-  <div class="row">
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.name") %></label>
-      <input type="text" class="form-control" name="name" required>
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.organization") %></label>
-      <input type="text" class="form-control" name="organization">
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.country") %></label>
-      <input type="text" class="form-control" name="country" required>
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.city") %></label>
-      <input type="text" class="form-control" name="city">
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.position") %></label>
-      <input type="text" class="form-control" name="position">
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.email") %></label>
-      <input type="email" class="form-control" name="email" required>
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.individual.phone") %></label>
-      <input type="tel" class="form-control" name="phone" required>
-    </div>
-    <div class="mb-3 col-12">
-      <label><%= t("talent_management.pricing.form.individual.message") %></label>
-      <textarea class="form-control" name="message"></textarea>
-    </div>
-  </div>
-</div>
-
-
+        <%= form_with url: contact_form_send_academy_email_path, method: :post, local: true, html: { id: "registrationForm" } do |f| %>
+          <%= hidden_field_tag :type %>
+          <%= hidden_field_tag :title %>
+          <!-- Individual fields -->
+          <div id="individualFields" class="d-none">
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.name") %></label>
+                <%= text_field_tag :name, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.organization") %></label>
+                <%= text_field_tag :organization, nil, class: "form-control" %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.country") %></label>
+                <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.city") %></label>
+                <%= text_field_tag :city, nil, class: "form-control" %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.position") %></label>
+                <%= text_field_tag :position, nil, class: "form-control" %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.email") %></label>
+                <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.individual.phone") %></label>
+                <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-12">
+                <label><%= t("talent_management.pricing.form.individual.message") %></label>
+                <%= text_area_tag :message, nil, class: "form-control" %>
+              </div>
+            </div>
+          </div>
           <!-- Group fields -->
           <div id="groupFields" class="d-none">
-  <div class="row">
-    <div class="mb-3">
-      <label><%= t("talent_management.pricing.form.group.organization") %></label>
-      <input type="text" class="form-control" name="organization">
-    </div>
-
-    <% (1..5).each do |i| %>
-      <div class="mb-3 col-md-6">
-        <label><%= t("talent_management.pricing.form.group.participant", num: i, required: i <= 2 ? "*" : "") %></label>
-        <input type="text" class="form-control" name="participant_<%= i %>" <%= i <= 2 ? "required" : "" %>>
-      </div>
-      <div class="mb-3 col-md-6">
-        <label><%= t("talent_management.pricing.form.group.position") %></label>
-        <input type="text" class="form-control" name="position_<%= i %>">
-      </div>
-    <% end %>
-
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.group.country") %></label>
-      <input type="text" class="form-control" name="country" required>
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.group.city") %></label>
-      <input type="text" class="form-control" name="city">
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.group.email") %></label>
-      <input type="email" class="form-control" name="email" required>
-    </div>
-    <div class="mb-3 col-md-6">
-      <label><%= t("talent_management.pricing.form.group.phone") %></label>
-      <input type="tel" class="form-control" name="phone" required>
-    </div>
-    <div class="mb-3 col-12">
-      <label><%= t("talent_management.pricing.form.group.message") %></label>
-      <textarea class="form-control" name="message"></textarea>
-    </div>
-  </div>
-</div>
-
-
-          <div class="text-end">
-            <button type="submit" class="btn btn-primary"><%= t("talent_management.pricing.form.submit") %></button>
+            <div class="row">
+              <div class="mb-3 col-12">
+                <label><%= t("talent_management.pricing.form.group.organization") %></label>
+                <%= text_field_tag :organization, nil, class: "form-control" %>
+              </div>
+              <% (1..5).each do |i| %>
+                <div class="mb-3 col-md-6">
+                  <label><%= t("talent_management.pricing.form.group.participant", num: i, required: i <= 2 ? "*" : "") %></label>
+                  <%= text_field_tag "participant#{i}", nil, class: "form-control", 'data-required': (i <= 2).to_s %>
+                </div>
+                <div class="mb-3 col-md-6">
+                  <label><%= t("talent_management.pricing.form.group.position") %></label>
+                  <%= text_field_tag "position#{i}", nil, class: "form-control" %>
+                </div>
+              <% end %>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.group.country") %></label>
+                <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.group.city") %></label>
+                <%= text_field_tag :city, nil, class: "form-control" %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.group.email") %></label>
+                <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label><%= t("talent_management.pricing.form.group.phone") %></label>
+                <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
+              </div>
+              <div class="mb-3 col-12">
+                <label><%= t("talent_management.pricing.form.group.message") %></label>
+                <%= text_area_tag :message, nil, class: "form-control" %>
+              </div>
+            </div>
           </div>
-        </form>
+          <div class="text-end">
+            <%= submit_tag t("talent_management.pricing.form.submit"), class: "btn btn-primary" %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
 <script>
-
-   document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("registrationModal");
     const individualFields = document.getElementById("individualFields");
     const groupFields = document.getElementById("groupFields");
+    const modalTitle = document.getElementById("registrationModalLabel");
+
+    const hiddenTypeField = document.querySelector('input[name="type"]');
+    const hiddenTitleField = document.querySelector('input[name="title"]');
 
     const buttons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
     buttons.forEach(btn => {
       btn.addEventListener("click", function () {
         const type = this.dataset.type;
+        const title = this.dataset.title;
+
+        if (title) modalTitle.textContent = title;
+        if (hiddenTypeField) hiddenTypeField.value = type || "";
+        if (hiddenTitleField) hiddenTitleField.value = title || "";
+
+        // Disable hidden fields and enable visible ones
         if (type === "group") {
+          toggleFieldState(individualFields, true);
+          toggleFieldState(groupFields, false);
           individualFields.classList.add("d-none");
           groupFields.classList.remove("d-none");
         } else {
+          toggleFieldState(groupFields, true);
+          toggleFieldState(individualFields, false);
           groupFields.classList.add("d-none");
           individualFields.classList.remove("d-none");
         }
       });
     });
+
+    function toggleFieldState(container, disable = true) {
+      const elements = container.querySelectorAll('input, textarea, select');
+      elements.forEach(el => el.disabled = disable);
+    }
   });
+
+
+
 
   document.addEventListener("DOMContentLoaded", function () {
     const deadline = new Date("2025-08-31T23:59:59").getTime();
@@ -401,4 +461,3 @@
     setInterval(updateCountdown, 1000);
   });
 </script>
-

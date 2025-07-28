@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
     post 'contact_form/send_email'
     post 'contact_form/send_email_landing'
+    post 'contact_form/send_academy_email'
+
 
     root 'pages#home'
   end

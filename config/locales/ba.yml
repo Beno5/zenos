@@ -324,6 +324,32 @@ ba:
           email: "E-mail*"
           phone: "Broj telefona*"
           message: "Poruka"
+        success: "Prijava je uspješno poslana."
+        not_success: "Došlo je do greške prilikom slanja prijave. Molimo pokušajte ponovo."
+    team:
+      title: "Tim Akademije za Talent menadžment"
+      content: >
+        <strong>Voditeljica Akademije: Dr.sc. Ema Burić</strong><br><br>
+        Dr. Ema Burić je docentica na Ekonomskom fakultetu Univerziteta u Zenici i stručnjakinja za strateško upravljanje ljudskim resursima i talent menadžment.<br><br>
+        Doktorirala je na Ekonomskom fakultetu Univerziteta u Tuzli na temu:<br>
+        <strong>"Funkcija talent menadžmenta u postizanju konkurentske prednosti uslužnih preduzeća u BiH."</strong><br>
+        Tokom doktorskog istraživanja razvila je i inovirala <strong>procesni model talent menadžmenta kroz devet faza</strong>, koji je testiran i primijenjen u praksi.<br><br>
+        Dr. Burić je autorica brojnih naučnih i stručnih radova iz oblasti talent menadžmenta, organizacijskog razvoja i upravljanja ljudskim resursima. Provela je više studija slučaja i istraživačkih projekata s fokusom na praktičnu primjenu teorijskih znanja u realnom poslovnom okruženju.<br><br>
+        Pored akademske karijere, Ema Burić je <strong>direktorica i osnivačica Agencije za marketing i edukacije ZENOS d.o.o. Zenica</strong>, te <strong>suosnivačica Ženskog instituta za poduzetništvo i vještine (WISE) u Beču</strong>.<br><br>
+        Kombinacijom naučnog pristupa i praktične primjene, dr. Ema Burić polaznicima Akademije prenosi znanja koja su odmah primjenjiva u realnim poslovnim kontekstima.
+      collaborators_title: Saradnici Akademije
+      ena_description: >
+        Ena Fejzagić Livančić – marketing specijalista sa više od 10 godina iskustva u realnom sektoru, suosnivačica ZENOS-a i WISE instituta. U okviru Akademije zadužena je za segment employer brandinga i prenošenje znanja o tome kako kreirati privlačan imidž poslodavca na tržištu rada.
+      aida_description: >
+        Aida Kurtalić – komunikacijski specijalista i profesor jezika, sa preko 10 godina iskustva u radu s ljudima i razvoju interpersonalnih vještina. U Akademiji vodi dio programa posvećen organizacijskoj kulturi, strateškoj komunikaciji i izgradnji povjerenja unutar timova.
+      lejla_description: >
+        Lejla Hot – saradnica za tehničku podršku i organizaciju online sesija. Zadužena je za nesmetano odvijanje edukacije kroz tehničku koordinaciju i logističku podršku polaznicima.
+      
+
+
+
+
+
   contact:
     title: KONTAKT
     form:
