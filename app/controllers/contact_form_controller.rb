@@ -17,13 +17,13 @@ class ContactFormController < ApplicationController
   end
 
   def send_academy_email
-  begin
-    ContactFormMailer.academy_registration(params).deliver_now!
-    flash[:notice] = t('talent_management.pricing.form.success')
-  rescue => e
-    flash[:alert] = t('talent_management.pricing.form.not_success')
-  end
+    begin
+      ContactFormMailer.academy_registration(params).deliver_now!
+      flash[:notice] = t('talent_management.pricing.form.success')
+    rescue StandardError
+      flash[:alert] = t('talent_management.pricing.form.not_success')
+    end
 
-  redirect_back fallback_location: root_path
-end
+    redirect_back fallback_location: root_path
+  end
 end

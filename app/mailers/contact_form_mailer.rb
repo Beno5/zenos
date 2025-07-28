@@ -28,12 +28,10 @@ class ContactFormMailer < ApplicationMailer
   end
 
   def academy_registration(params)
-    
     @type = params[:type]
     @title = params[:title]
     @data = params
-    
+
     mail(to: 'ema@zen-os.com', subject: "Nova prijava: #{@title}")
   end
-
 end

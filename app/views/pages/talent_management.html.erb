@@ -257,42 +257,101 @@
                 <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover ",  style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
               </div>
             </div>
-          
-          <p class="text-4 line-height-7 text-justify lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-            <%= t("talent_management.team.collaborators_title") %>
-          </p>
-          <div class="mt-4 pt-2">
-            <div class="row team-list sort-destination" data-sort-id="team">
-              <% [
+            <p class="text-4 line-height-7 text-justify lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+              <%= t("talent_management.team.collaborators_title") %>
+            </p>
+            <div class="mt-4 pt-2">
+              <div class="row team-list sort-destination" data-sort-id="team">
+                <% [
       { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
       { img: "aida_talent.jpg", name: "Aida Kurtalić", role: "Komunikacijski specijalista", description: t("talent_management.team.aida_description"), email: "aida@zen-os.com", linkedin: "https://www.linkedin.com/in/aidakurtalic/" },
       { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
     ].each do |person| %>
-                <div class="col-12 col-sm-6 col-lg-4 isotope-item">
-                  <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                    <span class="thumb-info-wrapper">
-<%= image_tag(person[:img], class: "img-fluid", alt: person[:name], style: "height: 300px; width: 100%; object-fit: cover; object-position: center;") %>
-
-                      <span class="thumb-info-title">
-                        <span class="thumb-info-inner"><%= person[:name] %></span>
-                        <span class="thumb-info-type"><%= person[:role] %></span>
+                  <div class="col-12 col-sm-6 col-lg-4 isotope-item">
+                    <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                      <span class="thumb-info-wrapper">
+                        <%= image_tag(person[:img], class: "img-fluid", alt: person[:name], style: "height: 300px; width: 100%; object-fit: cover; object-position: center;") %>
+                        <span class="thumb-info-title">
+                          <span class="thumb-info-inner"><%= person[:name] %></span>
+                          <span class="thumb-info-type"><%= person[:role] %></span>
+                        </span>
+                      </span>
+                      <span class="thumb-info-caption">
+                        <span class="thumb-info-caption-text"><%= person[:description] %></span>
+                        <span class="thumb-info-social-icons mb-4">
+                          <a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
+                          <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                        </span>
                       </span>
                     </span>
-                    <span class="thumb-info-caption">
-                      <span class="thumb-info-caption-text"><%= person[:description] %></span>
-                      <span class="thumb-info-social-icons mb-4">
-<a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
-                        <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              <% end %>
+                  </div>
+                <% end %>
+              </div>
             </div>
           </div>
-          </div>
-          <div id="section7">
-            <h2 class="font-weight-semi-bold text-7 mb-2">Sekcija 7 – Iskustva polaznika</h2>
+          <div id="section7" class="section ">
+            <h2 class="font-weight-semi-bold text-7 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+              <%= t("talent_management.testimonials.title") %>
+            </h2>
+            <div class="container section-height-3 bg-color-grey border-0 m-0 appear-animation" data-appear-animation="fadeIn">
+              <div class="row">
+                <div class="col">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                  <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-dark nav-style-2 mb-0"
+             data-plugin-options='{"items": 1, "margin": 100, "loop": false, "nav": true, "dots": false, "stagePadding": 100, "autoHeight": true}'>
+                    <!-- Anja Brnić -->
+                    <div>
+                      <div class="testimonial testimonial-style-2 mb-0">
+                        <div style="display: flex; justify-content: center;">
+                          <%= image_tag("anja_talent.jpg", class: "img-fluid rounded-circle", alt: "Anja Brnić", style: "height: 200px; width: auto;") %>
+                        </div>
+                        <blockquote>
+                          <p class="text-color-dark text-5 line-height-5 mb-0">
+                            <%= t("talent_management.testimonials.anja.text") %>
+                          </p>
+                        </blockquote>
+                        <div class="testimonial-author">
+                          <p>
+                            <strong class="font-weight-extra-bold text-2">
+                              - <%= t("talent_management.testimonials.anja.name") %>
+                            </strong>
+                          </p>
+                          <a href="https://www.linkedin.com/in/anja-brnic-38450660/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Elliot Zissman -->
+                    <div>
+                      <div class="testimonial testimonial-style-2 mb-0">
+                        <div style="display: flex; justify-content: center;">
+                          <%= image_tag("elliot_talent.jpeg", class: "img-fluid rounded-circle", alt: "Anja Brnić", style: "height: 200px; width: auto;") %>
+                        </div>
+                        <blockquote>
+                          <p class="text-color-dark text-5 line-height-5 mb-0">
+                            <%= t("talent_management.testimonials.elliot.text") %>
+                          </p>
+                        </blockquote>
+                        <div class="testimonial-author">
+                          <p>
+                            <strong class="font-weight-extra-bold text-2">
+                              - <%= t("talent_management.testimonials.elliot.name") %>
+                            </strong>
+                          </p>
+                          <a href="https://www.linkedin.com/in/elliotz/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
