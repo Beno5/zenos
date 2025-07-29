@@ -121,6 +121,17 @@ en:
         module_one: "Women’s Health & Nutrition"
         module_two: "Introducing Solid Foods for Babies"
         module_three: "Healthy Eating for Children & Adolescents"
+      talent_academy:
+        title: "Talent Management Academy"
+        description: "The Talent Management Academy provides individuals with the knowledge and tools necessary for strategic people management and employee development. The program includes eight modules:"
+        module_one: "Talent Management Process Model"
+        module_two: "Creating a Talent Management Strategy"
+        module_three: "Identification of Key Positions and Ideal Profiles"
+        module_four: "Talent Attraction and Employer Branding"
+        module_five: "Talent Selection and Recruitment"
+        module_six: "Onboarding and Organizational Culture"
+        module_seven: "Talent Development and Retention"
+        module_eight: "Succession Planning"
     corporate_training:
       title: Corporate Training Programs
       talent_management:
