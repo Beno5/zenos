@@ -23,21 +23,17 @@
     <%= render "shared/flashes" %>
     <%= yield %>
     <%= render "shared/footer" %>
-    	<%= javascript_include_tag 'plugins.min.js' %>
+    <%= javascript_include_tag '/assets/vendor/modernizr/modernizr.min' %>
 
-		<!-- Theme Base, Components and Settings -->
-		<%= javascript_include_tag 'theme.js' %>
-
-		<!-- Current Page Vendor and Views -->
-		<%= javascript_include_tag 'view.contact.js' %>
-
-		<!-- Theme Custom -->
-		<%= javascript_include_tag 'custom.js' %>
-
-		<!-- Theme Initialization Files -->
-		<%= javascript_include_tag 'theme.init.js' %>
-		<!-- Head Libs -->
-		<%= javascript_include_tag 'modernizr.min.js' %>
+    <%= javascript_include_tag '/assets/vendor/plugins/js/plugins.min' %>
+    <!-- Theme Base, Components and Settings -->
+    <script src="/assets/js/theme.js"></script>
+    <!-- Current Page Vendor and Views -->
+    <script src="/assets/js/views/view.contact.js"></script>
+    <!-- Theme Custom -->
+    <script src="/assets/js/custom.js"></script>
+    <!-- Theme Initialization Files -->
+    <script src="/assets/js/theme.init.js"></script>
     <script src="https://cdn.tiny.cloud/1/gtln41g4mw897k7woob4uo2h1zie4yos88yvzke0khwrxags/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
       tinymce.init({
