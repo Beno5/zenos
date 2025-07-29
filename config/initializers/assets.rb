@@ -5,7 +5,14 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w[application.*.js]
 Rails.application.config.assets.precompile += %w[application.*.css]
 Rails.application.config.assets.precompile += %w[*.woff2 *.ttf]
-Rails.application.config.assets.precompile += %w( plugins.min.js )
+Rails.application.config.assets.precompile += %w(
+  plugins.min.js
+  theme.js
+  view.contact.js
+  custom.js
+  theme.init.js
+  modernizr.min.js
+)
 
 
 # Add additional assets to the asset load path.
