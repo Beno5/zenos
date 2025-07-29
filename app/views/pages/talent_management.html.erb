@@ -20,8 +20,8 @@
               <ul class="nav nav-tabs nav-fill m-0">
                 <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section1"><%= t("talent_management.navbar.academy") %></a></li>
                 <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section2"><%= t("talent_management.navbar.why_us") %></a></li>
-                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section3"><%= t("talent_management.navbar.why_us") %></a></li>
-                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section4"><%= t("talent_management.navbar.modules") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section3"><%= t("talent_management.navbar.modules") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section4"><%= t("talent_management.navbar.audience") %></a></li>
                 <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section5"><%= t("talent_management.navbar.details_signup") %></a></li>
                 <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section6"><%= t("talent_management.navbar.team") %></a></li>
                 <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section7"><%= t("talent_management.navbar.testimonials") %></a></li>
@@ -34,7 +34,7 @@
     <div class="container py-4">
       <div class="row">
         <div class="col py-4">
-          <div id="section1">
+          <div id="section1" class="pt-4">
             <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.academy.title") %></h2>
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description1") %></p>
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description2") %></p>
@@ -59,7 +59,7 @@
               </div>
             </div>
           </div>
-          <div id="section2">
+          <div id="section2" class="pt-4">
             <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.why_us.title") %></h2>
             <div class="row">
               <div class="featured-boxes featured-boxes-style-2">
@@ -122,18 +122,18 @@
               </div>
             </div>
           </div>
-          <div id="section3">
+          <div id="section3" class="pt-4">
             <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.modules.title") %></h2>
             <div class="row">
               <div class="col">
-                <div class="process process-vertical py-4">
+                <div class="process process-vertical">
                   <% (1..8).each do |i| %>
                     <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + (i * 200) %>">
                       <div class="process-step-circle">
                         <strong class="process-step-circle-content"><%= i %></strong>
                       </div>
                       <div class="process-step-content">
-                        <p class="mb-1 text-4 font-weight-bold"><%= t("talent_management.modules.module#{i}.title") %></p>
+                        <p class="mb-1 text-4 line-height-7 text-justify font-weight-bold"><%= t("talent_management.modules.module#{i}.title") %></p>
                         <p class="mb-0 text-3-5 line-height-7 text-justify"><%= t("talent_management.modules.module#{i}.desc") %></p>
                       </div>
                     </div>
@@ -142,9 +142,9 @@
               </div>
             </div>
             <p class="mb-1 text-5 font-weight-bold"><%=  t("talent_management.modules.title2") %></p>
-            <p class="text-4 line-height-7 text-justify"><%=  t("talent_management.modules.description2") %></p>
+            <p class="text-4 line-height-7 text-justify mb-5"><%=  t("talent_management.modules.description2") %></p>
           </div>
-          <div id="section4">
+          <div id="section4" class="pt-4">
             <h2 class="font-weight-semi-bold text-8 mb-5"><%= t("talent_management.format.title") %></h2>
             <div class="row justify-content-center mb-5">
               <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
@@ -178,19 +178,19 @@
               <div id="custom-countdown" class="d-flex justify-content-center gap-5 flex-wrap mb-4">
                 <div class="text-center">
                   <span class="h1 font-weight-bold text-color-primary d-block" id="cd-days">00</span>
-                  <small class="text-muted text-uppercase">Dana</small>
+                  <small class="text-muted text-uppercase"><%= t("countdown.days") %></small>
                 </div>
                 <div class="text-center">
                   <span class="h1 font-weight-bold text-color-primary d-block" id="cd-hours">00</span>
-                  <small class="text-muted text-uppercase">Sati</small>
+                  <small class="text-muted text-uppercase"><%= t("countdown.hours") %></small>
                 </div>
                 <div class="text-center">
                   <span class="h1 font-weight-bold text-color-primary d-block" id="cd-minutes">00</span>
-                  <small class="text-muted text-uppercase">Minuta</small>
+                  <small class="text-muted text-uppercase"><%= t("countdown.minutes") %></small>
                 </div>
                 <div class="text-center">
                   <span class="h1 font-weight-bold text-color-primary d-block" id="cd-seconds">00</span>
-                  <small class="text-muted text-uppercase">Sekundi</small>
+                  <small class="text-muted text-uppercase"><%= t("countdown.seconds") %></small>
                 </div>
               </div>
               <a href="#section5" class="btn btn-primary btn-modern text-uppercase font-weight-bold px-5 py-3 mt-3">
@@ -198,15 +198,19 @@
               </a>
             </div>
           </div>
-          <div id="section5" >
+          <div id="section5" class="pt-4">
             <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.pricing.title") %></h2>
-            <div class="pricing-table row g-0 mb-4">
-              <% (1..4).each do |i| %>
+            <div class="pricing-table row g-0 mb-4 py-5">
+              <% plans = [1, 3, 2, 4] %> <!-- Custom order -->
+              <% plans.each do |i| %>
                 <% plan = :"talent_management.pricing.plan#{i}" %>
+                <% is_featured = [1, 2].include?(i) %>
                 <div class="col-md-6 col-lg-3">
-                  <div class="plan <%= 'plan-featured' if i == 3 %>">
-                    <div class="plan-header <%= 'bg-primary' if i == 3 %>">
-                      <h3><%= t("#{plan}.title") %></h3>
+                  <div class="plan <%= 'plan-featured' if is_featured %>">
+                    <div class="plan-header <%= 'bg-primary' if is_featured %>">
+                      <h3 style="<%= 'font-size: 85%; line-height: 1.2;' unless is_featured %>">
+                        <%= t("#{plan}.title") %>
+                      </h3>
                     </div>
                     <div class="plan-price">
                       <span class="price"><%= t("#{plan}.price_eur") %></span>
@@ -221,10 +225,10 @@
                     </div>
                     <div class="plan-footer">
                       <a href="#registrationModal"
-   class="btn <%= i == 3 ? 'btn-primary' : 'btn-dark btn-outline' %> btn-modern py-2 px-4"
-   data-bs-toggle="modal"
-   data-type="<%= t("#{plan}.type") %>"
-   data-title="<%= t("#{plan}.title") %>">
+               class="btn <%= is_featured ? 'btn-primary' : 'btn-dark btn-outline' %> btn-modern py-2 px-4"
+               data-bs-toggle="modal"
+               data-type="<%= t("#{plan}.type") %>"
+               data-title="<%= t("#{plan}.title") %>">
                         <%= t("#{plan}.button") %>
                       </a>
                     </div>
@@ -233,8 +237,8 @@
               <% end %>
             </div>
           </div>
-          <div id="section6">
-            <div class="row">
+          <div id="section6" class="pt-4">
+            <div class="row py-5">
               <div class="col-md-7 order-2 order-md-1">
                 <div class="overflow-hidden">
                   <h2 class="font-weight-semi-bold text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
@@ -246,18 +250,18 @@
                 </p>
                 <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                 <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                  <div class="col-lg-12">
-                    <a href="mailto:ema@zen-os.com" target="_blank" class="btn btn-modern btn-dark mt-3 px-4 py-2">Kontakt</a>
+                  <div class="col-lg-12 d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="mailto:ema@zen-os.com" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2"><%= t("contact.title") %></a>
                     <a href="https://www.linkedin.com/in/ema-burić-phd-b87280b9/" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?hl=hr&user=xoHy7QsAAAAJ" target="_blank" class="btn btn-modern btn-light mt-3 px-4 py-2">Google Scholar</a>
+                    <a href="https://scholar.google.com/citations?hl=hr&user=xoHy7QsAAAAJ" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2">Google Scholar</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover ",  style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
+                <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover rounded-3", style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
               </div>
             </div>
-            <p class="text-4 line-height-7 text-justify lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+            <p class="font-weight-semi-bold text-5 mb-4 mt-4 lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
               <%= t("talent_management.team.collaborators_title") %>
             </p>
             <div class="mt-4 pt-2">
@@ -272,12 +276,12 @@
                       <span class="thumb-info-wrapper">
                         <%= image_tag(person[:img], class: "img-fluid", alt: person[:name], style: "height: 300px; width: 100%; object-fit: cover; object-position: center;") %>
                         <span class="thumb-info-title">
-                          <span class="thumb-info-inner"><%= person[:name] %></span>
-                          <span class="thumb-info-type"><%= person[:role] %></span>
+                          <span class="text-4 line-height-7 text-justify d-block"><%= person[:name] %></span>
+                          <span class="text-3 line-height-7 text-justify d-block"><%= person[:role] %></span>
                         </span>
                       </span>
                       <span class="thumb-info-caption">
-                        <span class="thumb-info-caption-text"><%= person[:description] %></span>
+                        <p class="text-3-5 line-height-7 text-justify"><%= person[:description] %></span>
                         <span class="thumb-info-social-icons mb-4">
                           <a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
                           <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
@@ -289,7 +293,7 @@
               </div>
             </div>
           </div>
-          <div id="section7" class="section ">
+          <div id="section7" class="pt-4">
             <h2 class="font-weight-semi-bold text-7 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
               <%= t("talent_management.testimonials.title") %>
             </h2>
@@ -304,7 +308,7 @@
              data-plugin-options='{"items": 1, "margin": 100, "loop": false, "nav": true, "dots": false, "stagePadding": 100, "autoHeight": true}'>
                     <!-- Anja Brnić -->
                     <div>
-                      <div class="testimonial testimonial-style-2 mb-0">
+                      <div class="testimonial testimonial-style-2 mb-0 mt-2">
                         <div style="display: flex; justify-content: center;">
                           <%= image_tag("anja_talent.jpg", class: "img-fluid rounded-circle", alt: "Anja Brnić", style: "height: 200px; width: auto;") %>
                         </div>

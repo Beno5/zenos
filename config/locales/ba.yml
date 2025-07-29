@@ -30,6 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 ba:
+  countdown:
+      days: "Dana"
+      hours: "Sati"
+      minutes: "Minuta"
+      seconds: "Sekundi"
   home:
     text_banner_first: Vaš pouzdan partner u
     text_banner_second: podsticanju promjena!
@@ -46,13 +51,13 @@ ba:
       title: KO SMO MI?
       first_part: "U Zenosu vjerujemo da stvarna promjena počinje malim koracima, od običnih ljudi koji žele napraviti razliku. Naš cilj je stvoriti pozitivan utjecaj kroz praktične alate kao što su obuke, online kursevi i korisni edukativni materijali."
       second_part: Od 2019. godine, sarađujemo s organizacijama i pojedincima kako bismo radili na svjetlijoj budućnosti. Zajedno se fokusiramo na oblasti poput obrazovanja i ekonomskog osnaživanja, podržavajući zajednice u stvaranju stvarnog i trajnog napretka.
-      third_part: Strastveni smo u želji da napravimo razliku – i to činimo zajedno.
+      third_part: Strastveni smo u želji da napravimo razliku i to činimo zajedno.
     qoute: 
       text: Oni koji misle da u biznisu nema mjesta za emocije nikada nisu bili u prisustvu strastvenog lidera.
       signature: Zenos tim
   about:
     title: NAŠA PRIČA
-    description_part_one: "Zenos je nastao kao ideja između dvije prijateljice, Eme i Ene (da, naša imena su stvarno toliko slična!), koje su željele povezati kvalificiranu radnu snagu Bosne i Hercegovine s globalnim poslovnim prilikama. Iskoristivši internet i modernu tehnologiju, prepoznale smo mogućnost da talentirani ljudi mogu raditi bilo gdje u svijetu – sve dok posjeduju odgovarajuće vještine. Naša misija je usmjerena na ekonomsko osnaživanje, s posebnim naglaskom na žene i mlade osobe, kroz izgradnju znanja, vještina i kontakata potrebnih za uspjeh."
+    description_part_one: "Zenos je nastao kao ideja između dvije prijateljice, Eme i Ene (da, naša imena su stvarno toliko slična!), koje su željele povezati kvalificiranu radnu snagu Bosne i Hercegovine s globalnim poslovnim prilikama. Iskoristivši internet i modernu tehnologiju, prepoznale smo mogućnost da talentirani ljudi mogu raditi bilo gdje u svijetu sve dok posjeduju odgovarajuće vještine. Naša misija je usmjerena na ekonomsko osnaživanje, s posebnim naglaskom na žene i mlade osobe, kroz izgradnju znanja, vještina i kontakata potrebnih za uspjeh."
     description_part_two: Osim pojedincima, pomažemo i organizacijama kroz različite timske edukacije, pomoć pri kreiranju različitih strategija, orijentaciju ka društvenoj odgovornosti i intekulturalnoj inteligenciji.
     qoute:
       text_part_one: "Pokretanje biznisa s najboljom prijateljicom zahtijeva balans, a temelj uspjeha leži u autentičnosti prijateljstva. Sve se zasniva na iskrenosti, povjerenju i zajedničkoj viziji, te u vašoj bliskosti  koja omogućava da dajete istinite povratne informacije, čak i kad nisu lako prihvatljive."
@@ -79,7 +84,7 @@ ba:
     invididual_training:
       title: Trening programi za pojedince
       entrepreneurship:
-        title: "1. Poduzetništvo: Od ideje do biznisa"
+        title: "Poduzetništvo: Od ideje do biznisa"
         description: "Pružamo pojedincima znanje i alate potrebne za pokretanje vlastitog biznisa. Program se sastoji od šest modula:"
         module_one: Razvoj poslovne ideje i istraživanje tržišta
         module_two: Kreiranje poslovnog modela i strategije
@@ -88,7 +93,7 @@ ba:
         module_five: Prodaja i upravljanje odnosima s klijentima
         module_six: Pravne i operativne smjernice
       economic_empowerment:
-        title: "2. Ekonomsko osnaživanje"
+        title: "Ekonomsko osnaživanje"
         description: "Nudimo obuke koje osnažuju pojedince za tržište rada, i to su:"
         module_one: Obuka za virtuelne asistente
         module_two: Kreiranje CV-a i priprema za intervju
@@ -97,29 +102,40 @@ ba:
         module_five: Pregovaranje i rješavanje konflikata
         module_six: Osnovna finansijska pismenost
       marketing_communication:
-        title: "3. Marketing i komunikacija"
+        title: "Marketing i komunikacija"
         description: "Naši trening programi omogućavaju pojedincima da steknu ključne marketinške vještine, uključujući:"
         module_one: Upravljanje društvenim mrežama
         module_two: Osnove grafičkog dizajna
         module_three: Copywriting i content marketing
         module_four: Strategije digitalnog oglašavanja
       intercultural_communication:
-        title: "4. Interkulturalna komunikacija"
+        title: "Interkulturalna komunikacija"
         description: "Pripremamo pojedince za rad u globalnom okruženju kroz:"
         module_one: Priprema za intervju u internacionalnom preduzeću
         module_two: Poslovna komunikacija između različitih kultura
         module_three: Efektivna saradnja u međunarodnim timovima
         module_four: Kulturna inteligencija za rad na daljinu
       healthy_nutrition:
-        title: "5. Zdrava ishrana"
+        title: "Zdrava ishrana"
         description: "Pružamo mentorstvo i grupne sesije prilagođene specifičnim potrebama, kao što su:"
         module_one: Zdravlje i ishrana žena
         module_two: Uvođenje čvrste hrane bebama
         module_three: Zdrava ishrana djece i adolescenata
+      talent_academy:
+        title: "Akademija za Talent menadžment"
+        description: "Akademija za Talent Menadžment pruža pojedincima znanja i alate potrebne za strateško upravljanje ljudima i razvojem zaposlenih. Program obuhvata osam modula:"
+        module_one: "Procesni model talent menadžmenta"
+        module_two: "Kreiranje strategije talent menadžmenta"
+        module_three: "Identifikacija ključnih pozicija i idealnih profila"
+        module_four: "Privlačenje talenata i employer branding"
+        module_five: "Selekcija i zapošljavanje talenata"
+        module_six: "Onboarding i organizacijska kultura"
+        module_seven: "Razvoj i zadržavanje talenata"
+        module_eight: "Planiranje sukcesije"
     corporate_training:
       title: Programi obuke za preduzeća
       talent_management:
-        title: "1. Talent menadžment"
+        title: "Talent menadžment"
         description: "Naša obuka za talent menadžment pomaže preduzećima da uspostave struktuiran pristup upravljanju ključnim zaposlenima. Proces uključuje:"
         module_one: Razvoj strategije talent menadžmenta
         module_two: Identifikaciju ključnih pozicija
@@ -131,31 +147,32 @@ ba:
         module_eight: Razvoj talenata
         module_nine: Planiranje sukcesije
       marketing_strategy:
-        title: "2. Marketing strategija i implementacija"
+        title: "Marketing strategija i implementacija"
         description: "Pomažemo preduzećima u razvoju marketing strategija i obučavamo njihove interne timove za implementaciju, uključujući:"
         module_one: Istraživanje tržišta i pozicioniranje preduzeća
         module_two: Digitalni marketing i izgradnja brenda
         module_three: Strategije za pribavljanje i zadržavanje klijenata
       cultural_intelligence:
-        title: "3. Kulturna inteligencija i raznolikost"
+        title: "Kulturna inteligencija i raznolikost"
         description: "Obučavamo organizacije kako da iskoriste raznolikost za rast kroz:"
         module_one: Rješavanje konflikata u međunarodnim timovima
         module_two: Ekspanziju na globalna tržišta
         module_three: Strategije za inkluzivna radna okruženja
         module_four: Efektivnu komunikaciju u multikulturalnim timovima
       healthy_nutrition:
-        title: "4. Zdrava ishrana za preduzeća"
+        title: "Zdrava ishrana za preduzeća"
         description: "Specijalizirali smo programe ishrane za:"
         module_one: Vrtiće i škole (planiranje balansiranih obroka za djecu)
         module_two: Fitnes centre i sportske organizacije (ishrana za ostvarivanje performanse i planiranje obroka)
         module_three: Korporativne wellness programe (zdravlje zaposlenih i produktivnost)
   talent_management:
+    more: Saznaj više
     navbar:
       academy: "Akademija"
       why_us: "Zašto odabrati?"
       modules: "Moduli"
-      audience: "Za koga je?"
-      details_signup: "Detalji & Prijava"
+      audience: "Format i Detalji"
+      details_signup: "Cijena & Prijava"
       team: "Tim"
       testimonials: "Iskustva"
     academy:
@@ -354,12 +371,6 @@ ba:
         name: "Elliot Zissman, vlasnik malog IT biznisa Phase2Growth"
         text: >
           "Kao vlasnik male IT firme, sve što se tiče zaposlenih radim sam jer nemam HR odjel niti saradnike koji se bave ljudima. Do sada nisam imao ni jasnu strategiju kako da razvijam ljude i zadržavam ih, naročito one koji su mi ključni. Akademija za Talent Menadžment mi je pomogla da naučim kako sistemski pristupiti tim pitanjima. Od kada primjenjujem ono što sam naučio, primijetio sam veliku promjenu: odnosi u timu su bolji, ljudi su sretniji i zadovoljniji, a fluktuacija zaposlenih se značajno smanjila. Za mene je ovo bilo jedno od najkorisnijih ulaganja u razvoj firme."
-
-
-
-
-
-
   contact:
     title: KONTAKT
     form:

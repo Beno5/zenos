@@ -30,6 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  countdown:
+    days: "Days"
+    hours: "Hours"
+    minutes: "Minutes"
+    seconds: "Seconds"
   home:
     text_banner_first: Your reliable partner
     text_banner_second: in driving the change!
@@ -46,21 +51,21 @@ en:
       title: WHO WE ARE?
       first_part: "At Zenos, we believe that real change happens one small step at a time, starting with ordinary people who want to make a difference. We’re all about creating positive impact through practical tools like training, online courses, and useful educational materials."
       second_part: Since 2019, we’ve been teaming up with organizations and individuals to work toward a brighter future. Together, we focus on areas like education and economic empowerment, aiming to support communities with real, lasting progress.
-      third_part: We’re passionate about making a difference—and doing it together.
+      third_part: We’re passionate about making a difference and doing it together.
     qoute: 
       text: Those who think there is no place for emotions in business have never been in the presence of a passionate leader.
       signature: Co-founders of Zenos
   about:
     title: ABOUT
-    description_part_one: Zenos started as an idea between two friends, Ema and Ena (yes, our names really are that similar!), who wanted to connect Bosnia and Herzegovina’s skilled workforce with global opportunities. By leveraging the internet and modern technology, we saw the potential for talented people to work anywhere in the world—as long as they have the right skills. Our mission focuses on economic empowerment, with a special emphasis on women and young people, through building the knowledge, skills, and networks needed for success.
+    description_part_one: Zenos started as an idea between two friends, Ema and Ena (yes, our names really are that similar!), who wanted to connect Bosnia and Herzegovina’s skilled workforce with global opportunities. By leveraging the internet and modern technology, we saw the potential for talented people to work anywhere in the world as long as they have the right skills. Our mission focuses on economic empowerment, with a special emphasis on women and young people, through building the knowledge, skills, and networks needed for success.
     description_part_two: In addition to individuals, we also assist organizations through various team training sessions, support in developing various strategies, and fostering social responsibility and intercultural intelligence. 
     qoute:
-      text_part_one: "Starting a business with your best friend is all about balance, with authenticity at the heart of it. It takes honesty, trust, and a shared vision to make it work—especially when you’re comfortable enough to give real feedback, even when it’s hard to hear."
+      text_part_one: "Starting a business with your best friend is all about balance, with authenticity at the heart of it. It takes honesty, trust, and a shared vision to make it work especially when you’re comfortable enough to give real feedback, even when it’s hard to hear."
       text_part_two: As challenging as it can be, building something together can turn out to be one of the most rewarding adventures of your life.
       signature: Co-founders of Zenos
     different: 
       title: WE ARE DIFFERENT!
-      text_part_one: "At Zenos, our team is made up of young, dynamic individuals with diverse skills, backgrounds, and expertise—ranging from economics and law to food engineering, IT, graphic design and foreign languages. We may come from different fields, but we share a common goal: to spread knowledge and make a lasting impact in our community and beyond."
+      text_part_one: "At Zenos, our team is made up of young, dynamic individuals with diverse skills, backgrounds, and expertise ranging from economics and law to food engineering, IT, graphic design and foreign languages. We may come from different fields, but we share a common goal: to spread knowledge and make a lasting impact in our community and beyond."
       text_part_two: "Our strength lies in our diversity, and together, we’re committed to driving change and empowering others."
     testimonial_title: WHAT OTHERS SAY ABOUT US
   projects:
@@ -150,12 +155,13 @@ en:
         module_two: "Fitness Centers & Sports Organizations (Performance Nutrition & Meal Plans)"
         module_three: "Corporate Wellness Programs (Employee Health & Productivity)"
   talent_management:
+    more: Learn more
     navbar:
       academy: "Academy"
-      why_us: "Why choose us"
+      why_us: "Why Us?"
       modules: "Modules"
-      audience: "Why choose us?"
-      details_signup: "Details & Signup"
+      audience: "Format & Details"
+      details_signup: "Pricing & Registration"
       team: "Team"
       testimonials: "Testimonials"
     academy:
@@ -328,6 +334,40 @@ en:
           message: "Message"
       sucess: "Thank you for your registration! We will contact you soon with further details."
       not_success: "There was an error with your registration. Please try again later."
+    team:
+      title: "Talent Management Academy Team"
+      content: >
+        <strong>Academy Lead: Dr. Ema Burić</strong><br><br>
+        Dr. Ema Burić is an assistant professor at the Faculty of Economics, University of Zenica, and an expert in strategic human resource management and talent management.<br><br>
+        She earned her PhD at the Faculty of Economics, University of Tuzla, with a dissertation titled:<br>
+        <strong>"The Role of Talent Management in Achieving Competitive Advantage of Service Companies in Bosnia and Herzegovina."</strong><br>
+        During her doctoral research, she developed and innovated a <strong>nine-phase process model of talent management</strong>, which has been tested and applied in practice.<br><br>
+        Dr. Burić is the author of numerous academic and professional papers in the fields of talent management, organizational development, and human resource management. She has conducted multiple case studies and research projects focused on the practical application of theoretical knowledge in real business environments.<br><br>
+        In addition to her academic career, Dr. Ema Burić is the <strong>founder and director of the ZENOS Marketing and Education Agency Ltd. Zenica</strong>, and <strong>co-founder of the Women’s Institute for Entrepreneurship and Skills (WISE) in Vienna</strong>.<br><br>
+        By combining scientific knowledge and practical application, Dr. Burić provides Academy participants with immediately applicable skills in real business contexts.
+
+      collaborators_title: "Academy Collaborators"
+
+      ena_description: >
+        Ena Fejzagić Livančić – marketing specialist with over 10 years of experience in the private sector, co-founder of ZENOS and the WISE institute. Within the Academy, she is responsible for the employer branding segment and for transferring knowledge on how to create an attractive employer image on the labor market.
+
+      aida_description: >
+        Aida Kurtalić – communication specialist and language professor, with over 10 years of experience working with people and developing interpersonal skills. At the Academy, she leads the part of the program dedicated to organizational culture, strategic communication, and building trust within teams.
+
+      lejla_description: >
+        Lejla Hot – collaborator for technical support and online session coordination. She ensures smooth delivery of the educational program through technical coordination and logistical support for participants.
+
+    testimonials:
+      title: "Participant Experiences"
+      anja:
+        name: "Anja Brnić, Senior Talent Partner | Tech Recruitment"
+        text: >
+          "I work as a Senior Talent Partner in the IT industry and thought I already had a solid understanding of people management. However, the Talent Management Academy showed me how crucial it is to have a holistic, strategic approach to talent, especially for key roles and long-term development. Everything I learned can be immediately applied in practice – from employer branding to succession planning. The program is of exceptional quality, tailored to real-world challenges we face daily in the industry. I would recommend this training to every HR professional."
+
+      elliot:
+        name: "Elliot Zissman, owner of a small IT business Phase2Growth"
+        text: >
+          "As the owner of a small IT company, I handle everything related to employees myself since I don’t have an HR department or associates focused on people. Until now, I lacked a clear strategy for developing and retaining key talent. The Talent Management Academy helped me learn how to approach these issues systematically. Since applying what I learned, I’ve seen a significant change: team relationships have improved, people are happier and more satisfied, and employee turnover has decreased significantly. For me, this has been one of the most valuable investments in my business development."  
   contact:
     title: CONTACT
     form: 
