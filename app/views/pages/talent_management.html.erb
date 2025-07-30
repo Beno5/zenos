@@ -41,19 +41,19 @@
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description3") %></p>
             <h2 class="font-weight-semi-bold text-8 mb-5 mt-5 text-center"><%= t("talent_management.academy.title2") %></h2>
             <div class="row mt-5 mb-5 text-center">
-              <div class="col-lg-3 col-md-6 mb-4 test" data-test="fadeInUpShorter" data-test-delay="200">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.hr.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.hr.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4 test" data-test="fadeInUpShorter" data-test-delay="300">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.managers.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.managers.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4 test" data-test="fadeInUpShorter" data-test-delay="400">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.owners.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.owners.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4 test" data-test="fadeInUpShorter" data-test-delay="500">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.individuals.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.individuals.desc") %></p>
               </div>
@@ -66,7 +66,7 @@
                 <!-- Red 1: 4 boxa -->
                 <div class="row g-5">
                   <% [1, 2, 3, 4].each do |i| %>
-                    <div class="col-md-6 col-lg-3 test" data-test="fadeInUpShorter" data-test-delay="<%= 300 + i * 100 %>">
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + i * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -80,7 +80,7 @@
                 <!-- Red 2: 4 boxa -->
                 <div class="row g-5">
                   <% [5, 6, 7, 8].each_with_index do |i, index| %>
-                    <div class="col-md-6 col-lg-3 test" data-test="fadeInUpShorter" data-test-delay="<%= 700 + index * 100 %>">
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + index * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -100,7 +100,7 @@
               <div class="col">
                 <div class="process process-vertical">
                   <% (1..8).each do |i| %>
-                    <div class="process-step test" data-test="fadeInUpShorter" data-test-delay="<%= 200 + (i * 200) %>">
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 100 + (i * 100) %>">
                       <div class="process-step-circle">
                         <strong class="process-step-circle-content"><%= i %></strong>
                       </div>
@@ -111,7 +111,7 @@
                     </div>
                   <% end %>
                   <!-- Završni ispit -->
-                  <div class="process-step test" data-test="fadeInUpShorter" data-test-delay="<%= 200 + (9 * 200) %>">
+                  <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 100 + (9 * 100) %>">
                     <div class="process-step-circle">
                       <strong class="process-step-circle-content">X</strong>
                     </div>
@@ -127,27 +127,27 @@
           <div id="section4" class="pt-4">
             <h2 class="font-weight-semi-bold text-center text-8 mb-5"><%= t("talent_management.format.title") %></h2>
             <div class="row justify-content-center mb-5">
-              <div class="col-lg-2 col-md-4 text-center mb-4 test" data-test="fadeInUpShorter" data-test-delay="100">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="50">
                 <i class="icons icon-clock text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.duration_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.duration") %></p>
               </div>
-              <div class="col-lg-2 col-md-4 text-center mb-4 test" data-test="fadeInUpShorter" data-test-delay="200">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <i class="icons icon-screen-desktop text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.format_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.format") %></p>
               </div>
-              <div class="col-lg-2 col-md-4 text-center mb-4 test" data-test="fadeInUpShorter" data-test-delay="300">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
                 <i class="icons icon-bubbles text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.support_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.support") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 text-center mb-4 test" data-test="fadeInUpShorter" data-test-delay="400">
+              <div class="col-lg-3 col-md-6 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                 <i class="icons icon-list text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.requirements_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.requirements") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 text-center mb-4 test" data-test="fadeInUpShorter" data-test-delay="500">
+              <div class="col-lg-3 col-md-6 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
                 <i class="icons icon-badge text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.certificate_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.certificate") %></p>
@@ -194,18 +194,18 @@
             </div>
           </div>
           <div id="section6" class="pt-4">
-            <h2 class="font-weight-semi-bold text-center text-8 mb-4 test" data-test="maskUp" data-test-delay="300">
+            <h2 class="font-weight-semi-bold text-center text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
               <%= t("talent_management.team.title") %>
             </h2>
             <div class="row py-5">
               <div class="col-md-7 order-2 order-md-1">
                 <div class="overflow-hidden">
                 </div>
-                <p class="text-4 line-height-7 text-justify test" data-test="fadeInUpShorter" data-test-delay="600">
+                <p class="text-4 line-height-7 text-justify appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
                   <%= raw t("talent_management.team.content") %>
                 </p>
-                <hr class="solid my-4 test" data-test="fadeInUpShorter" data-test-delay="800">
-                <div class="row align-items-center test" data-test="fadeInUpShorter" data-test-delay="1000">
+                <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                   <div class="col-lg-12 d-flex justify-content-center gap-3 flex-wrap">
                     <a href="mailto:ema@zen-os.com" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2"><%= t("contact.title") %></a>
                     <a href="https://www.linkedin.com/in/ema-burić-phd-b87280b9/" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2">LinkedIn</a>
@@ -213,11 +213,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 test" data-test="fadeInRightShorter">
+              <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter">
                 <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover rounded-3", style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
               </div>
             </div>
-            <p class="font-weight-semi-bold text-5 mb-4 mt-4 lead test" data-test="fadeInUpShorter" data-test-delay="300">
+            <p class="font-weight-semi-bold text-5 mb-4 mt-4 lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
               <%= t("talent_management.team.collaborators_title") %>
             </p>
             <div class="mt-4 pt-2">
@@ -250,10 +250,10 @@
             </div>
           </div>
           <div id="section7" class="pt-4">
-            <h2 class="font-weight-semi-bold text-7 mb-5 text-center test" data-test="fadeInUpShorter" data-test-delay="100">
+            <h2 class="font-weight-semi-bold text-7 mb-5 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
               <%= t("talent_management.testimonials.title") %>
             </h2>
-            <div class="row justify-content-center test" data-test="fadeInUpShorterPlus" data-test-delay="200">
+            <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">
               <div class="col-lg-10">
                 <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-dark custom-dots-style-1 mb-0" data-plugin-options='{"items": 1, "loop": false}'>
                   <!-- Anja testimonial -->
