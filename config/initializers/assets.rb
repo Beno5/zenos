@@ -14,6 +14,10 @@ Rails.application.config.assets.precompile += %w(
   modernizr.min.js
 )
 
+Rails.application.config.assets.precompile += %w( vendor/simple-line-icons/css/simple-line-icons.css )
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "stylesheets", "vendor", "simple-line-icons", "fonts")
+Rails.application.config.assets.precompile += %w( *.eot *.woff *.woff2 *.ttf *.svg )
+
 
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
