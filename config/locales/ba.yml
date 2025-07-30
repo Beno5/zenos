@@ -168,7 +168,7 @@ ba:
   talent_management:
     more: Saznaj više
     navbar:
-      academy: "Akademija"
+      academy: "O Akademiji"
       why_us: "Zašto odabrati?"
       modules: "Moduli"
       audience: "Format i Detalji"
@@ -186,17 +186,17 @@ ba:
       description3: Talent menadžment nije isto što i klasično upravljanje ljudskim resursima. Dok se HR često bavi operativnim zadacima – administracijom,
         evidencijama i osnovnim procesima zapošljavanja – talent menadžment je strateški proces koji postavlja ključne ljude u centar dugoročnog poslovnog razvoja.
       hr:
-        title: "HR stručnjacima i asistentima"
+        title: "HR stručnjacima"
         desc: "koji žele proširiti svoje kompetencije i specijalizovati se za oblast talent menadžmenta"
       managers:
-        title: "Menadžerima timova i rukovodiocima"
+        title: "Rukovodiocima timova"
         desc: "koji svakodnevno preuzimaju odgovornost za razvoj svojih zaposlenih"
       owners:
-        title: "Vlasnicima malih i srednjih preduzeća"
+        title: "Vlasnicima preduzeća"
         desc: "koji nemaju formalan HR odjel, pa strateško upravljanje ljudima postaje njihov zadatak"
       individuals:
-        title: "Zainteresovanim pojedincima"
-        desc: "koji planiraju karijeru u oblasti ljudskih resursa, employer brandinga ili organizacionog razvoja"  
+        title: "Budućim profesionalcima"
+        desc: "koji planiraju karijeru u oblasti ljudskih resursa, employer brandinga ili organizacionog razvoja" 
     why_us:
       title: Zašto odabrati Akademiju za Talent menadžment? 
       item1:
@@ -224,19 +224,11 @@ ba:
         title: "Regionalni Kontekst"
         desc: "Sadržaj Akademije razvijen je uzimajući u obzir specifičnosti poslovanja u Bosni i Hercegovini, Hrvatskoj, Srbiji i Crnoj Gori."
       item7:
-        icon: "icon-people icons text-color-primary bg-color-grey"
-        title: "Ekskluzivan Pristup"
-        desc: "Broj učesnika po grupi je ograničen, što omogućava individualiziraniji pristup i veću interakciju tokom trajanja programa."
-      item8:
-        icon: "icon-ban icons text-color-light bg-color-primary"
-        title: "Bez Preduslova"
-        desc: "Akademija je prilagođena i onima koji nemaju formalno HR obrazovanje ili iskustvo."
-      item9:
         icon: "icon-camrecorder icons text-color-primary bg-color-grey"
         title: "Prilagodljivo Učenje"
         desc: "Sve sesije se održavaju online i imaju snimak 72 sata nakon održavanja, što omogućava učestvovanje iz bilo kojeg grada ili države, i nadoknadu propuštene sesije."
-      item10:
-        icon: "icon-users icons text-color-light bg-color-primary"
+      item8:
+        icon: "fas fa-graduation-cap text-color-light bg-color-primary"
         title: "Zajednica Znanja"
         desc: "Učesnici postaju dio zatvorene grupe, gdje mogu nastaviti razmjenu iskustava tokom i nakon završetka programa."
     modules:
@@ -265,20 +257,20 @@ ba:
       module8:
         title: "Modul 8: Planiranje sukcesije"
         desc: "Polaznici se upoznaju sa metodama identifikacije nasljednika za ključne pozicije i razvojem sukcesionih planova koji omogućavaju stabilnost i dugoročnu održivost poslovanja. Obrađuju se alati za praćenje potencijala i planiranje razvoja budućih lidera."
-      title2: "Završni ispit: Teorijsko i praktično provjeravanje znanja"
+      title2: "Završni ispit: Teorijska i praktična provjera znanja"
       description2: "Akademija se završava kombinovanim ispitom: teorijskim online testom i pregledom projekta koji je razvijan tokom svih modula. Svaki polaznik dobija povratnu informaciju na svoju Strategiju talent menadžmenta izrađenu tokom trajanja programa, čime se pokazuje povezivanje teorije i prakse."
     format:
-      title: "Format i detalji kursa"
+      title: "Detalji programa Akademije"
       duration_title: "Trajanje"
-      duration: "2 mjeseca"
+      duration: "Program traje ukupno 2 mjeseca"
       format_title: "Format"
-      format: "Online sesije (Zoom), 1x sedmično, 90–120 minuta"
+      format: "Online Zoom sesije, 1x sedmično, 90–120 min"
       support_title: "Podrška"
-      support: "WhatsApp grupa za Q&A i networking"
+      support: "WhatsApp grupa za pitanja i umrežavanje"
       requirements_title: "Radne obaveze"
-      requirements: "Prisustvo na sesijama ili pregled modula, rad na strategiji talent menadžmenta i završni ispit"
+      requirements: "Prisustvo, izrada strategije i završni ispit"
       certificate_title: "Certifikat"
-      certificate: "Digitalna i štampana verzija sa serijskim brojem, QR kodom i zaštićenim TM9 žigom"
+      certificate: "Digitalna i štampana verzija s QR kodom"
       countdown_title: "Rana prijava traje do 31.08.2025."
       cta_button: "Prijavi se"
     pricing:

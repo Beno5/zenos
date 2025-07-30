@@ -35,85 +35,57 @@
       <div class="row">
         <div class="col py-4">
           <div id="section1" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.academy.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8 mb-4 text-center"><%= t("talent_management.academy.title") %></h2>
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description1") %></p>
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description2") %></p>
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description3") %></p>
-            <p class="font-weight-semi-bold text-5 mb-4"><%= t("talent_management.academy.title2") %></p>
-            <div class="row mt-3 mb-5">
-              <div class="col-md-6 mb-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
-                <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.academy.hr.title") %></p>
-                <p class="text-3-5 line-height-7 text-justify"><%= t("talent_management.academy.hr.desc") %></p>
+            <h2 class="font-weight-semi-bold text-8 mb-5 mt-5 text-center"><%= t("talent_management.academy.title2") %></h2>
+            <div class="row mt-5 mb-5 text-center">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.hr.title") %></p>
+                <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.hr.desc") %></p>
               </div>
-              <div class="col-md-6 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.academy.managers.title") %></p>
-                <p class="text-3-5 line-height-7 text-justify"><%= t("talent_management.academy.managers.desc") %></p>
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.managers.title") %></p>
+                <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.managers.desc") %></p>
               </div>
-              <div class="col-md-6 mb-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">
-                <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.academy.owners.title") %></p>
-                <p class="text-3-5 line-height-7 text-justify"><%= t("talent_management.academy.owners.desc") %></p>
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.owners.title") %></p>
+                <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.owners.desc") %></p>
               </div>
-              <div class="col-md-6 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-                <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.academy.individuals.title") %></p>
-                <p class="text-3-5 line-height-7 text-justify"><%= t("talent_management.academy.individuals.desc") %></p>
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.individuals.title") %></p>
+                <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.individuals.desc") %></p>
               </div>
             </div>
           </div>
           <div id="section2" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.why_us.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8 mb-4 text-center"><%= t("talent_management.why_us.title") %></h2>
             <div class="row">
               <div class="featured-boxes featured-boxes-style-2">
-                <!-- Red 1: 3 boxa -->
-                <div class="row">
-                  <% (1..3).each do |i| %>
-                    <div class="col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 300 + i * 100 %>">
-                      <div class="featured-box featured-box-effect-4">
-                        <div class="box-content">
+                <!-- Red 1: 4 boxa -->
+                <div class="row g-5">
+                  <% [1, 2, 3, 4].each do |i| %>
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 300 + i * 100 %>">
+                      <div class="featured-box featured-box-effect-4 h-100">
+                        <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
                           <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.why_us.item#{i}.title") %></p>
-                          <p class="px-3 text-3-5 line-height-7 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
+                          <p class="text-4 line-height-6 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
                         </div>
                       </div>
                     </div>
                   <% end %>
                 </div>
-                <!-- Red 2: 2 boxa -->
-                <div class="row justify-content-center">
-                  <% (4..5).each do |i| %>
-                    <div class="col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 300 + i * 100 %>">
-                      <div class="featured-box featured-box-effect-4">
-                        <div class="box-content">
+                <!-- Red 2: 4 boxa -->
+                <div class="row g-5">
+                  <% [5, 6, 7, 8].each_with_index do |i, index| %>
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 700 + index * 100 %>">
+                      <div class="featured-box featured-box-effect-4 h-100">
+                        <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
                           <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.why_us.item#{i}.title") %></p>
-                          <p class="px-3 text-3-5 line-height-7 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
-                        </div>
-                      </div>
-                    </div>
-                  <% end %>
-                </div>
-                <!-- Red 3: 3 boxa -->
-                <div class="row">
-                  <% (6..8).each do |i| %>
-                    <div class="col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 300 + i * 100 %>">
-                      <div class="featured-box featured-box-effect-4">
-                        <div class="box-content">
-                          <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
-                          <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.why_us.item#{i}.title") %></p>
-                          <p class="px-3 text-3-5 line-height-7 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
-                        </div>
-                      </div>
-                    </div>
-                  <% end %>
-                </div>
-                <!-- Red 4: 2 boxa -->
-                <div class="row justify-content-center">
-                  <% (9..10).each do |i| %>
-                    <div class="col-md-6 col-lg-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 300 + i * 100 %>">
-                      <div class="featured-box featured-box-effect-4">
-                        <div class="box-content">
-                          <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
-                          <p class="font-weight-bold text-4 mb-2"><%= t("talent_management.why_us.item#{i}.title") %></p>
-                          <p class="px-3 text-3-5 line-height-7 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
+                          <p class="text-4 line-height-6 text-justify"><%= t("talent_management.why_us.item#{i}.desc") %></p>
                         </div>
                       </div>
                     </div>
@@ -123,7 +95,7 @@
             </div>
           </div>
           <div id="section3" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.modules.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8  text-center mb-4"><%= t("talent_management.modules.title") %></h2>
             <div class="row">
               <div class="col">
                 <div class="process process-vertical">
@@ -133,19 +105,27 @@
                         <strong class="process-step-circle-content"><%= i %></strong>
                       </div>
                       <div class="process-step-content">
-                        <p class="mb-1 text-4 line-height-7 text-justify font-weight-bold"><%= t("talent_management.modules.module#{i}.title") %></p>
-                        <p class="mb-0 text-3-5 line-height-7 text-justify"><%= t("talent_management.modules.module#{i}.desc") %></p>
+                        <p class="mb-1 text-4 line-height-7 text-start font-weight-bold"><%= t("talent_management.modules.module#{i}.title") %></p>
+                        <p class="mb-0 text-3-5 line-height-7 text-start"><%= t("talent_management.modules.module#{i}.desc") %></p>
                       </div>
                     </div>
                   <% end %>
+                  <!-- Završni ispit -->
+                  <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + (9 * 200) %>">
+                    <div class="process-step-circle">
+                      <strong class="process-step-circle-content">X</strong>
+                    </div>
+                    <div class="process-step-content">
+                      <p class="mb-1 text-4 line-height-7 text-start font-weight-bold"><%= t("talent_management.modules.title2") %></p>
+                      <p class="mb-0 text-3-5 line-height-7 text-start"><%= t("talent_management.modules.description2") %></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="mb-1 text-5 font-weight-bold"><%=  t("talent_management.modules.title2") %></p>
-            <p class="text-4 line-height-7 text-justify mb-5"><%=  t("talent_management.modules.description2") %></p>
           </div>
           <div id="section4" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-5"><%= t("talent_management.format.title") %></h2>
+            <h2 class="font-weight-semi-bold text-center text-8 mb-5"><%= t("talent_management.format.title") %></h2>
             <div class="row justify-content-center mb-5">
               <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <i class="icons icon-clock text-color-primary mb-3" style="font-size: 40px;"></i>
@@ -173,33 +153,9 @@
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.certificate") %></p>
               </div>
             </div>
-            <div class="text-center mt-5 mb-4">
-              <h4 class="font-weight-bold text-5 mb-3"><%= t("talent_management.format.countdown_title") %></h4>
-              <div id="custom-countdown" class="d-flex justify-content-center gap-5 flex-wrap mb-4">
-                <div class="text-center">
-                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-days">00</span>
-                  <small class="text-muted text-uppercase"><%= t("countdown.days") %></small>
-                </div>
-                <div class="text-center">
-                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-hours">00</span>
-                  <small class="text-muted text-uppercase"><%= t("countdown.hours") %></small>
-                </div>
-                <div class="text-center">
-                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-minutes">00</span>
-                  <small class="text-muted text-uppercase"><%= t("countdown.minutes") %></small>
-                </div>
-                <div class="text-center">
-                  <span class="h1 font-weight-bold text-color-primary d-block" id="cd-seconds">00</span>
-                  <small class="text-muted text-uppercase"><%= t("countdown.seconds") %></small>
-                </div>
-              </div>
-              <a href="#section5" class="btn btn-primary btn-modern text-uppercase font-weight-bold px-5 py-3 mt-3">
-                <%= t("talent_management.format.cta_button") %>
-              </a>
-            </div>
           </div>
           <div id="section5" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-4"><%= t("talent_management.pricing.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8 text-center mb-4"><%= t("talent_management.pricing.title") %></h2>
             <div class="pricing-table row g-0 mb-4 py-5">
               <% plans = [1, 3, 2, 4] %> <!-- Custom order -->
               <% plans.each do |i| %>
@@ -238,12 +194,12 @@
             </div>
           </div>
           <div id="section6" class="pt-4">
+            <h2 class="font-weight-semi-bold text-center text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
+              <%= t("talent_management.team.title") %>
+            </h2>
             <div class="row py-5">
               <div class="col-md-7 order-2 order-md-1">
                 <div class="overflow-hidden">
-                  <h2 class="font-weight-semi-bold text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
-                    <%= t("talent_management.team.title") %>
-                  </h2>
                 </div>
                 <p class="text-4 line-height-7 text-justify appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
                   <%= raw t("talent_management.team.content") %>
@@ -294,64 +250,65 @@
             </div>
           </div>
           <div id="section7" class="pt-4">
-            <h2 class="font-weight-semi-bold text-7 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
+            <h2 class="font-weight-semi-bold text-7 mb-5 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
               <%= t("talent_management.testimonials.title") %>
             </h2>
-            <div class="container section-height-3 bg-color-grey border-0 m-0 appear-animation" data-appear-animation="fadeIn">
-              <div class="row">
-                <div class="col">
+            <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">
+              <div class="col-lg-10">
+                <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-dark custom-dots-style-1 mb-0" data-plugin-options='{"items": 1, "loop": false}'>
+                  <!-- Anja testimonial -->
+                  <div>
+                    <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
+                      <blockquote>
+                        <p class="text-color-dark text-4-5 line-height-5 mb-0">
+                          <%= t("talent_management.testimonials.anja.text") %>
+                        </p>
+                      </blockquote>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
+                        <div class="text-center text-md-left">
+                          <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
+                            <%= t("talent_management.testimonials.anja.name") %>
+                          </span>
+                          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            Senior Talent Partner
+                          </span>
+                          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn"></i><span>LinkedIn</span></a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                      <%= image_tag("anja_talent.jpg", alt: "Anja Brnić", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                  <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-dark nav-style-2 mb-0"
-             data-plugin-options='{"items": 1, "margin": 100, "loop": false, "nav": true, "dots": false, "stagePadding": 100, "autoHeight": true}'>
-                    <!-- Anja Brnić -->
-                    <div>
-                      <div class="testimonial testimonial-style-2 mb-0 mt-4">
-                        <div style="display: flex; justify-content: center;">
-                          <%= image_tag("anja_talent.jpg", class: "img-fluid rounded-circle", alt: "Anja Brnić", style: "height: 200px; width: auto;") %>
-                        </div>
-                        <blockquote>
-                          <p class="text-color-dark text-5 line-height-5 mb-0">
-                            <%= t("talent_management.testimonials.anja.text") %>
-                          </p>
-                        </blockquote>
-                        <div class="testimonial-author">
-                          <p>
-                            <strong class="font-weight-extra-bold text-2">
-                              - <%= t("talent_management.testimonials.anja.name") %>
-                            </strong>
-                          </p>
-                          <a href="https://www.linkedin.com/in/anja-brnic-38450660/" target="_blank" rel="noopener">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
-                          </a>
-                        </div>
-                      </div>
+                <!-- Elliot testimonial -->
+                <div>
+                  <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
+                    <blockquote>
+                      <p class="text-color-dark text-4-5 line-height-5 mb-0">
+                        <%= t("talent_management.testimonials.elliot.text") %>
+                      </p>
+                    </blockquote>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
+                      <div class="text-center text-md-left">
+                        <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
+                          <%= t("talent_management.testimonials.elliot.name") %>
+                        </span>
+                        <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                          IT Business Owner
+                        </span>
+                        <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                          <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn"></i><span>LinkedIn</span></a>
+                      </span>
                     </div>
-                    <!-- Elliot Zissman -->
-                    <div>
-                      <div class="testimonial testimonial-style-2 mb-0 mt-4">
-                        <div style="display: flex; justify-content: center;">
-                          <%= image_tag("elliot_talent.jpg", class: "img-fluid rounded-circle", alt: "Elliot", style: "height: 200px; width: auto;") %>
-                        </div>
-                        <blockquote>
-                          <p class="text-color-dark text-5 line-height-5 mb-0">
-                            <%= t("talent_management.testimonials.elliot.text") %>
-                          </p>
-                        </blockquote>
-                        <div class="testimonial-author">
-                          <p>
-                            <strong class="font-weight-extra-bold text-2">
-                              - <%= t("talent_management.testimonials.elliot.name") %>
-                            </strong>
-                          </p>
-                          <a href="https://www.linkedin.com/in/elliotz/" target="_blank" rel="noopener">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
+                  <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                    <%= image_tag("elliot_talent.jpg", alt: "Elliot", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
                   </div>
                 </div>
               </div>
@@ -361,6 +318,8 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>
 <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
