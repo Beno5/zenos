@@ -228,3 +228,15 @@ select.form-control {
   padding-right: 2rem;
 }
 
+#header {
+  background: red !important;
+  z-index: 99999 !important;
+}
+
+body {
+  background: green !important;
+}
+
+.main {
+  background: yellow !important;
+}
