@@ -47,6 +47,16 @@ en:
       cultural: CULTURAL INTELLIGENCE
       healty: HEALTHY NUTRITION
       entreprenurship: ENTREPRENEURSHIP
+    talent_modal:
+      title: "Talent Management Academy"
+      subtitle: "Enrollment Open"
+      countdown_intro: "Early bird price valid for:"
+      units:
+        days: "Days"
+        hours: "Hours"
+        minutes: "Minutes"
+        seconds: "Seconds"
+      cta_button: "Learn More"
     who:
       title: WHO WE ARE?
       first_part: "At Zenos, we believe that real change happens one small step at a time, starting with ordinary people who want to make a difference. We’re all about creating positive impact through practical tools like training, online courses, and useful educational materials."
@@ -312,7 +322,6 @@ en:
         price_eur: "640 EUR"
         price_bam: "1251 BAM"
         button: "Register"
-
       form:
         title: "Academy Registration"
         submit: "Submit"
@@ -339,33 +348,27 @@ en:
     team:
       title: "Talent Management Academy Team"
       content: >
-        <strong>Academy Lead: Dr. Ema Burić</strong><br><br>
+        Academy Lead: Dr. Ema Burić<br><br>
         Dr. Ema Burić is an assistant professor at the Faculty of Economics, University of Zenica, and an expert in strategic human resource management and talent management.<br><br>
         She earned her PhD at the Faculty of Economics, University of Tuzla, with a dissertation titled:<br>
-        <strong>"The Role of Talent Management in Achieving Competitive Advantage of Service Companies in Bosnia and Herzegovina."</strong><br>
-        During her doctoral research, she developed and innovated a <strong>nine-phase process model of talent management</strong>, which has been tested and applied in practice.<br><br>
+        "The Role of Talent Management in Achieving Competitive Advantage of Service Companies in Bosnia and Herzegovina."<br>
+        During her doctoral research, she developed and innovated a nine-phase process model of talent management, which has been tested and applied in practice.<br><br>
         Dr. Burić is the author of numerous academic and professional papers in the fields of talent management, organizational development, and human resource management. She has conducted multiple case studies and research projects focused on the practical application of theoretical knowledge in real business environments.<br><br>
-        In addition to her academic career, Dr. Ema Burić is the <strong>founder and director of the ZENOS Marketing and Education Agency Ltd. Zenica</strong>, and <strong>co-founder of the Women’s Institute for Entrepreneurship and Skills (WISE) in Vienna</strong>.<br><br>
+        In addition to her academic career, Dr. Ema Burić is the founder and director of the ZENOS Marketing and Education Agency Ltd. Zenica, and co-founder of the Women’s Institute for Entrepreneurship and Skills (WISE) in Vienna.<br><br>
         By combining scientific knowledge and practical application, Dr. Burić provides Academy participants with immediately applicable skills in real business contexts.
-
       collaborators_title: "Academy Collaborators"
-
       ena_description: >
         Ena Fejzagić Livančić – marketing specialist with over 10 years of experience in the private sector, co-founder of ZENOS and the WISE institute. Within the Academy, she is responsible for the employer branding segment and for transferring knowledge on how to create an attractive employer image on the labor market.
-
       aida_description: >
         Aida Kurtalić – communication specialist and language professor, with over 10 years of experience working with people and developing interpersonal skills. At the Academy, she leads the part of the program dedicated to organizational culture, strategic communication, and building trust within teams.
-
       lejla_description: >
         Lejla Hot – collaborator for technical support and online session coordination. She ensures smooth delivery of the educational program through technical coordination and logistical support for participants.
-
     testimonials:
       title: "Participant Experiences"
       anja:
         name: "Anja Brnić, Senior Talent Partner | Tech Recruitment"
         text: >
           "I work as a Senior Talent Partner in the IT industry and thought I already had a solid understanding of people management. However, the Talent Management Academy showed me how crucial it is to have a holistic, strategic approach to talent, especially for key roles and long-term development. Everything I learned can be immediately applied in practice – from employer branding to succession planning. The program is of exceptional quality, tailored to real-world challenges we face daily in the industry. I would recommend this training to every HR professional."
-
       elliot:
         name: "Elliot Zissman, owner of a small IT business Phase2Growth"
         text: >

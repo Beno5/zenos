@@ -112,3 +112,69 @@
     <%= render "shared/contact_us" %>
   </div>
 </div>
+<div class="modal fade" id="talentModal" tabindex="-1" role="dialog" aria-labelledby="talentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content p-4">
+
+      <!-- Close button u svom divu, apsolutno pozicioniran -->
+      <div class="position-absolute" style="top: 10px; right: 15px; z-index: 1051;">
+        <button type="button" class="close text-dark" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Naslov posebno centriran -->
+      <div class="modal-header border-0 justify-content-center">
+        <h4 class="modal-title font-weight-bold text-5 text-center w-100 mb-0" id="talentModalLabel">
+          <%= t("home.talent_modal.title") %>
+        </h4>
+      </div>
+
+      <div class="modal-body text-center pb-0">
+        <p class="text-4 mb-3"><%= t("home.talent_modal.subtitle") %></p>
+        <p class="mb-4 text-4"><%= t("home.talent_modal.countdown_intro") %></h5>
+
+        <!-- Countdown -->
+        <div id="custom-countdown" class="d-flex justify-content-center gap-4 flex-wrap mb-4">
+          <% %w[days hours minutes seconds].each do |unit| %>
+            <div class="text-center">
+              <span class="p font-weight-bold text-8 text-color-primary d-block" id="cd-<%= unit %>">00</span>
+              <small class="p text-muted text-3 text-uppercase"><%= t("home.talent_modal.units.#{unit}") %></small>
+            </div>
+          <% end %>
+        </div>
+
+       <%= link_to t("home.talent_modal.cta_button"), pages_talent_management_path(locale: I18n.locale), class: "btn btn-primary btn-modern text-uppercase font-weight-bold px-5 py-3 mt-3" %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  // Modal trigger
+  $('#talentModal').modal('show');
+
+  // Countdown logic
+  const deadline = new Date("2025-08-31T23:59:59").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = deadline - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("cd-days").textContent = days;
+    document.getElementById("cd-hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("cd-minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("cd-seconds").textContent = seconds.toString().padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+});
+</script>

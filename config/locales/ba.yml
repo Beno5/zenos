@@ -47,6 +47,16 @@ ba:
       cultural: KULTURALNA INTELIGENCIJA
       healty: ZDRAVA ISHRANA
       entreprenurship: PREDUZETNIŠTVO
+    talent_modal:
+      title: "Akademija za Talent Menadžment"
+      subtitle: "Upis u toku"
+      countdown_intro: "Snižena cijena za ranu prijavu važi još:"
+      units:
+        days: "Dana"
+        hours: "Sati"
+        minutes: "Minuta"
+        seconds: "Sekundi"
+      cta_button: "Saznaj više"
     who:
       title: KO SMO MI?
       first_part: "U Zenosu vjerujemo da stvarna promjena počinje malim koracima, od običnih ljudi koji žele napraviti razliku. Naš cilj je stvoriti pozitivan utjecaj kroz praktične alate kao što su obuke, online kursevi i korisni edukativni materijali."
@@ -337,13 +347,13 @@ ba:
     team:
       title: "Tim Akademije za Talent menadžment"
       content: >
-        <strong>Voditeljica Akademije: Dr.sc. Ema Burić</strong><br><br>
+        Voditeljica Akademije: Dr.sc. Ema Burić<br><br>
         Dr. Ema Burić je docentica na Ekonomskom fakultetu Univerziteta u Zenici i stručnjakinja za strateško upravljanje ljudskim resursima i talent menadžment.<br><br>
         Doktorirala je na Ekonomskom fakultetu Univerziteta u Tuzli na temu:<br>
-        <strong>"Funkcija talent menadžmenta u postizanju konkurentske prednosti uslužnih preduzeća u BiH."</strong><br>
-        Tokom doktorskog istraživanja razvila je i inovirala <strong>procesni model talent menadžmenta kroz devet faza</strong>, koji je testiran i primijenjen u praksi.<br><br>
+        "Funkcija talent menadžmenta u postizanju konkurentske prednosti uslužnih preduzeća u BiH."<br>
+        Tokom doktorskog istraživanja razvila je i inovirala procesni model talent menadžmenta kroz devet faza, koji je testiran i primijenjen u praksi.<br><br>
         Dr. Burić je autorica brojnih naučnih i stručnih radova iz oblasti talent menadžmenta, organizacijskog razvoja i upravljanja ljudskim resursima. Provela je više studija slučaja i istraživačkih projekata s fokusom na praktičnu primjenu teorijskih znanja u realnom poslovnom okruženju.<br><br>
-        Pored akademske karijere, Ema Burić je <strong>direktorica i osnivačica Agencije za marketing i edukacije ZENOS d.o.o. Zenica</strong>, te <strong>suosnivačica Ženskog instituta za poduzetništvo i vještine (WISE) u Beču</strong>.<br><br>
+        Pored akademske karijere, Ema Burić je direktorica i osnivačica Agencije za marketing i edukacije ZENOS d.o.o. Zenica, te <strong>suosnivačica Ženskog instituta za poduzetništvo i vještine (WISE) u Beču</strong>.<br><br>
         Kombinacijom naučnog pristupa i praktične primjene, dr. Ema Burić polaznicima Akademije prenosi znanja koja su odmah primjenjiva u realnim poslovnim kontekstima.
       collaborators_title: Saradnici Akademije
       ena_description: >
