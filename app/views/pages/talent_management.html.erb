@@ -1,9 +1,36 @@
 <div class="body">
   <div role="main" class="main">
-    <section class="page-header page-header-modern bg-primary custom-page-header mb-0" style="height: 100px !important;">
-      
+    <section class="page-header page-header-modern bg-primary custom-page-header">
+      <div class="custom-svg-style-1 svg-fill-color-primary position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" data-plugin-float-element-svg="true">
+          <circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+          <circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10" stroke-width="3" stroke="6CD499" fill="none"/>
+          <circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+        </svg>
+      </div>
     </section>
-   
+    <aside class="nav-secondary pt-2 pb-0" id="navSecondary" data-plugin-sticky data-plugin-options='{"minWidth": 991, "padding": {"top": 71}}'>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="tabs tabs-bottom tabs-center tabs-simple m-0">
+              <ul class="nav nav-tabs nav-fill m-0">
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section1"><%= t("talent_management.navbar.academy") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section2"><%= t("talent_management.navbar.why_us") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section3"><%= t("talent_management.navbar.modules") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section4"><%= t("talent_management.navbar.audience") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section5"><%= t("talent_management.navbar.details_signup") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section6"><%= t("talent_management.navbar.team") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section7"><%= t("talent_management.navbar.testimonials") %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
     <div class="container py-4">
       <div class="row">
         <div class="col py-4">
@@ -14,19 +41,19 @@
             <p class="text-4 line-height-7 text-justify"><%= raw t("talent_management.academy.description3") %></p>
             <h2 class="font-weight-semi-bold text-8 mb-5 mt-5 text-center"><%= t("talent_management.academy.title2") %></h2>
             <div class="row mt-5 mb-5 text-center">
-              <div class="col-lg-3 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.hr.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.hr.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.managers.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.managers.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.owners.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.owners.desc") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
                 <p class="font-weight-bold text-uppercase text-4 mb-2"><%= t("talent_management.academy.individuals.title") %></p>
                 <p class="text-4 line-height-7 text-justify"><%= t("talent_management.academy.individuals.desc") %></p>
               </div>
@@ -39,7 +66,7 @@
                 <!-- Red 1: 4 boxa -->
                 <div class="row g-5">
                   <% [1, 2, 3, 4].each do |i| %>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + i * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -53,7 +80,7 @@
                 <!-- Red 2: 4 boxa -->
                 <div class="row g-5">
                   <% [5, 6, 7, 8].each_with_index do |i, index| %>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + index * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -73,7 +100,7 @@
               <div class="col">
                 <div class="process process-vertical">
                   <% (1..8).each do |i| %>
-                    <div class="process-step">
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 100 + (i * 100) %>">
                       <div class="process-step-circle">
                         <strong class="process-step-circle-content"><%= i %></strong>
                       </div>
@@ -84,7 +111,7 @@
                     </div>
                   <% end %>
                   <!-- Završni ispit -->
-                  <div class="process-step">
+                  <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 100 + (9 * 100) %>">
                     <div class="process-step-circle">
                       <strong class="process-step-circle-content">X</strong>
                     </div>
@@ -100,27 +127,27 @@
           <div id="section4" class="pt-4">
             <h2 class="font-weight-semi-bold text-center text-8 mb-5"><%= t("talent_management.format.title") %></h2>
             <div class="row justify-content-center mb-5">
-              <div class="col-lg-2 col-md-4 text-center mb-4">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="50">
                 <i class="icons icon-clock text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.duration_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.duration") %></p>
               </div>
-              <div class="col-lg-2 col-md-4 text-center mb-4">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                 <i class="icons icon-screen-desktop text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.format_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.format") %></p>
               </div>
-              <div class="col-lg-2 col-md-4 text-center mb-4">
+              <div class="col-lg-2 col-md-4 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">
                 <i class="icons icon-bubbles text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.support_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.support") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 text-center mb-4">
+              <div class="col-lg-3 col-md-6 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                 <i class="icons icon-list text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.requirements_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.requirements") %></p>
               </div>
-              <div class="col-lg-3 col-md-6 text-center mb-4">
+              <div class="col-lg-3 col-md-6 text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
                 <i class="icons icon-badge text-color-primary mb-3" style="font-size: 40px;"></i>
                 <p class="font-weight-bold text-4 mb-1"><%= t("talent_management.format.certificate_title") %></p>
                 <p class="text-3-5 line-height-6"><%= t("talent_management.format.certificate") %></p>
@@ -167,18 +194,18 @@
             </div>
           </div>
           <div id="section6" class="pt-4">
-            <h2 class="font-weight-semi-bold text-center text-8 mb-4">
+            <h2 class="font-weight-semi-bold text-center text-8 mb-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
               <%= t("talent_management.team.title") %>
             </h2>
             <div class="row py-5">
               <div class="col-md-7 order-2 order-md-1">
                 <div class="overflow-hidden">
                 </div>
-                <p class="text-4 line-height-7 text-justify">
+                <p class="text-4 line-height-7 text-justify appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
                   <%= raw t("talent_management.team.content") %>
                 </p>
-                <hr class="solid my-4">
-                <div class="row align-items-center">
+                <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
                   <div class="col-lg-12 d-flex justify-content-center gap-3 flex-wrap">
                     <a href="mailto:ema@zen-os.com" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2"><%= t("contact.title") %></a>
                     <a href="https://www.linkedin.com/in/ema-burić-phd-b87280b9/" target="_blank" class="btn btn-modern btn-primary mt-3 px-4 py-2">LinkedIn</a>
@@ -186,11 +213,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0">
+              <div class="col-md-5 order-1 order-md-2 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter">
                 <%= image_tag("ema_talent.jpg", class: "img-fluid w-100 h-100 object-fit-cover rounded-3", style: "object-position: 60% center;", alt: "Dr. Ema Burić") %>
               </div>
             </div>
-            <p class="font-weight-semi-bold text-5 mb-4 mt-4 lead">
+            <p class="font-weight-semi-bold text-5 mb-4 mt-4 lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
               <%= t("talent_management.team.collaborators_title") %>
             </p>
             <div class="mt-4 pt-2">
@@ -223,10 +250,10 @@
             </div>
           </div>
           <div id="section7" class="pt-4">
-            <h2 class="font-weight-semi-bold text-7 mb-5 text-center">
+            <h2 class="font-weight-semi-bold text-7 mb-5 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
               <%= t("talent_management.testimonials.title") %>
             </h2>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">
               <div class="col-lg-10">
                 <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-dark custom-dots-style-1 mb-0" data-plugin-options='{"items": 1, "loop": false}'>
                   <!-- Anja testimonial -->
