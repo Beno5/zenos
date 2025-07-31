@@ -11,6 +11,18 @@
           <circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
         </svg>
       </div>
+      <div class="container position-relative z-index-1 mt-4 h-100">
+        <div class="row h-100">
+          <div class="col align-self-center font-span">
+            <div class="d-block">
+              <span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2"><%= t("education_training.title") %></span>
+            </div>
+            <div class="d-block">
+              <h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0"><%= t("education_training.title") %></h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <aside class="nav-secondary pt-2 pb-0" id="navSecondary" data-plugin-sticky data-plugin-options='{"minWidth": 991, "padding": {"top": 71}}'>
       <div class="container">
@@ -457,12 +469,5 @@
       elements.forEach(el => el.disabled = disable);
     }
   });
-
-  window.addEventListener('load', function () {
-  window.scrollTo(0, 1);
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 10);
-});
-
+  
 </script>
