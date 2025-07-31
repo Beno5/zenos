@@ -21,7 +21,7 @@
     <%= favicon_link_tag 'favicon.png', type: 'image/png' %>
   </head>
   <body>
-<%= render("shared/navbar") unless controller.controller_name == "pages" && controller.action_name == "talent_management" %>
+    <%= render "shared/navbar" %>
     <%= render "shared/flashes" %>
     <%= yield %>
     <%= render "shared/footer" %>
