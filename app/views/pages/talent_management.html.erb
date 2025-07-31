@@ -420,16 +420,16 @@
 <script>
 
    document.addEventListener("DOMContentLoaded", function () {
-    // Reset all scroll locking on body/html
-    document.body.style.overflow = "auto";
-    document.documentElement.style.overflow = "auto";
-    document.body.classList.remove("modal-open");
-
-    // Odblokiraj touch scroll na mobilnim uređajima
-    document.body.addEventListener('touchmove', function(e) {
-      e.stopPropagation();
-    }, { passive: true });
+    // Nakon 1 sekunde, odblokiraj sve
+    setTimeout(function () {
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+      document.body.classList.remove("modal-open");
+      document.documentElement.scrollTop = 0;
+    }, 1000); // ako treba, stavi 1500
   });
+
+  
   document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("registrationModal");
     const individualFields = document.getElementById("individualFields");
