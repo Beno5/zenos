@@ -418,18 +418,16 @@
   </div>
 </div>
 <script>
-
-   document.addEventListener("DOMContentLoaded", function () {
-    // Nakon 1 sekunde, odblokiraj sve
+  document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
+      // Ovo odblokira scroll nakon što svi pluginovi završe
       document.body.style.overflow = "auto";
       document.documentElement.style.overflow = "auto";
       document.body.classList.remove("modal-open");
       document.documentElement.scrollTop = 0;
-    }, 1000); // ako treba, stavi 1500
+    }, 1000); // možeš povećati na 1500ms ako bude trebalo
   });
 
-  
   document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("registrationModal");
     const individualFields = document.getElementById("individualFields");
