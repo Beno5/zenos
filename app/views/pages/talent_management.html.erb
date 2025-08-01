@@ -221,7 +221,7 @@
               <div class="row team-list sort-destination" data-sort-id="team">
                 <% [
                       { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
-                      { img: "antonio_talent.jpg", name: "Antonio Topalović", role: "Komunikacijski specijalista", description: t("talent_management.team.antonio_description"), email: "antonio_topalovic@hotmail.com", linkedin: "https://www.linkedin.com/in/antonio-topalovi%C4%87-924764135?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+                      { img: "antonio_talent.jpg", name: "Antonio Topalović", role: "HR stručnjak", description: t("talent_management.team.antonio_description"), email: "antonio_topalovic@hotmail.com", linkedin: "https://www.linkedin.com/in/antonio-topalovi%C4%87-924764135?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
                       { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
                     ].each do |person| %>
                   <div class="col-12 col-sm-6 col-lg-4 isotope-item">
@@ -250,57 +250,79 @@
               </div>
             </div>
           </div>
-         <div id="section7" class="pt-4">
+          <div id="section7" class="pt-4">
   <h2 class="font-weight-semi-bold text-7 mb-5 text-center">
     <%= t("talent_management.testimonials.title") %>
   </h2>
 
-  <div class="container">
-    <!-- Testimonial 1 -->
-    <div class="row align-items-center mb-5 py-4 border rounded bg-light">
-      <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-        <div>
-          <p class="text-color-dark text-4-5 line-height-5 mb-4">
-            <%= t("talent_management.testimonials.anja.text") %>
-          </p>
-          <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
-            <%= t("talent_management.testimonials.anja.name") %>
-          </span>
-          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
-            Senior Talent Partner
-          </span>
-          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
-            <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn">LinkedIn</a>
-          </span>
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Testimonial 1 -->
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row align-items-center mb-5 py-4 border rounded bg-light">
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+              <p class="text-color-dark text-4-5 line-height-5 mb-4">
+                <%= t("talent_management.testimonials.anja.text") %>
+              </p>
+              <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
+                <%= t("talent_management.testimonials.anja.name") %>
+              </span>
+              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
+                Senior Talent Partner
+              </span>
+              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
+                <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn">LinkedIn</a>
+              </span>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+              <%= image_tag("anja_talent.jpg",
+                   alt: "Anja Brnić",
+                   class: "img-fluid rounded-circle",
+                   style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
-        <%= image_tag("anja_talent.jpg", alt: "Anja Brnić", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+
+      <!-- Testimonial 2 -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row align-items-center mb-5 py-4 border rounded bg-light">
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+              <p class="text-color-dark text-4-5 line-height-5 mb-4">
+                <%= t("talent_management.testimonials.elliot.text") %>
+              </p>
+              <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
+                <%= t("talent_management.testimonials.elliot.name") %>
+              </span>
+              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
+                IT Business Owner
+              </span>
+              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
+                <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn">LinkedIn</a>
+              </span>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+              <%= image_tag("elliot_talent.jpg",
+                   alt: "Elliot",
+                   class: "img-fluid rounded-circle",
+                   style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
 
-    <!-- Testimonial 2 -->
-    <div class="row align-items-center mb-5 py-4 border rounded bg-light">
-      <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-        <div>
-          <p class="text-color-dark text-4-5 line-height-5 mb-4">
-            <%= t("talent_management.testimonials.elliot.text") %>
-          </p>
-          <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
-            <%= t("talent_management.testimonials.elliot.name") %>
-          </span>
-          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
-            IT Business Owner
-          </span>
-          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
-            <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn">LinkedIn</a>
-          </span>
-        </div>
-      </div>
-      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
-        <%= image_tag("elliot_talent.jpg", alt: "Elliot", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
-      </div>
-    </div>
+    
+    <!-- Controls -->
+   
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+      <span class="visually-hidden"><%= t("shared.next") %></span>
+    </button>
   </div>
 </div>
 
