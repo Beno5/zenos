@@ -1,43 +1,36 @@
 <div class="body">
   <div role="main" class="main">
-   <section class="page-header page-header-modern bg-primary custom-page-header">
-  <div class="custom-svg-style-1 svg-fill-color-primary position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         x="0px" y="0px" viewBox="0 0 1920 400" xml:space="preserve" preserveAspectRatio="none"
-         width="100%" height="100%" data-plugin-float-element-svg="true">
-      <circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2"
-              data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-      <circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2"
-              data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
-      <circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2"
-              data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-      <circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10"
-              stroke-width="3" stroke="6CD499" fill="none"/>
-      <circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976"
-              fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
-      <circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476"
-              fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
-    </svg>
-  </div>
-
-  <div class="container position-relative z-index-1 mt-4 h-100">
-    <div class="row h-100">
-      <div class="col align-self-center font-span">
-        <div class="d-block">
-          <span class="d-block custom-stroke-text-effect-1 custom-big-text-2 font-weight-bold opacity-2">
-            <%= t("talent_management.title") %>
-          </span>
-        </div>
-        <div class="d-block">
-          <h1 class="text-color-light font-weight-bold positive-ls-3 custom-big-text-1 line-height-1 mb-0">
-            <%= t("talent_management.title") %>
-          </h1>
+    <section class="page-header page-header-modern bg-primary custom-page-header mb-0" style="height: 100px !important;">
+      <div class="custom-svg-style-1 svg-fill-color-primary position-absolute top-0 left-50pct transform3dx-n50 h-100 z-index-0">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 400" xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" data-plugin-float-element-svg="true">
+          <circle id="svg_2" r="7.5" cy="539.5" cx="209.5" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_3" r="12" cy="211" cx="268" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.4, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+          <circle id="svg_4" r="17" cy="144" cx="1864" fill="#FFF" opacity="0.2" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.6, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle id="svg_6" r="28.5" cy="326.74992" cx="327.75073" stroke-miterlimit="10" stroke-width="3" stroke="6CD499" fill="none"/>
+          <circle opacity="0.2" stroke="#ffffff" id="svg_8" r="21.5" cy="340.25" cx="90.74976" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}"/>
+          <circle stroke="#ffffff" opacity="0.2" id="svg_9" r="14.625" cy="689.625" cx="128.87476" fill="none" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.5, 'transition': true, 'transitionDuration': 2000, 'isInsideSVG': true}"/>
+        </svg>
+      </div>
+    </section>
+    <aside class="nav-secondary pt-2 pb-0" id="navSecondary" data-plugin-sticky data-plugin-options='{"minWidth": 991, "padding": {"top": 71}}'>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="tabs tabs-bottom tabs-center tabs-simple m-0">
+              <ul class="nav nav-tabs nav-fill m-0">
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section1"><%= t("talent_management.navbar.academy") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section2"><%= t("talent_management.navbar.why_us") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section3"><%= t("talent_management.navbar.modules") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section4"><%= t("talent_management.navbar.audience") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section5"><%= t("talent_management.navbar.details_signup") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section6"><%= t("talent_management.navbar.team") %></a></li>
+                <li class="nav-item m-0"><a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="150" href="#section7"><%= t("talent_management.navbar.testimonials") %></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </aside>
     <div class="container py-4">
       <div class="row">
         <div class="col py-4">
@@ -230,10 +223,10 @@
             <div class="mt-4 pt-2">
               <div class="row team-list sort-destination" data-sort-id="team">
                 <% [
-      { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
-      { img: "antonio_talent.jpg", name: "Antonio Topalović", role: "Komunikacijski specijalista", description: t("talent_management.team.antonio_description"), email: "", linkedin: "" },
-      { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
-    ].each do |person| %>
+                      { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
+                      { img: "antonio_talent.jpg", name: "Antonio Topalović", role: "Komunikacijski specijalista", description: t("talent_management.team.antonio_description"), email: "", linkedin: "" },
+                      { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
+                    ].each do |person| %>
                   <div class="col-12 col-sm-6 col-lg-4 isotope-item">
                     <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                       <span class="thumb-info-wrapper">
@@ -244,10 +237,14 @@
                         </span>
                       </span>
                       <span class="thumb-info-caption">
-                        <p class="text-3-5 line-height-7 text-justify"><%= person[:description] %></span>
+                        <p class="text-3-5 line-height-7 text-justify"><%= person[:description] %></p>
                         <span class="thumb-info-social-icons mb-4">
-                          <a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
-                          <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                          <% if person[:email].present? %>
+                            <a href="mailto:<%= person[:email] %>" title="Email" target="_blank"><i class="fas fa-envelope"></i><span>Email</span></a>
+                          <% end %>
+                          <% if person[:linkedin].present? %>
+                            <a target="_blank" href="<%= person[:linkedin] %>" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                          <% end %>
                         </span>
                       </span>
                     </span>
@@ -282,40 +279,42 @@
                             Senior Talent Partner
                           </span>
                           <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                            <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn"></i><span>LinkedIn</span></a>
-                        </span>
+                            <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn"><span>LinkedIn</span></a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                        <%= image_tag("anja_talent.jpg", alt: "Anja Brnić", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
                       </div>
                     </div>
-                    <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
-                      <%= image_tag("anja_talent.jpg", alt: "Anja Brnić", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+                  </div>
+                  <!-- Elliot testimonial -->
+                  <div>
+                    <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
+                      <blockquote>
+                        <p class="text-color-dark text-4-5 line-height-5 mb-0">
+                          <%= t("talent_management.testimonials.elliot.text") %>
+                        </p>
+                      </blockquote>
                     </div>
-                  </div>
-                </div>
-                <!-- Elliot testimonial -->
-                <div>
-                  <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
-                    <blockquote>
-                      <p class="text-color-dark text-4-5 line-height-5 mb-0">
-                        <%= t("talent_management.testimonials.elliot.text") %>
-                      </p>
-                    </blockquote>
-                  </div>
-                  <div class="row align-items-center">
-                    <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
-                      <div class="text-center text-md-left">
-                        <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
-                          <%= t("talent_management.testimonials.elliot.name") %>
-                        </span>
-                        <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                          IT Business Owner
-                        </span>
-                        <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                          <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn"></i><span>LinkedIn</span></a>
-                      </span>
+                    <div class="row align-items-center">
+                      <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
+                        <div class="text-center text-md-left">
+                          <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
+                            <%= t("talent_management.testimonials.elliot.name") %>
+                          </span>
+                          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            IT Business Owner
+                          </span>
+                          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
+                            <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn"><span>LinkedIn</span></a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
+                        <%= image_tag("elliot_talent.jpg", alt: "Elliot", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
-                    <%= image_tag("elliot_talent.jpg", alt: "Elliot", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
                   </div>
                 </div>
               </div>
@@ -324,148 +323,142 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="registrationModalLabel"><%= t("talent_management.pricing.form.title") %></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
-      </div>
-      <div class="modal-body">
-        <%= form_with url: contact_form_send_academy_email_path, method: :post, local: true, html: { id: "registrationForm" } do |f| %>
-          <%= hidden_field_tag :type %>
-          <%= hidden_field_tag :title %>
-          <!-- Individual fields -->
-          <div id="individualFields" class="d-none">
-            <div class="row">
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.name") %></label>
-                <%= text_field_tag :name, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.organization") %></label>
-                <%= text_field_tag :organization, nil, class: "form-control" %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.country") %></label>
-                <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.city") %></label>
-                <%= text_field_tag :city, nil, class: "form-control" %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.position") %></label>
-                <%= text_field_tag :position, nil, class: "form-control" %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.email") %></label>
-                <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.individual.phone") %></label>
-                <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-12">
-                <label><%= t("talent_management.pricing.form.individual.message") %></label>
-                <%= text_area_tag :message, nil, class: "form-control" %>
-              </div>
-            </div>
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registrationModalLabel"><%= t("talent_management.pricing.form.title") %></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
           </div>
-          <!-- Group fields -->
-          <div id="groupFields" class="d-none">
-            <div class="row">
-              <div class="mb-3 col-12">
-                <label><%= t("talent_management.pricing.form.group.organization") %></label>
-                <%= text_field_tag :organization, nil, class: "form-control" %>
-              </div>
-              <% (1..5).each do |i| %>
-                <div class="mb-3 col-md-6">
-                  <label><%= t("talent_management.pricing.form.group.participant", num: i, required: i <= 2 ? "*" : "") %></label>
-                  <%= text_field_tag "participant#{i}", nil, class: "form-control", 'data-required': (i <= 2).to_s %>
+          <div class="modal-body">
+            <%= form_with url: contact_form_send_academy_email_path, method: :post, local: true, html: { id: "registrationForm" } do |f| %>
+              <%= hidden_field_tag :type %>
+              <%= hidden_field_tag :title %>
+              <!-- Individual fields -->
+              <div id="individualFields" class="d-none">
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.name") %></label>
+                    <%= text_field_tag :name, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.organization") %></label>
+                    <%= text_field_tag :organization, nil, class: "form-control" %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.country") %></label>
+                    <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.city") %></label>
+                    <%= text_field_tag :city, nil, class: "form-control" %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.position") %></label>
+                    <%= text_field_tag :position, nil, class: "form-control" %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.email") %></label>
+                    <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.individual.phone") %></label>
+                    <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-12">
+                    <label><%= t("talent_management.pricing.form.individual.message") %></label>
+                    <%= text_area_tag :message, nil, class: "form-control" %>
+                  </div>
                 </div>
-                <div class="mb-3 col-md-6">
-                  <label><%= t("talent_management.pricing.form.group.position") %></label>
-                  <%= text_field_tag "position#{i}", nil, class: "form-control" %>
+              </div>
+              <!-- Group fields -->
+              <div id="groupFields" class="d-none">
+                <div class="row">
+                  <div class="mb-3 col-12">
+                    <label><%= t("talent_management.pricing.form.group.organization") %></label>
+                    <%= text_field_tag :organization, nil, class: "form-control" %>
+                  </div>
+                  <% (1..5).each do |i| %>
+                    <div class="mb-3 col-md-6">
+                      <label><%= t("talent_management.pricing.form.group.participant", num: i, required: i <= 2 ? "*" : "") %></label>
+                      <%= text_field_tag "participant#{i}", nil, class: "form-control", 'data-required': (i <= 2).to_s %>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label><%= t("talent_management.pricing.form.group.position") %></label>
+                      <%= text_field_tag "position#{i}", nil, class: "form-control" %>
+                    </div>
+                  <% end %>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.group.country") %></label>
+                    <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.group.city") %></label>
+                    <%= text_field_tag :city, nil, class: "form-control" %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.group.email") %></label>
+                    <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label><%= t("talent_management.pricing.form.group.phone") %></label>
+                    <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
+                  </div>
+                  <div class="mb-3 col-12">
+                    <label><%= t("talent_management.pricing.form.group.message") %></label>
+                    <%= text_area_tag :message, nil, class: "form-control" %>
+                  </div>
                 </div>
-              <% end %>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.group.country") %></label>
-                <%= text_field_tag :country, nil, class: "form-control", 'data-required': true %>
               </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.group.city") %></label>
-                <%= text_field_tag :city, nil, class: "form-control" %>
+              <div class="text-end">
+                <%= submit_tag t("talent_management.pricing.form.submit"), class: "btn btn-primary" %>
               </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.group.email") %></label>
-                <%= email_field_tag :email, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-md-6">
-                <label><%= t("talent_management.pricing.form.group.phone") %></label>
-                <%= telephone_field_tag :phone, nil, class: "form-control", 'data-required': true %>
-              </div>
-              <div class="mb-3 col-12">
-                <label><%= t("talent_management.pricing.form.group.message") %></label>
-                <%= text_area_tag :message, nil, class: "form-control" %>
-              </div>
-            </div>
+            <% end %>
           </div>
-          <div class="text-end">
-            <%= submit_tag t("talent_management.pricing.form.submit"), class: "btn btn-primary" %>
-          </div>
-        <% end %>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("registrationModal");
+        const individualFields = document.getElementById("individualFields");
+        const groupFields = document.getElementById("groupFields");
+        const modalTitle = document.getElementById("registrationModalLabel");
 
+        const hiddenTypeField = document.querySelector('input[name="type"]');
+        const hiddenTitleField = document.querySelector('input[name="title"]');
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("registrationModal");
-    const individualFields = document.getElementById("individualFields");
-    const groupFields = document.getElementById("groupFields");
-    const modalTitle = document.getElementById("registrationModalLabel");
+        const buttons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
-    const hiddenTypeField = document.querySelector('input[name="type"]');
-    const hiddenTitleField = document.querySelector('input[name="title"]');
+        buttons.forEach(btn => {
+          btn.addEventListener("click", function () {
+            const type = this.dataset.type;
+            const title = this.dataset.title;
 
-    const buttons = document.querySelectorAll('[data-bs-toggle="modal"]');
+            if (title) modalTitle.textContent = title;
+            if (hiddenTypeField) hiddenTypeField.value = type || "";
+            if (hiddenTitleField) hiddenTitleField.value = title || "";
 
-    buttons.forEach(btn => {
-      btn.addEventListener("click", function () {
-        const type = this.dataset.type;
-        const title = this.dataset.title;
+            // Disable hidden fields and enable visible ones
+            if (type === "group") {
+              toggleFieldState(individualFields, true);
+              toggleFieldState(groupFields, false);
+              individualFields.classList.add("d-none");
+              groupFields.classList.remove("d-none");
+            } else {
+              toggleFieldState(groupFields, true);
+              toggleFieldState(individualFields, false);
+              groupFields.classList.add("d-none");
+              individualFields.classList.remove("d-none");
+            }
+          });
+        });
 
-        if (title) modalTitle.textContent = title;
-        if (hiddenTypeField) hiddenTypeField.value = type || "";
-        if (hiddenTitleField) hiddenTitleField.value = title || "";
-
-        // Disable hidden fields and enable visible ones
-        if (type === "group") {
-          toggleFieldState(individualFields, true);
-          toggleFieldState(groupFields, false);
-          individualFields.classList.add("d-none");
-          groupFields.classList.remove("d-none");
-        } else {
-          toggleFieldState(groupFields, true);
-          toggleFieldState(individualFields, false);
-          groupFields.classList.add("d-none");
-          individualFields.classList.remove("d-none");
+        function toggleFieldState(container, disable = true) {
+          const elements = container.querySelectorAll('input, textarea, select');
+          elements.forEach(el => el.disabled = disable);
         }
       });
-    });
-
-    function toggleFieldState(container, disable = true) {
-      const elements = container.querySelectorAll('input, textarea, select');
-      elements.forEach(el => el.disabled = disable);
-    }
-  });
-
-  
-</script>
+    </script>
+  </div>
+</div>
