@@ -101,7 +101,7 @@
               <div class="col">
                 <div class="process process-vertical">
                   <% (1..8).each do |i| %>
-                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 100 + (i * 100) %>">
+                    <div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 50 + (i * 20) %>">
                       <div class="process-step-circle">
                         <strong class="process-step-circle-content"><%= i %></strong>
                       </div>
@@ -225,7 +225,7 @@
               <div class="row team-list sort-destination" data-sort-id="team">
                 <% [
       { img: "ena_talent.jpg", name: "Ena Fejzagić Livančić", role: "Marketing specijalista", description: t("talent_management.team.ena_description"), email: "efl@zen-os.com", linkedin: "https://www.linkedin.com/in/enafejzagic/" },
-      { img: "aida_talent.jpg", name: "Aida Kurtalić", role: "Komunikacijski specijalista", description: t("talent_management.team.aida_description"), email: "aida@zen-os.com", linkedin: "https://www.linkedin.com/in/aidakurtalic/" },
+      { img: "antonio_talent.jpg", name: "Antonio Topalović", role: "Komunikacijski specijalista", description: t("talent_management.team.antonio_description"), email: "", linkedin: "" },
       { img: "lejla_talent.jpg", name: "Lejla Hot", role: "Tehnička podrška", description: t("talent_management.team.lejla_description"), email: "lejla@zen-os.com", linkedin: "https://www.linkedin.com/in/lejla-hot/" }
     ].each do |person| %>
                   <div class="col-12 col-sm-6 col-lg-4 isotope-item">
