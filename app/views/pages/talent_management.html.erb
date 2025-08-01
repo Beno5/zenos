@@ -251,82 +251,54 @@
             </div>
           </div>
          <div id="section7" class="pt-4">
-  <h2 class="font-weight-semi-bold text-7 mb-5 text-center appear-animation"
-      data-appear-animation="fadeInUpShorter"
-      data-appear-animation-delay="100">
+  <h2 class="font-weight-semi-bold text-7 mb-5 text-center">
     <%= t("talent_management.testimonials.title") %>
   </h2>
-  <div class="row justify-content-center appear-animation"
-       data-appear-animation="fadeInUpShorterPlus"
-       data-appear-animation-delay="200">
-    <div class="col-lg-10">
-      <div class="owl-carousel owl-theme nav-bottom rounded-nav dots-dark custom-dots-style-1 mb-0"
-           data-plugin-options='{"items":1,"loop":false}'>
-        
-        <!-- Slide 1: Anja -->
-        <div class="testimonial-slide">
-          <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
-            <blockquote>
-              <p class="text-color-dark text-4-5 line-height-5 mb-0">
-                <%= t("talent_management.testimonials.anja.text") %>
-              </p>
-            </blockquote>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
-              <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
-                <%= t("talent_management.testimonials.anja.name") %>
-              </span>
-              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                Senior Talent Partner
-              </span>
-              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                <a target="_blank"
-                   href="https://www.linkedin.com/in/anja-brnic-38450660/"
-                   title="LinkedIn">LinkedIn</a>
-              </span>
-            </div>
-            <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
-              <%= image_tag("anja_talent.jpg",
-                            alt: "Anja Brnić",
-                            class: "img-fluid rounded-circle",
-                            style: "width:275px;height:275px;object-fit:cover;object-position:center;") %>
-            </div>
-          </div>
+
+  <div class="container">
+    <!-- Testimonial 1 -->
+    <div class="row align-items-center mb-5 py-4 border rounded bg-light">
+      <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+        <div>
+          <p class="text-color-dark text-4-5 line-height-5 mb-4">
+            <%= t("talent_management.testimonials.anja.text") %>
+          </p>
+          <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
+            <%= t("talent_management.testimonials.anja.name") %>
+          </span>
+          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
+            Senior Talent Partner
+          </span>
+          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
+            <a target="_blank" href="https://www.linkedin.com/in/anja-brnic-38450660/" title="LinkedIn">LinkedIn</a>
+          </span>
         </div>
-        
-        <!-- Slide 2: Elliot -->
-        <div class="testimonial-slide">
-          <div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-light mb-4">
-            <blockquote>
-              <p class="text-color-dark text-4-5 line-height-5 mb-0">
-                <%= t("talent_management.testimonials.elliot.text") %>
-              </p>
-            </blockquote>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1 text-center text-md-left mb-4">
-              <span class="d-block text-color-dark font-weight-bold text-5 mb-3">
-                <%= t("talent_management.testimonials.elliot.name") %>
-              </span>
-              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                IT Business Owner
-              </span>
-              <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-2">
-                <a target="_blank"
-                   href="https://www.linkedin.com/in/elliotz/"
-                   title="LinkedIn">LinkedIn</a>
-              </span>
-            </div>
-            <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4">
-              <%= image_tag("elliot_talent.jpg",
-                            alt: "Elliot",
-                            class: "img-fluid rounded-circle",
-                            style: "width:275px;height:275px;object-fit:cover;object-position:center;") %>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+        <%= image_tag("anja_talent.jpg", alt: "Anja Brnić", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="row align-items-center mb-5 py-4 border rounded bg-light">
+      <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+        <div>
+          <p class="text-color-dark text-4-5 line-height-5 mb-4">
+            <%= t("talent_management.testimonials.elliot.text") %>
+          </p>
+          <span class="d-block text-color-dark font-weight-bold text-5 mb-2">
+            <%= t("talent_management.testimonials.elliot.name") %>
+          </span>
+          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3 mb-1">
+            IT Business Owner
+          </span>
+          <span class="d-block text-color-dark opacity-7 font-weight-bold line-height-1 text-3">
+            <a target="_blank" href="https://www.linkedin.com/in/elliotz/" title="LinkedIn">LinkedIn</a>
+          </span>
         </div>
-        
+      </div>
+      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+        <%= image_tag("elliot_talent.jpg", alt: "Elliot", class: "img-fluid rounded-circle", style: "width: 275px; height: 275px; object-fit: cover; object-position: center;") %>
       </div>
     </div>
   </div>
