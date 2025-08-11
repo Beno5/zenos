@@ -232,12 +232,12 @@ en:
         desc: "The program is led by the model’s author, enabling direct knowledge exchange through sessions, networking, and individual contact."
       item6:
         icon: "icon-globe icons text-color-light bg-color-primary"
-        title: "Regional Context"
-        desc: "The Academy's content was developed with the specific business environment of Bosnia and Herzegovina, Croatia, Serbia, and Montenegro in mind."
+        title: "No Prerequisites"
+        desc: "The academy is designed for participants with or without formal HR education or experience."
       item7:
         icon: "icon-camrecorder icons text-color-primary bg-color-grey"
         title: "Flexible Learning"
-        desc: "All sessions are held online and recorded, with access for 72 hours after the session — enabling participation from any location and allowing make-up viewing."
+        desc: "All sessions are held online and recorded, with access for 72 hours after the session — enabling participation from any location and allowing on-demand viewing."
       item8:
         icon: "fas fa-graduation-cap text-color-light bg-color-primary"
         title: "Knowledge Community"
@@ -362,7 +362,7 @@ en:
       antonio_description: >
         Antonio Topalović – an expert in human resources and organizational culture with many years of experience in people development and building inclusive work environments. He is a PhD candidate in educational sciences, focusing on developing an organizational culture that fosters belonging, resilience, and collaboration. At the Academy, he leads the part of the program dedicated to organizational culture and onboarding.
       jasmin_description: >
-        Jasmin Alic is the world’s No. 1 LinkedIn expert in personal and corporate brand growth, and the creator of a unique approach to authentic branding and building online influence. Through his work with hundreds of companies and thousands of individuals, he has established himself as a leading voice in digital visibility and professional development. He’s the founder of the Hey Jay platform, the LinkUp community, and the LinkBound sales tool—through which he educates, advises, and transforms the LinkedIn presence of professionals and organizations. At the Academy, he leads the employer-branding module, focusing on strategic communication, trust-building, and long-term positioning in the talent market.
+        Jasmin Alić – the world’s most influential LinkedIn expert, copywriter, and owner of the Link Up platform, as well as co-founder of the Linkbound tool. With more than 300,000 followers on LinkedIn, Jasmin has been ranked as the No. 1 LinkedIn expert in the world for three consecutive years and is considered one of the most engaging speakers on the global stage. His work has been recognized by Forbes, the Financial Times, and Bloomberg, where he has been highlighted as a digital mogul from Bosnia and Herzegovina. At the Academy, he leads the module dedicated to employer branding, with a focus on strategic communication, building trust, and long-term positioning in the talent market.
     testimonials:
       title: "Participant Experiences"
       anja:

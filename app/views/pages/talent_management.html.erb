@@ -60,12 +60,12 @@
             </div>
           </div>
           <div id="section2" class="pt-4">
-            <h2 class="font-weight-semi-bold text-8 mb-4 text-center"><%= t("talent_management.why_us.title") %></h2>
+            <h2 class="font-weight-semi-bold text-8 mb-4 pb-5 text-center"><%= t("talent_management.why_us.title") %></h2>
             <div class="row">
               <div class="featured-boxes featured-boxes-style-2">
                 <div class="row g-5">
                   <% [1, 2, 3, 4].each do |i| %>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + i * 100 %>">
+                    <div class="col-md-6 mt-0 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + i * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="row g-5">
                   <% [5, 6, 7, 8].each_with_index do |i, index| %>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + index * 100 %>">
+                    <div class="col-md-6 mt-0 col-lg-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="<%= 200 + index * 100 %>">
                       <div class="featured-box featured-box-effect-4 h-100">
                         <div class="box-content py-3 px-2">
                           <i class="icon-featured <%= t("talent_management.why_us.item#{i}.icon") %>"></i>
@@ -468,3 +468,12 @@
     </script>
   </div>
 </div>
+
+<style>
+  @media (max-width: 767px) {
+    #navSecondary .nav-link {
+      font-size: 16px !important;
+      padding: 4px 6px !important;
+    }
+  }
+</style>
